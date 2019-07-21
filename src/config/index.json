@@ -1,0 +1,45 @@
+[
+    {
+        "aboutNative": [
+            {
+                "title": "EXPERIENCE",
+                "image": "../images/gatsby-astronaut.png",
+                "description": "Hear the personal accounts of our Native hosts in intimate experience groups and become stewards to real stories."
+            },
+            {
+                "title": "EXPAND",
+                "image": "../images/gatsby-astronaut.png",
+                "description": "Grow your knowledge of the world and learn about different cultures by experiencing all of it firsthand."
+            },
+            {
+                "title": "EXPLORE",
+                "image": "../images/gatsby-astronaut.png",
+                "description": "Have the peace of mind to embark on a boundless adventure. Our experiences uphold your safety and comfort as utmost priorities."
+            }
+        ],
+        "nativeAffliates": [
+            {
+                "title": "Our Partners",
+                "images": [
+                    "../images/gatsby-astronaut.png",
+                    "../images/gatsby-astronaut.png",
+                    "../images/gatsby-astronaut.png"
+                ]
+            },
+            {
+                "title": "Awards",
+                "images": [
+                    "../images/gatsby-astronaut.png"
+                ]
+            },
+            {
+                "title": "Featured On",
+                "images": [
+                    "../images/gatsby-astronaut.png",
+                    "../images/gatsby-astronaut.png"
+                ]
+            }
+        ]
+
+    }
+]
