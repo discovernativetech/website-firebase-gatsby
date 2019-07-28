@@ -1,16 +1,18 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from "../components/layout"
+import Layout from "../components/layout";
 // import Image from "../components/image"
 import { MDBContainer } from 'mdbreact';
 import Img from "gatsby-image"
 
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 import BackgroundSection from "../components/BackgroundSection/BackgroundSection";
 import MultiColumns from "../components/MultiColumns/MultiColumns";
 import CardBlock from "../components/CardBlock/CardBlock";
 import Tabs from "../components/Tabs/Tabs";
+
+import styles from '../pageStyles/index.module.css';
 
 const IndexPage = ({ data }) => {
   console.log(data);
@@ -22,11 +24,15 @@ const IndexPage = ({ data }) => {
     <SEO title="Home" />
     <BackgroundSection image={data.fullImageHeader.childImageSharp.fluid.src} />
     <MDBContainer>
-      <h1>Discover Malaysia The Native Way</h1>
-      <p>Vision</p>
-      <p>Native strives to see a Malaysia where people from all walks of life are represented, protected and valued for their own unique sense of identity.</p>
-      <p>Mission</p>
-      <p>To redefine what it means to be a native through community based travel opportunities.</p>
+      <div className={styles.aboutNativeSection}>
+        <h1 className={styles.sectionTitle}>Discover Malaysia The Native Way</h1>
+        <div className={styles.sectionContent}>
+          <span className={styles.sectionSub}>Vision</span>
+          <p>Native strives to see a Malaysia where people from all walks of life are represented, protected and valued for their own unique sense of identity.</p>
+          <span className={styles.sectionSub}>Mission</span>
+          <p>To redefine what it means to be a native through community based travel opportunities.</p>
+        </div>
+      </div>
       <MultiColumns>
         {
           aboutNativeInfo.map((node, index) => (

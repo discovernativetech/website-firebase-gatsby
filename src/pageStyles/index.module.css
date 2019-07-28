@@ -1,0 +1,20 @@
+.aboutNativeSection {
+    color: #002445;
+    margin: 30px 0px;
+}
+
+.sectionTitle {
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sectionSub {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.sectionContent {
+    margin: 20px 0px;
+}
