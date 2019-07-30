@@ -8,7 +8,7 @@ import SEO from "../components/seo";
 import BackgroundSection from "../components/BackgroundSection/BackgroundSection";
 import MultiColumns from "../components/MultiColumns/MultiColumns";
 import CardBlock from "../components/CardBlock/CardBlock";
-import TravellersTeamsTabs from "../components/TravellersTeamsTabs/travellersTeamsTabs";
+import TravellersTeamsTabs from "../components/TravellersTeamsTabs/TravellersTeamsTabs";
 
 import styles from '../pageStyles/index.module.css';
 
