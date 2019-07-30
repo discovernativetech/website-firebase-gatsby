@@ -40,7 +40,7 @@ const Navbar = () => {
                             <span className={styles.navLink}>
                                 <Link className={styles.link} to="/coming-soon">Journal</Link>
                             </span>
-                            <Button text={'BOOK NOW'} link={'https://google.com'} outlineColor={'#ED435D'} textColor={'#3A3A3C'}/>
+                            <Button text={'BOOK NOW'} link={'https://www.airbnb.com/experiences/182216'} outlineColor={'#ED435D'} textColor={'#3A3A3C'}/>
                         </div>
                     </div>
                 </MDBContainer>

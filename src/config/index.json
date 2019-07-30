@@ -41,19 +41,19 @@
         "travellerSlides": [
             {
                 "image": "../images/travellers-carousel.jpg",
-                "link": "https://www.google.com",
+                "link": "https://www.airbnb.com/experiences/182216",
                 "description": "Catch an intimate glimpse into how nature and culture go hand-in-hand on a fascinating day trip to Kampung Sungai Lalang Bahru, Semenyih."
             },
             {
                 "image": "../images/teams-carousel.jpg",
-                "link": "https://www.google.com",
+                "link": "https://www.airbnb.com/experiences/182216",
                 "description": "Test Sungai Lalang Bahru, Semenyih."
             }
         ],
         "teamSlides": [
             {
                 "image": "../images/teams-carousel.jpg",
-                "link": "https://www.google.com",
+                "link": "https://www.airbnb.com/experiences/182216",
                 "description": "Catch an intimate glimpse into how nature and culture go hand-in-hand on a fascinating day trip to Kampung Sungai Lalang Bahru, Semenyih."
             }
         ]

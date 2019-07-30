@@ -15,11 +15,11 @@
 .linksContainer {
     display: flex;
     margin: 10px 0px;
+    color: #ffffff;
 }
 
 .infoContainer {
-    width: 33%;
-    /* border: 1px solid white; */
+    width: 33%; 
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -36,4 +36,8 @@
 
 .border {
     font-weight: bold;
+}
+
+.link{
+    color: #ffffff;
 }
