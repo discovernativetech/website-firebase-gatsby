@@ -1,0 +1,17 @@
+.navItem {
+    margin: 5px 25px 5px 0px;
+}
+
+.tabTitle {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+.activeTab {
+    color: #0056b3;
+}
+
+.inactiveTab {
+    color: #002445;
+}

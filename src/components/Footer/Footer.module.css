@@ -1,0 +1,39 @@
+.container {
+    min-height: 250px;
+    background-color: #002445;
+    color: #ffffff;
+}
+
+.innerContainer {
+    padding: 30px
+}
+
+.socialMediaContainer {
+    margin: 0px 0px 30px 0px;
+}
+
+.linksContainer {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.infoContainer {
+    width: 33%;
+    /* border: 1px solid white; */
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoTitle {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    font-size: 18px;
+    margin-bottom: 1px !important;
+}
+
+.border {
+    font-weight: bold;
+}

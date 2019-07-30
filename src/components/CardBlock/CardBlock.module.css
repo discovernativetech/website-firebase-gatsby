@@ -1,0 +1,45 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 90% !important;
+    }
+      
+}
+
+.container {
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 5px 0px;
+    align-items: center;
+}
+
+.iconContainer {
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+}
+
+.titleContainer {
+    text-align: center;
+}
+
+.title {
+    font-size: 22px;
+}
+
+.divider {
+    height: 25px;
+    width: 50px;
+    margin: 20px;
+}
+
+.description {
+    text-align: center;
+}
