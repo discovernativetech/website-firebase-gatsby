@@ -5,6 +5,12 @@
     padding-top: 10px;
 }
 
+.link {
+    color: #3A3A3C;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
 .container {
     height: 120px;
     width: 100%;

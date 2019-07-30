@@ -2,15 +2,13 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
-// import Image from "../components/image"
 import { MDBContainer } from 'mdbreact';
-import Img from "gatsby-image"
 
 import SEO from "../components/seo";
 import BackgroundSection from "../components/BackgroundSection/BackgroundSection";
 import MultiColumns from "../components/MultiColumns/MultiColumns";
 import CardBlock from "../components/CardBlock/CardBlock";
-import Tabs from "../components/Tabs/Tabs";
+import TravellersTeamsTabs from "../components/TravellersTeamsTabs/travellersTeamsTabs";
 
 import styles from '../pageStyles/index.module.css';
 
@@ -18,11 +16,13 @@ const IndexPage = ({ data }) => {
   console.log(data);
   const aboutNativeInfo = data.allIndexJson.edges[0].node.aboutNative;
   const nativeAffliatesInfo = data.allIndexJson.edges[0].node.nativeAffliates;
+  const tabsTravellers = data.allIndexJson.edges[0].node.travellerSlides;
+  const tabsTeams= data.allIndexJson.edges[0].node.teamSlides;
 
   return (
   <Layout>
     <SEO title="Home" />
-    <BackgroundSection image={data.fullImageHeader.childImageSharp.fluid.src} />
+    <BackgroundSection image={data.fullImageHeader.childImageSharp.fluid} />
     <MDBContainer>
       <div className={styles.aboutNativeSection}>
         <h1 className={styles.sectionTitle}>Discover Malaysia The Native Way</h1>
@@ -40,17 +40,18 @@ const IndexPage = ({ data }) => {
           ))
         }
       </MultiColumns>
-      <Tabs />
-      <MultiColumns>
+      <TravellersTeamsTabs teamsTab={tabsTeams} travellersTab={tabsTravellers}/>
+      <MultiColumns className={styles.affliatesContainer}>
         {
           nativeAffliatesInfo.map((node, index) => (
-              <CardBlock key={index} title={node.title}>
+              <CardBlock key={index} title={node.title} titleClass={styles.affliatesTitle}>
+                <div className={styles.logoContainer}>
                  {
                     node.images.map((image, index) => {
-                      console.log(image);
-                      return (<Img key={index} fixed={image.childImageSharp.fixed} />)
+                      return (<img key={index} src={image.childImageSharp.original.src} className={styles.logos} alt="test" />)
                     })
                  }
+                 </div>
               </CardBlock>
           ))
         }
@@ -63,7 +64,7 @@ export const query = graphql`
 query {
   fullImageHeader: file(relativePath: { eq: "asliBackground.png" }) {
       childImageSharp {
-        fluid {
+        fluid (fit: CONTAIN){
           ...GatsbyImageSharpFluid
         }
       }
@@ -76,7 +77,7 @@ query {
           description
           image {
             childImageSharp {
-              fixed (width:200, height: 200) {
+              fixed (width:128, height: 150) {
                 ...GatsbyImageSharpFixed
               }
             }
@@ -86,11 +87,33 @@ query {
           title
           images {
             childImageSharp {
-              fixed(width: 100, height:100) {
-              	...GatsbyImageSharpFixed
+              original {
+                src
               }
             }
           }
+        }
+        travellerSlides {
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          link
+          description
+        }
+        teamSlides {
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          link
+          description
         }
       }
     }

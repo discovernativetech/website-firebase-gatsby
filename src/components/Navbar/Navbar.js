@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql  } from "gatsby";
 import { MDBContainer } from 'mdbreact';
 import Img from "gatsby-image";
 import styles from './Navbar.module.css';
+import Button from '../Button/Button';
 
 const Navbar = () => {
     const data = useStaticQuery(graphql`
@@ -21,12 +22,14 @@ const Navbar = () => {
             <div className={styles.container}>
                 <MDBContainer className={styles.innerContainer}>
                     <div className={styles.logoContainer}>
-                        <Img fixed={data.logo.childImageSharp.fixed} />
+                        <Link to="/">
+                            <Img fixed={data.logo.childImageSharp.fixed} />
+                        </Link>
                     </div>
                     <div className={styles.linksContainer}>
                         <div className={styles.menuContainer}>
                             <span className={styles.navLink}>
-                                <Link className={styles.link} to="/about-us">About Us</Link>
+                                <Link className={styles.link} to="/coming-soon">About Us</Link>
                             </span>
                             <span className={styles.navLink}>
                                 <Link className={styles.link} to="/coming-soon">The Experiences</Link>
@@ -37,6 +40,7 @@ const Navbar = () => {
                             <span className={styles.navLink}>
                                 <Link className={styles.link} to="/coming-soon">Journal</Link>
                             </span>
+                            <Button text={'BOOK NOW'} link={'https://google.com'} outlineColor={'#ED435D'} textColor={'#3A3A3C'}/>
                         </div>
                     </div>
                 </MDBContainer>

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './CardBlock.module.css'
 import Img from 'gatsby-image';
 
-const CardBlock = ({title, description, image, children}) => {
+const CardBlock = ({title, titleClass = "", description, image, children}) => {
   return (
     <div className={styles.container}>
         { image &&
@@ -11,7 +11,7 @@ const CardBlock = ({title, description, image, children}) => {
           </div>
         }
         <div className={styles.titleContainer}>
-            <span className={styles.title}>{title}</span>
+            <span className={`${styles.title} ${titleClass}`}>{title}</span>
         </div>
         { description &&
           <div className={styles.descriptionContainer}>
