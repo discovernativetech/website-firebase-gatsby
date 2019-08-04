@@ -6,10 +6,10 @@ const SocialMedias = ({ size = "2x" }) => {
 
     return (
         <div className={styles.socialMedias}>
-            <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.facebook.com/nativexperiences/">
+            <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.facebook.com/discovernative/">
                 <MDBIcon fab className={styles.icon} icon="facebook-square" size={size}/>
             </a>
-            <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.instagram.com/nativexperiences/">
+            <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.instagram.com/discovernative/">
                 <MDBIcon fab className={styles.icon} icon="instagram" size={size}/>
             </a>
             <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.linkedin.com/company/native-experiences/about/">

@@ -46,7 +46,7 @@ const Travellers = ({ data }) => {
                   {itineraryContents}
                 </Timeline>
                 <div className={styles.buttonContainer}>
-                  <Button text={'BOOK THIS EXPERIENCE'} textColor={'#002445'} link={'google.com'} />
+                  <Button text={'BOOK THIS EXPERIENCE'} textColor={'#002445'} link={'https://www.airbnb.com/experiences/182216'} />
                 </div>
                 <Testimonials testimonials={testimonials} />
                 <FAQ data={faq}/>
