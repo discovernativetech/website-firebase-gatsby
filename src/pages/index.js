@@ -13,7 +13,6 @@ import TravellersTeamsTabs from "../components/TravellersTeamsTabs/TravellersTea
 import styles from '../pageStyles/index.module.css';
 
 const IndexPage = ({ data }) => {
-  console.log(data);
   const aboutNativeInfo = data.allIndexJson.edges[0].node.aboutNative;
   const nativeAffliatesInfo = data.allIndexJson.edges[0].node.nativeAffliates;
   const tabsTravellers = data.allIndexJson.edges[0].node.travellerSlides;

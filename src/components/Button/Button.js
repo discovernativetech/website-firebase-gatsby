@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
+import ReactGA from 'react-ga';
 import styles from './Button.module.css';
 
 const Button = ({text, link, outlineColor = '#49CCDD', textColor}) => {
@@ -7,11 +8,22 @@ const Button = ({text, link, outlineColor = '#49CCDD', textColor}) => {
         color: textColor,
         border: `2px solid ${outlineColor}`
     }
+
+    const sendEvent = data => e => {
+        e.preventDefault();
+        console.log(data)
+        ReactGA.event({
+            category: data,
+            action: 'Button Click'
+        });
+    }
+
     return (
         <ButtonWrapper link={link}>
             <button
                 className={styles.button}
                 style={customStyle}
+                onClick={sendEvent(`${text} - ${link}`)}
             >
                 {text}
             </button>
