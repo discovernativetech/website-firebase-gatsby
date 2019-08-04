@@ -10,8 +10,7 @@ const Button = ({text, link, outlineColor = '#49CCDD', textColor}) => {
     }
 
     const sendEvent = data => e => {
-        e.preventDefault();
-        console.log(data)
+        console.log('sending event..' + data);
         ReactGA.event({
             category: data,
             action: 'Button Click'
