@@ -1,0 +1,21 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    margin: 100px 0px !important;
+  }
+  
+  .itemsContainer {
+    flex-direction: column;
+  }
+}
+
+.container {
+  margin: 50px 0px;
+}
+
+.itemsContainer {
+  display: flex;
+}
+
+.titleContainer {
+  margin-bottom: 50px;
+}

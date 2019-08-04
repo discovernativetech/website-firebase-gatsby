@@ -1,0 +1,42 @@
+.iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 20px 0px;
+  flex-grow: 1;
+  max-height: 450px;
+  max-width: 500px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.userIcon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  margin: 10px;
+}
+
+.dash {
+  width: 14px;
+  margin-right: 8px;
+  height: 6px;
+}
+
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 26px;
+}
+
+.quoteText {
+  margin: 20px 0px 10px 0px;
+}
