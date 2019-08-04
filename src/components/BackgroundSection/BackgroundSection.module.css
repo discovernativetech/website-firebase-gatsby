@@ -1,6 +1,14 @@
-.container {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+.background {
     position: relative;
+}
+
+.title {
+    position: absolute;
+	bottom: 5%;
+	left: 3%;
+    color: #fff;
+	margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }

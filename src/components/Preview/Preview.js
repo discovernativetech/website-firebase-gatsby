@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import styles from './Preview.module.css';
 import Button from '../Button/Button';
 
-const Preview = ({image, imageAlt, link, description, linkText}) => {
+const Preview = ({image, imageAlt, link, description, linkText, newTab}) => {
 
     return (
         <div className={styles.container}>
@@ -13,7 +13,7 @@ const Preview = ({image, imageAlt, link, description, linkText}) => {
             </div>
             <div className={styles.infoContainer}>
                 <p className={styles.description}>{description}</p>
-                <Button text={linkText} textColor={'#002445'} link={link} />
+                <Button text={linkText} textColor={'#002445'} link={link} newTab={newTab} />
             </div>
         </div>
     )
