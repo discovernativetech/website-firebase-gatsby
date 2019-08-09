@@ -1,12 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: `Discover Native`,
+    siteUrl: `https://discovernative.org`,
     description: `Unique community-based experiences and adventures hosted by natives across Malaysia`,
     author: `@tzeweiwee`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/coming-soon`, `/page-2`],
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

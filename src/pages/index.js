@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
   return (
   <Layout>
     <SEO title="Home" />
-    <BackgroundSection image={data.fullImageHeader.childImageSharp.fluid} />
+    <BackgroundSection image={data.fullImageHeader.childImageSharp.fluid} containerStyles={{maxHeight: '800px'}} imageStyles={{maxHeight: '800px'}} />
     <MDBContainer>
       <div className={styles.aboutNativeSection}>
         <h1 className={styles.sectionTitle}>Discover Malaysia The Native Way</h1>
