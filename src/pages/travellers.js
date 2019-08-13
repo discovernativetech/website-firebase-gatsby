@@ -26,7 +26,7 @@ const Travellers = ({ data }) => {
 
     return (
         <Layout>
-            <SEO title="Travellers" />
+            <SEO title="Travellers" description={experienceSummary} />
             <BackgroundSection title={'TRAVELLERS'} image={backgroundImage} containerStyles={backgroundImageStyle} imageStyles={backgroundImageStyle} />
             <MDBContainer className={styles.container}>
                 <SectionTitle title={'THE NATIVE EXPERIENCE'} />

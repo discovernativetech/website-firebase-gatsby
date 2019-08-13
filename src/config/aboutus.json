@@ -1,0 +1,53 @@
+[
+    {
+        "summaryP1": "Native is on a mission to redefine what it means to be a 'native' by creating opportunities for anyone to proudly share their inherent skills and stories. We curate unique, community-based experiences hosted by natives in Malaysia for world explorers to immerse themselves.",
+        "summaryP2": "Founded in 2018, Daniel Teoh envisioned a different Malaysia where all of us shared something in common - that we are all natives somewhere. Native, a travel-based social enterprise, wants to rewrite the narrative of what it means to be a 'native' person by creating opportunities for anyone to proudly share their inherent skills and stories.",
+        "summaryP3": "We currently work with Orang Asli communities to build their capacity to organise, grow their economic capabilities, and tell their stories. With the locals leading the way, we aim to support them in rediscovering their strengths and dignity through sharing their heritage with the world in the midst of changing times.",
+        "summaryP4": "Here at Native, we believe that everyone is a native person and is deserving of the same respect and freedoms - where the term “native” is not uniquely reserved for a particular group of people and is instead a shared identity.",
+        "mainImage": "../images/aboutus-image-min.jpg",
+        "team": [
+            {
+                "name": "Daniel Teoh",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "Sasha Amira",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "Eric Wee",
+                "description": "",
+                "image": ""
+            }
+        ],
+        "hosts": [
+            {
+                "name": "Faizul",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "Busi",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "Ayah Abi",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "Ebing",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "Jason Liew",
+                "description": "",
+                "image": ""
+            }
+        ]
+    }
+]

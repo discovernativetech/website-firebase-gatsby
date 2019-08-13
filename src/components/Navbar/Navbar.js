@@ -37,7 +37,7 @@ const Navbar = () => {
                     <div className={`${styles.linksContainer} ${toggleMenu ? styles.openMenu : styles.hideMenu}`} >
                         <div className={`${styles.menuContainer} ${toggleMenu ? styles.openMenu : styles.hideMenu}`}>
                             <span className={styles.navLink}>
-                                <Link className={styles.link} to="/coming-soon">About Us</Link>
+                                <Link className={styles.link} to="/about-us">About Us</Link>
                             </span>
                             <span className={styles.navLink}>
                                 <Link className={styles.link} to="/travellers">The Experiences</Link>
