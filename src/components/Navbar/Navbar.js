@@ -13,7 +13,7 @@ const Navbar = () => {
         query {
             logo: file(relativePath: { eq: "logo.png" }) {
                 childImageSharp {
-                    fixed(width: 100, height: 100) {
+                    fixed(width: 80, height: 80) {
                         ...GatsbyImageSharpFixed
                     }
                 }
