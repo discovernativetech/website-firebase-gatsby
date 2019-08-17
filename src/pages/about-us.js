@@ -20,7 +20,7 @@ const AboutUs = ({data}) => {
     const maxHeaderHeight = '800px';
     return (
         <Layout> 
-            <SEO title="About Us" />
+            <SEO title="About Us" description={summaryP1}/>
             <BackgroundSection image={mainImage.childImageSharp.fluid} imageStyles={{maxHeight: maxHeaderHeight}} containerStyles={{maxHeight: maxHeaderHeight}} title={'ABOUT US'} />
             <MDBContainer className={styles.summaryContainer}>
               <p className={styles.content}>{summaryP1}</p>
