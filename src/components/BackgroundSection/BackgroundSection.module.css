@@ -4,11 +4,19 @@
 
 .title {
     position: absolute;
-	bottom: 5%;
-	left: 3%;
+	bottom: 55%;
+    right: 20%;
     color: #fff;
 	margin: 0;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 54px;
+    font-weight: 800;
     letter-spacing: 0.3px;
+}
+
+@media (min-width: 120px) and (max-width: 790px) {
+    .title {
+        bottom: 20%;
+        left: 2.5%;
+        font-size: 48px;
+    }
 }

@@ -8,45 +8,38 @@
         "team": [
             {
                 "name": "Daniel Teoh",
-                "description": "",
-                "image": ""
+                "title": "Founder",
+                "description": "How did he end up here? We’re still wondering that, too.",
+                "image": "../images/p_daniel_r.jpg"
             },
             {
                 "name": "Sasha Amira",
-                "description": "",
-                "image": ""
+                "title": "Co-Founder",
+                "description": "When she’s not at her desk, you can find her at the pantry with snacks in her hands.",
+                "image": "../images/p_sasha_r.jpg"
             },
             {
                 "name": "Eric Wee",
-                "description": "",
-                "image": ""
+                "title": "Tech Lead",
+                "description": "He's helped to turn caffeine and bobas into this website.",
+                "image": "../images/p_tzewei.jpg"
             }
         ],
         "hosts": [
             {
                 "name": "Faizul",
                 "description": "",
-                "image": ""
+                "image": "../images/p_faizul_r.jpg"
             },
             {
                 "name": "Busi",
                 "description": "",
-                "image": ""
-            },
-            {
-                "name": "Ayah Abi",
-                "description": "",
-                "image": ""
-            },
-            {
-                "name": "Ebing",
-                "description": "",
-                "image": ""
+                "image": "../images/p_busi_r.jpg"
             },
             {
                 "name": "Jason Liew",
                 "description": "",
-                "image": ""
+                "image": "../images/p_jason_r.jpg"
             }
         ]
     }

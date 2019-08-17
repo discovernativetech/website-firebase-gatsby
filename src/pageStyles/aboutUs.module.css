@@ -1,3 +1,28 @@
+
+
 .summaryContainer {
-    padding: 50px 0px 0px 0px;
+    padding: 20px 0px;
+}
+
+.titleContainer {
+    margin: 25px 0px;
+}
+
+.staffContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    font-weight: 600;
+}
+
+@media (min-width: 120px) and (max-width: 790px) {
+    .staffContainer {
+        flex-direction: column;
+    }
+
+    .summaryContainer {
+        padding: 20px 10px;
+    }
 }

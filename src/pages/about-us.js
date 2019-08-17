@@ -7,20 +7,43 @@ import SEO from "../components/seo";
 import Layout from '../components/layout';
 import SectionTitle from '../components/SectionTitle/SectionTitle';
 import BackgroundSection from '../components/BackgroundSection/BackgroundSection';
+import StaffProfile from '../components/StaffProfile/StaffProfile';
 
 const AboutUs = ({data}) => {
-    const { summaryP1, summaryP2, summaryP3, summaryP4, mainImage } = data.allAboutusJson.edges[0].node;
-
+    const { summaryP1, summaryP2, summaryP3, summaryP4, mainImage, team, hosts } = data.allAboutusJson.edges[0].node;
+    const teamProfiles = team.map((staff, i) => {
+      return <StaffProfile key={i} image={staff.image.childImageSharp.fixed} name={staff.name} title={staff.title} description={staff.description} />
+    });
+    const hostProfiles = hosts.map((staff, i) => {
+      return <StaffProfile key={i} image={staff.image.childImageSharp.fixed} name={staff.name} description={staff.description} />
+    });
+    const maxHeaderHeight = '800px';
     return (
         <Layout> 
             <SEO title="About Us" />
+            <BackgroundSection image={mainImage.childImageSharp.fluid} imageStyles={{maxHeight: maxHeaderHeight}} containerStyles={{maxHeight: maxHeaderHeight}} title={'ABOUT US'} />
             <MDBContainer className={styles.summaryContainer}>
-                <SectionTitle title={'ABOUT US'} />
-                <p>{summaryP1}</p>
-                <p>{summaryP2}</p>
+              <p className={styles.content}>{summaryP1}</p>
+              <p className={styles.content}>{summaryP2}</p>
+              <p className={styles.content}>{summaryP3}</p>
+              <p className={styles.content}>{summaryP4}</p>
+              <div className={styles.titleContainer}>
+                <SectionTitle title={'MEET OUR TEAM'} />
+              </div>
+              <div className={styles.staffContainer}>
+                {
+                  teamProfiles
+                }
+              </div>
+              <div className={styles.titleContainer}>
+                <SectionTitle title={'MEET OUR EXPERIENCE HOSTS'} />
+              </div>
+              <div className={styles.staffContainer}>
+                {
+                  hostProfiles
+                }
+              </div>
             </MDBContainer>
-            <BackgroundSection image={mainImage.childImageSharp.fluid} imageStyles={{maxHeight: '600px'}} containerStyles={{maxHeight: '600px'}} />
-           
         </Layout>
     )
 }
@@ -36,20 +59,33 @@ query {
         summaryP4
         mainImage {
             childImageSharp {
-                fluid (fit: CONTAIN){
+                fluid (fit: CONTAIN, cropFocus: NORTH){
                   ...GatsbyImageSharpFluid
                 }
             }
         }
         team {
             name
+            title
             description
-            image
+            image {
+              childImageSharp {
+                fixed (width:275, height: 303) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
         }
         hosts {
             name
             description
-            image
+            image {
+              childImageSharp {
+                fixed (width:275, height: 303) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
         }
       }
     }
