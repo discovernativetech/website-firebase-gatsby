@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
 
   return (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" description={data.allAboutusJson.edges[0].node.summaryP1}/>
     <BackgroundSection image={data.fullImageHeader.childImageSharp.fluid} containerStyles={{maxHeight: '800px'}} imageStyles={{maxHeight: '800px'}} />
     <MDBContainer>
       <div className={styles.aboutNativeSection}>
@@ -47,7 +47,7 @@ const IndexPage = ({ data }) => {
                 <div className={styles.logoContainer}>
                  {
                     node.images.map((image, index) => {
-                      return (<img key={index} src={image.childImageSharp.original.src} className={styles.logos} alt="test" />)
+                      return (<img key={index} src={image.childImageSharp.original.src} className={styles.logos} alt={node.title} />)
                     })
                  }
                  </div>
@@ -67,6 +67,13 @@ query {
           ...GatsbyImageSharpFluid
         }
       }
+  },
+  allAboutusJson {
+    edges {
+      node {
+        summaryP1
+      }
+    }
   },
   allIndexJson {
     edges {
