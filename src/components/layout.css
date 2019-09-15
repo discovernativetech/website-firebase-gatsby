@@ -18,6 +18,10 @@ body {
 
 }
 
+a:hover {
+  color: #ED435D;
+}
+
 /*
 article,
 aside,
