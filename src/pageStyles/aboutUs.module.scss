@@ -1,7 +1,12 @@
-
+@import '../theme/colors.scss';
+@import '../theme/typo.scss';
 
 .summaryContainer {
     padding: 20px 0px;
+}
+
+.backgroundHeader {
+    @extend %backgroundHeaderText;
 }
 
 .titleContainer {

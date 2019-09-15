@@ -1,3 +1,5 @@
+@import '../theme/typo.scss';
+
 @media (min-width: 320px) and (max-width: 600px) {
     .showcaseImages {
         flex-direction: column;
@@ -14,6 +16,10 @@
 
 .container {
     padding: 50px 0px 0px 0px;
+}
+
+.backgroundHeader {
+    @extend %backgroundHeaderText;
 }
 
 .summaryInfoContainer {

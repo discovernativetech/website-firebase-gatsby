@@ -8,18 +8,39 @@ import Button from "../Button/Button"
 
 const { navbarBookNow } = featureToggles
 
-const experiencesMenu = [
+const navItems = [
   {
-    title: "Travellers",
-    path: "/travellers",
+    title: "About Us",
+    path: "/about-us",
+    menu: [],
   },
   {
-    title: "Teams",
-    path: "/travellers",
+    title: "Experiences",
+    path: "",
+    menu: [
+      {
+        title: "Travellers",
+        path: "/travellers-experiences",
+      },
+      {
+        title: "Teams",
+        path: "/travellers-experiences",
+      },
+      {
+        title: "School",
+        path: "/travellers-experiences",
+      },
+    ],
   },
   {
-    title: "School",
-    path: "/travellers",
+    title: "Impact",
+    path: "/coming-soon",
+    menu: [],
+  },
+  {
+    title: "Journal",
+    path: "/coming-soon",
+    menu: [],
   },
 ]
 
@@ -37,6 +58,15 @@ const Navbar = () => {
       }
     }
   `)
+
+  const navBarItems = navItems.map((item, index) => (
+    <NavBarItem
+      key={index}
+      title={item.title}
+      path={item.path}
+      menuItems={item.menu}
+    />
+  ))
 
   const handleToggle = e => setToggleMenu(!toggleMenu)
 
@@ -65,18 +95,7 @@ const Navbar = () => {
               toggleMenu ? styles.openMenu : styles.hideMenu
             }`}
           >
-            <NavBarItem title={"About Us"} path={"/about-us"} menuItems={[]} />
-            <NavBarItem
-              title={"Experiences"}
-              path={""}
-              menuItems={experiencesMenu}
-            />
-            <NavBarItem title={"Impact"} path={"/coming-soon"} menuItems={[]} />
-            <NavBarItem
-              title={"Journal"}
-              path={"/coming-soon"}
-              menuItems={[]}
-            />
+            {navBarItems}
             {navbarBookNow && (
               <Button
                 text={"BOOK NOW"}
@@ -94,7 +113,7 @@ const Navbar = () => {
 
 const NavBarItem = ({ title, path, menuItems }) => {
   const [hoverMenu, setHoverMenu] = useState(false)
-  const menuStyles = hoverMenu ? { display: "flex" } : { display: "none" }
+  const menuStyles = hoverMenu ? { visibility: "visible", opacity: "1" } : { visibility: "hidden", opacity: "0" }
 
   const handleMouseEnter = e => {
     setHoverMenu(true)
@@ -135,6 +154,9 @@ const NavBarItem = ({ title, path, menuItems }) => {
             {title}
           </Link>
         )}
+        {
+          Boolean(items.length) && <MDBIcon icon="caret-down" className={styles.caretDownIcon} />
+        }
       </span>
       {Boolean(items.length) && (
         <div style={menuStyles} className={styles.navItemMenuContainer}>

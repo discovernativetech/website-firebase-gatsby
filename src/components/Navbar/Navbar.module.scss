@@ -68,6 +68,10 @@
     }
 }
 
+.caretDownIcon {
+    color: $grey-color;
+}
+
 .menuIcon {
     display: none;
 }
@@ -80,9 +84,10 @@
 }
 
 .link {
-    color: #3A3A3C;
+    color: $dark-grey-color;
     font-weight: lighter;
     text-transform: uppercase;
+    margin-right: $grid-tiny;
 }
 
 .container {
@@ -106,8 +111,9 @@
 }
 
 .navLink {
-    margin: $grid-small;
-    padding: 10px;
+    margin: $grid-tiny;
+    padding: $grid-small;
+    cursor: pointer;
 }
 
 .menuContainer {
@@ -126,6 +132,7 @@
     background-color: $white-color;
     width: 150px;
     margin-top: $grid-tiny;
+    transition: visibility 0s, opacity 0.2s ease-in;
 }
 
 .itemLinkContainer {
@@ -139,7 +146,7 @@
 
 .itemNavLink {
     font-size: $font-standard;
-    color: $grey-color;
+    color: $dark-grey-color;
     font-weight: lighter;
 }
 

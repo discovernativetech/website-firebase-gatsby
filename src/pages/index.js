@@ -1,130 +1,188 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from "react"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout";
-import { MDBContainer } from 'mdbreact';
+import Layout from "../components/layout"
+import { MDBContainer } from "mdbreact"
 
-import SEO from "../components/seo";
-import BackgroundSection from "../components/BackgroundSection/BackgroundSection";
-import MultiColumns from "../components/MultiColumns/MultiColumns";
-import CardBlock from "../components/CardBlock/CardBlock";
-import TravellersTeamsTabs from "../components/TravellersTeamsTabs/TravellersTeamsTabs";
+import SEO from "../components/seo"
+import BackgroundSection from "../components/BackgroundSection/BackgroundSection"
+import MultiColumns from "../components/MultiColumns/MultiColumns"
+import CardBlock from "../components/CardBlock/CardBlock"
+import TravellersTeamsTabs from "../components/TravellersTeamsTabs/TravellersTeamsTabs"
 
-import styles from '../pageStyles/index.module.css';
+import styles from "../pageStyles/index.module.scss"
+import Dropdown from "../components/Dropdown/Dropdown"
 
 const IndexPage = ({ data }) => {
-  const aboutNativeInfo = data.allIndexJson.edges[0].node.aboutNative;
-  const nativeAffliatesInfo = data.allIndexJson.edges[0].node.nativeAffliates;
-  const tabsTravellers = data.allIndexJson.edges[0].node.travellerSlides;
-  const tabsTeams= data.allIndexJson.edges[0].node.teamSlides;
+  const aboutNativeInfo = data.allIndexJson.edges[0].node.aboutNative
+  const nativeAffliatesInfo = data.allIndexJson.edges[0].node.nativeAffliates
+  const tabsTravellers = data.allIndexJson.edges[0].node.travellerSlides
+  const tabsTeams = data.allIndexJson.edges[0].node.teamSlides
+
+  const dropDownOptions = [
+    {
+      title: "Traveller",
+      link: "/travellers-experiences",
+    },
+    {
+      title: "Team",
+      link: "/travellers-experiences",
+    },
+    {
+      title: "School",
+      link: "/travellers-experiences",
+    },
+  ]
 
   return (
-  <Layout>
-    <SEO title="Home" description={data.allAboutusJson.edges[0].node.summaryP1}/>
-    <BackgroundSection image={data.fullImageHeader.childImageSharp.fluid} containerStyles={{maxHeight: '800px'}} imageStyles={{maxHeight: '800px'}} />
-    <MDBContainer>
-      <div className={styles.aboutNativeSection}>
-        <h1 className={styles.sectionTitle}>Discover Malaysia The Native Way</h1>
-        <div className={styles.sectionContent}>
-          <span className={styles.sectionSub}>Vision</span>
-          <p>Native strives to see a Malaysia where people from all walks of life are represented, protected and valued for their own unique sense of identity.</p>
-          <span className={styles.sectionSub}>Mission</span>
-          <p>To redefine what it means to be a native through community based travel opportunities.</p>
+    <Layout>
+      <SEO
+        title="Home"
+        description={data.allAboutusJson.edges[0].node.summaryP1}
+      />
+      <BackgroundSection
+        childrenPosition={{ left: "25%", top: "35%" }}
+        image={data.fullImageHeader.childImageSharp.fluid}
+        containerStyles={{ maxHeight: "800px" }}
+        imageStyles={{ maxHeight: "800px" }}
+      >
+        <div className={styles.backgroundItemsBlock}>
+          <span className={styles.backgroundHeaderText}>
+            Discover Malaysia <br /> the Native way
+          </span>
+          <Dropdown options={dropDownOptions} defaultText={"I am a"} />
         </div>
-      </div>
-      <MultiColumns>
-        {
-          aboutNativeInfo.map((node, index) => (
-              <CardBlock key={index} title={node.title} description={node.description} image={node.image.childImageSharp.fixed} />
-          ))
-        }
-      </MultiColumns>
-      <TravellersTeamsTabs teamsTab={tabsTeams} travellersTab={tabsTravellers}/>
-      <MultiColumns className={styles.affliatesContainer}>
-        {
-          nativeAffliatesInfo.map((node, index) => (
-              <CardBlock key={index} title={node.title} titleClass={styles.affliatesTitle}>
-                <div className={styles.logoContainer}>
-                 {
-                    node.images.map((image, index) => {
-                      return (<img key={index} src={image.childImageSharp.original.src} className={styles.logos} alt={node.title} />)
-                    })
-                 }
-                 </div>
-              </CardBlock>
-          ))
-        }
-      </MultiColumns>
-    </MDBContainer>
-  </Layout>
-)}
+      </BackgroundSection>
+      <MDBContainer>
+        <div className={styles.aboutNativeSection}>
+          <div className={styles.secondaryBackgroundBlock}>
+            <h1 className={styles.sectionTitle}>
+              Discover Malaysia The Native Way
+            </h1>
+            <Dropdown options={dropDownOptions} defaultText={"I am a"} />
+          </div>
+
+          <div className={styles.sectionContent}>
+            <span className={styles.sectionSub}>Vision</span>
+            <p>
+              Native strives to see a Malaysia where people from all walks of
+              life are represented, protected and valued for their own unique
+              sense of identity.
+            </p>
+            <span className={styles.sectionSub}>Mission</span>
+            <p>
+              To redefine what it means to be a native through community based
+              travel opportunities.
+            </p>
+          </div>
+        </div>
+        <MultiColumns>
+          {aboutNativeInfo.map((node, index) => (
+            <CardBlock
+              key={index}
+              title={node.title}
+              description={node.description}
+              image={node.image.childImageSharp.fixed}
+            />
+          ))}
+        </MultiColumns>
+        <TravellersTeamsTabs
+          teamsTab={tabsTeams}
+          travellersTab={tabsTravellers}
+        />
+        <MultiColumns className={styles.affliatesContainer}>
+          {nativeAffliatesInfo.map((node, index) => (
+            <CardBlock
+              key={index}
+              title={node.title}
+              titleClass={styles.affliatesTitle}
+            >
+              <div className={styles.logoContainer}>
+                {node.images.map((image, index) => {
+                  return (
+                    <img
+                      key={index}
+                      src={image.childImageSharp.original.src}
+                      className={styles.logos}
+                      alt={node.title}
+                    />
+                  )
+                })}
+              </div>
+            </CardBlock>
+          ))}
+        </MultiColumns>
+      </MDBContainer>
+    </Layout>
+  )
+}
 
 export const query = graphql`
-query {
-  fullImageHeader: file(relativePath: { eq: "asliBackground.png" }) {
+  query {
+    fullImageHeader: file(relativePath: { eq: "asliBackground.png" }) {
       childImageSharp {
-        fluid (fit: CONTAIN){
+        fluid(fit: CONTAIN) {
           ...GatsbyImageSharpFluid
         }
       }
-  },
-  allAboutusJson {
-    edges {
-      node {
-        summaryP1
+    }
+    allAboutusJson {
+      edges {
+        node {
+          summaryP1
+        }
       }
     }
-  },
-  allIndexJson {
-    edges {
-      node {
-        aboutNative {
-          title
-          description
-          image {
-            childImageSharp {
-              fixed (width:128, height: 150) {
-                ...GatsbyImageSharpFixed
+    allIndexJson {
+      edges {
+        node {
+          aboutNative {
+            title
+            description
+            image {
+              childImageSharp {
+                fixed(width: 128, height: 150) {
+                  ...GatsbyImageSharpFixed
+                }
               }
             }
           }
-        }
-        nativeAffliates {
-          title
-          images {
-            childImageSharp {
-              original {
-                src
+          nativeAffliates {
+            title
+            images {
+              childImageSharp {
+                original {
+                  src
+                }
               }
             }
           }
-        }
-        travellerSlides {
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+          travellerSlides {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
+            link
+            description
           }
-          link
-          description
-        }
-        teamSlides {
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+          teamSlides {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
+            link
+            description
           }
-          link
-          description
         }
       }
     }
   }
-}
 `
 
 export default IndexPage

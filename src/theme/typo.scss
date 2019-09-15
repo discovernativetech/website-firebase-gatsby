@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 $font-tiny: 8px;
 $font-small: 12px;
 $font-standard: 16px;
@@ -8,3 +10,11 @@ $font-xxlarge: 54px;
 $font-weight-light: 400;
 $font-weight-semi: 600;
 $font-weight-bold: 900;
+
+%backgroundHeaderText {
+    color: $white-color;
+    margin: 0px;
+    font-size: $font-xxlarge;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3px;
+}

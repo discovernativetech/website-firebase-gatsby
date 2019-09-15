@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby";
 import Img from "gatsby-image"
-import styles from '../pageStyles/travellers.module.css';
+import styles from '../pageStyles/travellers.module.scss';
 import { MDBContainer } from 'mdbreact';
 import Layout from '../components/layout';
 import SEO from "../components/seo";
@@ -14,7 +14,7 @@ import Button from '../components/Button/Button';
 import Testimonials from '../components/Testimonials/Testimonials';
 import FAQ from '../components/FAQ/FAQ';
 
-const Travellers = ({ data }) => {
+const TravellersExperiences = ({ data }) => {
     const backgroundImage = data.fullImageHeader.childImageSharp.fluid;
     const backgroundImageStyle = {
         maxHeight: '700px'
@@ -27,7 +27,9 @@ const Travellers = ({ data }) => {
     return (
         <Layout>
             <SEO title="Travellers" description={experienceSummary} />
-            <BackgroundSection title={'TRAVELLERS'} image={backgroundImage} containerStyles={backgroundImageStyle} imageStyles={backgroundImageStyle} />
+            <BackgroundSection image={backgroundImage} containerStyles={backgroundImageStyle} imageStyles={backgroundImageStyle}>
+              <span className={styles.backgroundHeader}>TRAVELLERS</span>
+            </BackgroundSection>
             <MDBContainer className={styles.container}>
                 <SectionTitle title={'THE NATIVE EXPERIENCE'} />
                 <div className={styles.summaryInfoContainer}>
@@ -108,4 +110,4 @@ query {
   }
 }`
 
-export default Travellers
+export default TravellersExperiences
