@@ -1,8 +1,8 @@
 import React from "react"
-import styles from "./CardBlock.module.css"
 import Img from "gatsby-image"
+import styles from "./SimpleBlock.module.scss"
 
-const CardBlock = ({
+const SimpleBlock = ({
   title,
   titleClass = "",
   description,
@@ -29,4 +29,4 @@ const CardBlock = ({
   )
 }
 
-export default CardBlock
+export default SimpleBlock

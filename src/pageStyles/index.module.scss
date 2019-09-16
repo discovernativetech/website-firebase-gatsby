@@ -9,13 +9,21 @@
     font-weight: $font-weight-bold;
 }
 
+.textBanner {
+    font-size: $font-xxlarge !important;
+    font-weight: $font-weight-bolder;
+    color: $tertiary-color !important;
+    padding: $grid-xxlarge $grid-small !important;
+}
+
 .aboutNativeSection {
     color: $tertiary-color;
-    margin: 30px 0px;
+    margin-bottom: $grid-xlarge;
 }
 
 .secondaryBackgroundBlock {
     display: none;
+    margin-top: $grid-medium;
 }
 
 .sectionTitle {
@@ -36,6 +44,10 @@
 
 .affliatesContainer {
     margin: 30px 0px;
+}
+
+.oneThirdWidth {
+    width: 300px;
 }
 
 .logos {
@@ -68,5 +80,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .textBanner {
+        font-size: $font-xlarge !important;
     }
 }
