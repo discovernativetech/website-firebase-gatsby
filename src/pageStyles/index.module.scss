@@ -7,13 +7,19 @@
     text-shadow: 2px 2px 5px grey;
     letter-spacing: 0px;
     font-weight: $font-weight-bold;
+    font-family: $font-family-header;
 }
 
 .textBanner {
-    font-size: $font-xxlarge !important;
+    font-size: $font-xxxlarge !important;
     font-weight: $font-weight-bolder;
     color: $tertiary-color !important;
-    padding: $grid-xxlarge $grid-small !important;
+    font-family: $font-family-header;
+}
+
+.visionMissionStyle {
+    font-size: $font-midLarge !important;
+    font-weight: $font-weight-light;
 }
 
 .aboutNativeSection {
@@ -84,5 +90,9 @@
 
     .textBanner {
         font-size: $font-xlarge !important;
+    }
+
+    .visionMissionStyle {
+        font-size: $font-large !important;
     }
 }

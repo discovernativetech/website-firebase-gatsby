@@ -3,11 +3,17 @@
 @import '../../theme/typo.scss';
 
 .container {
-    min-height: 300px;
+    min-height: 250px;
     color: $white-color;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: $font-large;
-    padding: $grid-small;
+    padding: $grid-large $grid-xxxlarge;
+}
+
+@media (min-width: 120px) and (max-width: 790px) {
+    .container {
+        padding: $grid-large $grid-large;
+    }
 }

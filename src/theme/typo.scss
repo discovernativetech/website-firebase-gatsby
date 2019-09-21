@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:400,700,800&display=swap');
 @import './colors.scss';
+
+$font-family-header: 'Raleway', 'san-serif';
+$font-family-standard: 'Open Sans', 'san-serif';
 
 $font-tiny: 8px;
 $font-small: 12px;
 $font-standard: 16px;
 $font-large: 24px;
+$font-midLarge: 30px;
 $font-xlarge: 36px;
 $font-xxlarge: 54px;
 $font-xxxlarge: 60px;
@@ -16,7 +21,7 @@ $font-weight-bolder: 900;
 %backgroundHeaderText {
     color: $white-color;
     margin: 0px;
-    font-size: $font-xxlarge;
-    font-weight: $font-weight-bold;
+    font-size: $font-xxxlarge;
+    font-weight: $font-weight-bolder;
     letter-spacing: 0.3px;
 }

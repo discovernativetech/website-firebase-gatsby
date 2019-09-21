@@ -15,7 +15,7 @@ const navItems = [
     menu: [],
   },
   {
-    title: "Experiences",
+    title: "Our Experiences",
     path: "",
     menu: [
       {
@@ -23,7 +23,7 @@ const navItems = [
         path: "/travellers-experiences",
       },
       {
-        title: "Teams",
+        title: "Company",
         path: "/travellers-experiences",
       },
       {
@@ -113,7 +113,7 @@ const Navbar = () => {
 
 const NavBarItem = ({ title, path, menuItems }) => {
   const [hoverMenu, setHoverMenu] = useState(false)
-  const menuStyles = hoverMenu ? { visibility: "visible", opacity: "1" } : { visibility: "hidden", opacity: "0" }
+  const menuStyles = hoverMenu ? { visibility: "visible", opacity: "1" } : { visibility: "hidden", opacity: "0", height: "0px" }
 
   const handleMouseEnter = e => {
     setHoverMenu(true)

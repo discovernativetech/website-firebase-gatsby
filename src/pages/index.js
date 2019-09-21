@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
       link: "/travellers-experiences",
     },
     {
-      title: "Team",
+      title: "Company",
       link: "/travellers-experiences",
     },
     {
@@ -45,10 +45,10 @@ const IndexPage = ({ data }) => {
         description={data.allAboutusJson.edges[0].node.summaryP1}
       />
       <BackgroundSection
-        childrenPosition={{ left: "25%", top: "40%" }}
+        childrenPosition={{ left: "25%", top: "45%" }}
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ maxHeight: "800px" }}
-        imageStyles={{ maxHeight: "800px" }}
+        containerStyles={{ maxHeight: "600px" }}
+        imageStyles={{ maxHeight: "600px" }}
       >
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>
@@ -69,11 +69,12 @@ const IndexPage = ({ data }) => {
         <TextBanner
           containerStyle={styles.textBanner}
           text={
-            "Rewrite the narrative through your travels. Contribute to the Native story."
+            "Rewrite the narrative through your travels. <br/> Contribute to the Native story."
           }
         />
         <TextBanner
           image={visionMissionImage}
+          containerStyle={styles.visionMissionStyle}
           text={
             "Native strives to see a Malaysia where people from all walks of life are represented, protected and valued for their own unique sense of identity."
           }
@@ -128,7 +129,7 @@ export const query = graphql`
   query {
     fullImageHeader: file(relativePath: { eq: "asliBackground.png" }) {
       childImageSharp {
-        fluid(fit: CONTAIN) {
+        fluid(fit: CONTAIN, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

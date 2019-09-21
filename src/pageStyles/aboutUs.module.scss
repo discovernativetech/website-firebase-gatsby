@@ -1,5 +1,26 @@
 @import '../theme/colors.scss';
 @import '../theme/typo.scss';
+@import '../theme/layout.scss';
+
+.backgroundHeaderText {
+    @extend %backgroundHeaderText;
+    text-shadow: 2px 2px 5px grey;
+    letter-spacing: 0px;
+    font-weight: $font-weight-bold;
+    font-family: $font-family-header;
+}
+
+.textBanner {
+    font-size: $font-xxxlarge !important;
+    font-weight: $font-weight-bolder;
+    color: $tertiary-color !important;
+    font-family: $font-family-header;
+}
+
+.descriptionBanner {
+    font-size: $font-large !important;
+    font-weight: $font-weight-light;
+}
 
 .summaryContainer {
     padding: 20px 0px;
@@ -19,8 +40,9 @@
 }
 
 .content {
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: $font-weight-light;
+    font-size: $font-standard;
+    margin: $grid-large 0px;
 }
 
 @media (min-width: 120px) and (max-width: 790px) {
@@ -30,5 +52,9 @@
 
     .summaryContainer {
         padding: 20px 10px;
+    }
+
+    .textBanner {
+        font-size: $font-xlarge !important;
     }
 }
