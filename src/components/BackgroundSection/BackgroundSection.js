@@ -1,15 +1,19 @@
 import React from 'react'
 import Img from "gatsby-image"
 
-import styles from './BackgroundSection.module.css';
+import styles from './BackgroundSection.module.scss';
 
-// import BackgroundImage from 'gatsby-background-image'
+const BackgroundSection = ({ image, imageStyles = {}, containerStyles = {}, title, children, childrenPosition }) => {
+  const itemsPosition = childrenPosition || {
+    left: '50%',
+    top: '50%',
+  };
 
-const BackgroundSection = ({ image, imageStyles = {}, containerStyles = {}, title }) => {
   return (
     <div className={styles.background} style={containerStyles}>
       <Img fluid={image} imgStyle={imageStyles}/>
-      <span className={styles.title}>{title}</span>
+      <span style={itemsPosition} className={styles.children}>{children}</span>
+      {/* <span className={styles.title}>{title}</span> */}
     </div>
   );
 }

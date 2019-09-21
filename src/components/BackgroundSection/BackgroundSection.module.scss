@@ -1,3 +1,5 @@
+@import '../../theme/typo.scss';
+
 .background {
     position: relative;
 }
@@ -10,7 +12,13 @@
 	margin: 0;
     font-size: 54px;
     font-weight: 800;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
+    font-family: $font-family-header;
+}
+
+.children {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 @media (min-width: 120px) and (max-width: 790px) {

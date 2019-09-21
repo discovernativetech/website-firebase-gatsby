@@ -1,3 +1,5 @@
+@import '../../theme/animation.scss';
+
 .button {
     text-align: center;
     font-size: 16px;
@@ -6,8 +8,13 @@
     padding: 10px 30px;
     outline: none !important;
     white-space: nowrap;
+    box-shadow: $box-shadow-standard
 }
 
 .button:focus {
     outline: none !important;
+}
+
+.button:hover {
+    opacity: 0.95;
 }

@@ -1,0 +1,56 @@
+@import '../../theme/colors.scss';
+@import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/animation.scss';
+
+.container {
+    position: relative;
+    width: 200px;
+    color: $white-color;
+    font-size: $font-standard;
+    margin-top: $grid-medium;
+    cursor: pointer;
+    box-shadow: $box-shadow-standard;
+}
+
+.dropdownMenu {
+    position: absolute;
+    width: 100%;
+    transition: visibility 0s, opacity 0.2s ease-in;
+}
+
+.link {
+    color: $white-color;
+}
+
+.link:hover {
+    color: $white-color;
+}
+
+.icon {
+    color: $white-color;
+}
+
+.dropdownButton {
+    padding: $grid-small $grid-medium;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.optionContainer {
+    padding: $grid-small;
+    padding-left: $grid-medium;
+    background-color: $secondary-color;
+}
+
+.menuDropdownButton {
+    width: 100%;
+}
+
+.optionContainer:hover{
+    background-color: $tertiary-color;
+}
+
+

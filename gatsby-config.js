@@ -6,6 +6,7 @@ module.exports = {
     author: `@tzeweiwee`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
@@ -29,7 +30,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 90
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
