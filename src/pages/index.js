@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
         <TextBanner
           containerStyle={styles.textBanner}
           text={
-            "Rewrite the narrative through your travels. <br/> Contribute to the Native story."
+            "Rewrite the narrative through your travels. <br/> Be part of the Native story."
           }
         />
         <TextBanner

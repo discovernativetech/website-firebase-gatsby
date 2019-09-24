@@ -20,11 +20,11 @@
 }
 
 .link {
-    color: $white-color;
+    color: $tertiary-color;
 }
 
 .link:hover {
-    color: $white-color;
+    color: $tertiary-color;
 }
 
 .icon {
@@ -42,7 +42,7 @@
 .optionContainer {
     padding: $grid-small;
     padding-left: $grid-medium;
-    background-color: $secondary-color;
+    background-color: #FAFAFA;
 }
 
 .menuDropdownButton {
@@ -50,7 +50,7 @@
 }
 
 .optionContainer:hover{
-    background-color: $tertiary-color;
+    background-color: $secondary-color;
 }
 
 
