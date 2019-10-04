@@ -44,8 +44,8 @@ const TravellersExperiences = ({ data }) => {
       <BackgroundSection
         childrenPosition={{ right: "-15%", bottom: "5%" }}
         image={headerImage.childImageSharp.fluid}
-        containerStyles={backgroundImageStyle}
-        imageStyles={backgroundImageStyle}
+        containerStyles={{ height: '600px' }}
+        imageStyles={{ height: '100%' }}
       >
         <span className={styles.backgroundHeader}>{title}</span>
       </BackgroundSection>

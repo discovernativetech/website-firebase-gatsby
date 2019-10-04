@@ -17,3 +17,8 @@
   font-size: $font-standard;
   font-weight: $font-weight-lighter;
 }
+
+.buttons {
+  display: flex;
+  justify-content: space-betwen;
+}

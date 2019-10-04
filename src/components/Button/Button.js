@@ -9,6 +9,7 @@ const Button = ({
   outlineColor,
   textColor,
   backgroundColor = "#ffff",
+  newTab = true,
 }) => {
   const customStyle = {
     color: textColor,
@@ -25,7 +26,7 @@ const Button = ({
   }
 
   return (
-    <ButtonWrapper link={link}>
+    <ButtonWrapper link={link} newTab={newTab}>
       <button
         className={styles.button}
         style={customStyle}
@@ -37,7 +38,7 @@ const Button = ({
   )
 }
 
-const ButtonWrapper = ({ link, children }) => {
+const ButtonWrapper = ({ link, children, newTab }) => {
   if (link && link.charAt(0) === "/") {
     return <Link to={link}>{children}</Link>
   }

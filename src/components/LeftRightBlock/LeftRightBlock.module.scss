@@ -1,10 +1,13 @@
 @import '../../theme/typo.scss';
 @import '../../theme/layout.scss';
 @import '../../theme/colors.scss';
+@import '../../theme/animation.scss';
 
 .container {
   display: flex;
-  height: 600px;
+  height: 500px;
+  margin: $grid-small 0px;
+  box-shadow: $box-shadow-standard;
 }
 
 .leftBlockContainer {
@@ -15,17 +18,33 @@
 .rightBlockContainer {
   flex-grow: 1;
   width: 50%;
+  padding: $grid-large;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .title {
   font-size: $font-large;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-header;
+  color: $tertiary-color;
+  text-transform: uppercase;
+  text-align:center;
 }
 
 .description {
   font-size: $font-standard;
+  padding: $grid-large;
+  line-height: 30px;
 }
 
 .buttons {
   display: flex;
   justify-content: space-around;
+}
+
+.children {
+  width: 100%;
 }

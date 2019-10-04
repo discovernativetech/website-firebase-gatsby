@@ -5,18 +5,26 @@ import BackgroundSection from "../components/BackgroundSection/BackgroundSection
 import styles from "../pageStyles/traveller-experiences.module.scss"
 import LeftRightBlock from "../components/LeftRightBlock/LeftRightBlock"
 import { MDBContainer } from "mdbreact"
+import TravellersExperienceButtons from "../components/Custom/TravellersExperienceButtons"
 
 const TravellerExperienceList = ({ data }) => {
   const experiences = data.allTravellersJson.edges
   const experienceBlocks = experiences.map(({ node }, i) => {
-    const { title, headerImage, airbnbLink, listingSummary, slug } = node;
-    return <LeftRightBlock 
-      image={headerImage.childImageSharp.fluid} 
-      title={title} 
-      description={listingSummary} 
-      learnMoreLink={slug}
-      bookingLink={airbnbLink}
-      />
+    const { title, listingThumbnail, airbnbLink, listingSummary, slug } = node
+    return (
+      <LeftRightBlock
+        image={listingThumbnail.childImageSharp.fluid}
+        title={title}
+        description={listingSummary}
+        learnMoreLink={slug}
+        bookingLink={airbnbLink}
+      >
+        <TravellersExperienceButtons
+          learnMoreLink={`/${slug}`}
+          bookingLink={airbnbLink}
+        />
+      </LeftRightBlock>
+    )
   })
 
   return (
@@ -24,8 +32,8 @@ const TravellerExperienceList = ({ data }) => {
       <BackgroundSection
         childrenPosition={{ left: "50%", top: "50%" }}
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ maxHeight: "600px" }}
-        imageStyles={{ maxHeight: "600px" }}
+        containerStyles={{ height: "600px" }}
+        imageStyles={{ height: "100%" }}
       >
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>TRAVELLERS</span>
@@ -37,9 +45,7 @@ const TravellerExperienceList = ({ data }) => {
           </p>
         </div>
       </BackgroundSection>
-      <MDBContainer>
-        {experienceBlocks}
-      </MDBContainer>
+      <MDBContainer>{experienceBlocks}</MDBContainer>
     </Layout>
   )
 }
@@ -50,7 +56,7 @@ export const query = graphql`
       relativePath: { eq: "travellers-listing-header.jpg" }
     ) {
       childImageSharp {
-        fluid(fit: CONTAIN, quality: 100) {
+        fluid(maxHeight: 600,fit: CONTAIN, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -59,7 +65,7 @@ export const query = graphql`
       edges {
         node {
           title
-          headerImage {
+          listingThumbnail {
             childImageSharp {
               fluid(maxWidth: 400, maxHeight: 400) {
                 ...GatsbyImageSharpFluid

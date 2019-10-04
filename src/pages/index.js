@@ -47,8 +47,8 @@ const IndexPage = ({ data }) => {
       <BackgroundSection
         childrenPosition={{ left: "25%", top: "45%" }}
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ maxHeight: "600px" }}
-        imageStyles={{ maxHeight: "600px" }}
+        containerStyles={{ height: "600px" }}
+        imageStyles={{ height: "100%" }}
       >
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>

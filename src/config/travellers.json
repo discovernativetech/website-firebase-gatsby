@@ -2,6 +2,7 @@
     {
         "slug": "temuan-trails",
         "title": "Temuan Village Trail",
+        "listingThumbnail": "../images/listing-temuan-thumbnail.jpg",
         "headerImage": "../images/temuan-trails-header.jpg",
         "airbnbLink": "https://www.airbnb.com/experiences/182216",
         "listingSummary": "Travellers will embark on a 3-4 hour long nature journey through the protected forests of the Orang Asli Temuan community alongside the locals themselves who will act as guides and teachers along the path - teaching travellers indigenous knowledge and stories. At the end of every experience, our local guide and his family will then prepare a post-hike meal (local Asli cuisine) for travellers to enjoy at his home.",
@@ -87,6 +88,7 @@
     {
         "slug": "raman-school",
         "title": "Gombak Outbound School",
+        "listingThumbnail": "../images/listing-raman-thumbnail.jpg",
         "headerImage": "../images/gombak-header.JPG",
         "airbnbLink": "https://www.airbnb.com/experiences/182216",
         "listingSummary": "Travellers will commit to a 1-day programme that teaches the basic survival skills of the Orang Asli Semai community in the jungle. Travellers will learn about the use of flora and fauna, the basic skills of foraging, and experience the community’s culture of music and art.",
@@ -99,33 +101,27 @@
             },
             {
                 "title": "9:00AM",
-                "description": "Arrival at Kampung Batu 12. Meet the local expert and have introduction to the village at the Orang Asli museum.",
-                "image": "../images/temuan-1.jpg"
+                "description": "Arrival at Kampung Batu 12. Meet the local expert and have introduction to the village at the Orang Asli museum."
             },
             {
                 "title": "9:15AM",
-                "description": "Begin Trek to Gombak Outbound School site.",
-                "image": "../images/temuan-2.jpg"
+                "description": "Begin Trek to Gombak Outbound School site."
             },
             {
                 "title": "10:00AM",
-                "description": "Begin Guided Forest Hiking Trail.",
-                "image": "../images/temuan-3.jpg"
+                "description": "Begin Guided Forest Hiking Trail."
             },
             {
                 "title": "10:30AM",
-                "description": "Build a 1-day shelter with ‘bertam’ leaves.",
-                "image": "../images/temuan-4.jpg"
+                "description": "Build a 1-day shelter with ‘bertam’ leaves."
             },
             {
                 "title": "11:00AM",
-                "description": "Look for wood and begin fire preparation.",
-                "image": "../images/temuan-5.jpg"
+                "description": "Look for wood and begin fire preparation."
             },
             {
                 "title": "11:30AM",
-                "description": "Look for wood and begin fire preparation.",
-                "image": "../images/temuan-5.jpg"
+                "description": "Look for wood and begin fire preparation."
             },
             {
                 "title": "1:00PM",
