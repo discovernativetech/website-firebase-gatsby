@@ -2,25 +2,22 @@ import React from "react"
 import Layout from "../components/layout"
 import BackgroundSection from "../components/BackgroundSection/BackgroundSection"
 
-import styles from "../pageStyles/traveller-experiences.module.scss"
+import styles from "../pageStyles/team-experiences.module.scss"
 import LeftRightBlock from "../components/LeftRightBlock/LeftRightBlock"
 import { MDBContainer } from "mdbreact"
-import TravellersExperienceButtons from "../components/Custom/TravellersExperienceButtons"
+import TeamsExperienceButtons from "../components/Custom/TeamsExperienceButtons"
 
-const TravellerExperienceList = ({ data }) => {
-  const experiences = data.allTravellersJson.edges
+const TeamExperiencesList = ({ data }) => {
+  const experiences = data.allTeamsJson.edges
   const experienceBlocks = experiences.map(({ node }, i) => {
-    const { title, listingThumbnail, airbnbLink, listingSummary, slug } = node
+    const { title, listingThumbnail, listingSummary } = node
     return (
       <LeftRightBlock
         image={listingThumbnail.childImageSharp.fluid}
         title={title}
         description={listingSummary}
       >
-        <TravellersExperienceButtons
-          learnMoreLink={`/${slug}`}
-          bookingLink={airbnbLink}
-        />
+        <TeamsExperienceButtons />
       </LeftRightBlock>
     )
   })
@@ -34,12 +31,9 @@ const TravellerExperienceList = ({ data }) => {
         imageStyles={{ height: "100%" }}
       >
         <div className={styles.backgroundItemsBlock}>
-          <span className={styles.backgroundHeaderText}>TRAVELLERS</span>
+          <span className={styles.backgroundHeaderText}>TEAMS</span>
           <p className={styles.headerDescriptionText}>
-            Curated for travellers who are interested to travel with a purpose.{" "}
-            <br /> Immerse yourself in a Native experience and benefit the
-            communities you visit. We offer multiple experiences, each embarking
-            on an adventure with different Orang Asli Tribes in Malaysia.
+          Curated for changemakers and community leaders that are interested in the field <br/> of short-term learning-based travel. We offer programmes to develop a connection <br/> with local communities and support the preservation of their culture. Each <br/> programme is catered towards different learning objectives.
           </p>
         </div>
       </BackgroundSection>
@@ -51,15 +45,15 @@ const TravellerExperienceList = ({ data }) => {
 export const query = graphql`
   query {
     fullImageHeader: file(
-      relativePath: { eq: "travellers-listing-header.jpg" }
+      relativePath: { eq: "teams-listing-header.jpg" }
     ) {
       childImageSharp {
-        fluid(maxHeight: 600,fit: CONTAIN, quality: 100) {
+        fluid(maxHeight: 600, fit: CONTAIN, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    allTravellersJson {
+    allTeamsJson {
       edges {
         node {
           title
@@ -70,13 +64,11 @@ export const query = graphql`
               }
             }
           }
-          airbnbLink
           listingSummary
-          slug
         }
       }
     }
   }
 `
 
-export default TravellerExperienceList
+export default TeamExperiencesList

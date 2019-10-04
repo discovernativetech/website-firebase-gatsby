@@ -10,6 +10,7 @@ const Button = ({
   textColor,
   backgroundColor = "#ffff",
   newTab = true,
+  onClick,
 }) => {
   const customStyle = {
     color: textColor,
@@ -23,6 +24,7 @@ const Button = ({
       category: data,
       action: "Button Click",
     })
+    onClick(e);
   }
 
   return (
@@ -39,9 +41,14 @@ const Button = ({
 }
 
 const ButtonWrapper = ({ link, children, newTab }) => {
-  if (link && link.charAt(0) === "/") {
+  if (!link) {
+    return <>{children}</>
+  }
+
+  if (link.charAt(0) === "/") {
     return <Link to={link}>{children}</Link>
   }
+
   return (
     <a href={link} target={"_blank"}>
       {children}

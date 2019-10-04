@@ -13,9 +13,6 @@ import Testimonials from "../../components/Testimonials/Testimonials"
 import FAQ from "../../components/FAQ/FAQ"
 
 const TravellersExperiences = ({ data }) => {
-  const backgroundImageStyle = {
-    maxHeight: "600px",
-  }
   const {
     title,
     faq,

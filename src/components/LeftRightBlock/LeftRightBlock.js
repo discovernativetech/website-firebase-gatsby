@@ -16,7 +16,7 @@ const LeftRightBlock = ({
       </div>
       <div className={styles.rightBlockContainer}>
         <p className={styles.title}>{title}</p>
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description} dangerouslySetInnerHTML={{__html: description}}></p>
         <div className={styles.children}>
           {children}
         </div>
