@@ -1,0 +1,19 @@
+@import '../theme/typo.scss';
+@import '../theme/layout.scss';
+@import '../theme/colors.scss';
+
+.backgroundItemsBlock {
+  text-align: center;
+}
+
+.backgroundHeaderText {
+  @extend %backgroundHeaderText;
+}
+
+.headerDescriptionText {
+  color: $white-color;
+  line-height: $grid-medium;
+  letter-spacing: 0.7px;
+  font-size: $font-standard;
+  font-weight: $font-weight-lighter;
+}

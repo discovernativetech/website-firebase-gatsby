@@ -1,0 +1,31 @@
+@import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
+
+.container {
+  display: flex;
+  height: 600px;
+}
+
+.leftBlockContainer {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.rightBlockContainer {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.title {
+  font-size: $font-large;
+}
+
+.description {
+  font-size: $font-standard;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}

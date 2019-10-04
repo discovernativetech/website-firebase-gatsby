@@ -26,15 +26,15 @@ const IndexPage = ({ data }) => {
   const dropDownOptions = [
     {
       title: "Traveller",
-      link: "/travellers-experiences",
+      link: "/traveller-experiences",
     },
     {
       title: "Company",
-      link: "/travellers-experiences",
+      link: "/traveller-experiences",
     },
     {
       title: "School",
-      link: "/travellers-experiences",
+      link: "/traveller-experiences",
     },
   ]
 

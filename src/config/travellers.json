@@ -1,9 +1,10 @@
 [
     {
         "slug": "temuan-trails",
-        "title": "TEMUAN VILLAGE TRAIL",
+        "title": "Temuan Village Trail",
         "headerImage": "../images/temuan-trails-header.jpg",
         "airbnbLink": "https://www.airbnb.com/experiences/182216",
+        "listingSummary": "Travellers will embark on a 3-4 hour long nature journey through the protected forests of the Orang Asli Temuan community alongside the locals themselves who will act as guides and teachers along the path - teaching travellers indigenous knowledge and stories. At the end of every experience, our local guide and his family will then prepare a post-hike meal (local Asli cuisine) for travellers to enjoy at his home.",
         "summaryTitle": "A 3-4 hour journey through the village of Kampung Sungai Lalang Bahru",
         "experienceSummary": "Our Native hosts from the Temuan Tribe will act as both guides and teachers, sharing indigenous knowledge and stories along the path with insights on flora and fauna, cultural beliefs, and even their modern day struggles. Guests will then be given access to a host’s home where you enjoy a post-hike homecooked lunch of Temuan dishes with his family.",
         "itinerary": [
@@ -88,6 +89,7 @@
         "title": "Gombak Outbound School",
         "headerImage": "../images/gombak-header.JPG",
         "airbnbLink": "https://www.airbnb.com/experiences/182216",
+        "listingSummary": "Travellers will commit to a 1-day programme that teaches the basic survival skills of the Orang Asli Semai community in the jungle. Travellers will learn about the use of flora and fauna, the basic skills of foraging, and experience the community’s culture of music and art.",
         "summaryTitle": "Learn the dos and don’ts of the jungle the Orang Asli way",
         "experienceSummary": "Travellers will learn the basic survival skills of the Orang Asli in the jungle, learning about the use of flora and fauna, the basic skills of food searching and prepping, and experience the community’s culture of music and art.",
         "itinerary": [
