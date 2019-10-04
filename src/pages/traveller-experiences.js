@@ -13,6 +13,8 @@ const TravellerExperienceList = ({ data }) => {
     const { title, listingThumbnail, airbnbLink, listingSummary, slug } = node
     return (
       <LeftRightBlock
+        key={i}
+        inverseBlock={Boolean(i % 2)}
         image={listingThumbnail.childImageSharp.fluid}
         title={title}
         description={listingSummary}

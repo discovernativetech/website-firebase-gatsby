@@ -24,7 +24,9 @@ const Button = ({
       category: data,
       action: "Button Click",
     })
-    onClick(e);
+    if (onClick) {
+      onClick(e);
+    }
   }
 
   return (

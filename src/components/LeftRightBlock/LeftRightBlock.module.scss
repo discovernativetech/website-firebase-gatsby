@@ -25,6 +25,10 @@
   flex-direction: column;
 }
 
+.invertedContainer {
+  flex-direction: row-reverse;
+}
+
 .title {
   font-size: $font-large;
   font-weight: $font-weight-bold;

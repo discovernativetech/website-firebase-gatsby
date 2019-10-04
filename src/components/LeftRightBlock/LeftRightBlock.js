@@ -4,13 +4,14 @@ import Img from "gatsby-image"
 import styles from "./LeftRightBlock.module.scss"
 
 const LeftRightBlock = ({
+  inverseBlock = false,
   image,
   title,
   description,
   children,
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${inverseBlock && styles.invertedContainer}`}>
       <div className={styles.leftBlockContainer}>
         <Img style={{ maxHeight: "100%" }} fluid={image} />
       </div>

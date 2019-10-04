@@ -13,6 +13,8 @@ const TeamExperiencesList = ({ data }) => {
     const { title, listingThumbnail, listingSummary } = node
     return (
       <LeftRightBlock
+        key={i}
+        inverseBlock={Boolean(i % 2)}
         image={listingThumbnail.childImageSharp.fluid}
         title={title}
         description={listingSummary}
