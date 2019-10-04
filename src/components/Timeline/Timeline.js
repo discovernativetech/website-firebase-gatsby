@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './Timeline.module.css';
+import styles from './Timeline.module.scss';
 
 // use TimelineContent to form the contents
 const Timeline = ({ children, className = {} }) => {

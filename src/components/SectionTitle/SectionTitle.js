@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SectionTitle.module.css';
+import styles from './SectionTitle.module.scss';
 
 const SectionTitle = ({ title }) => {
     return (

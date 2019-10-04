@@ -1,9 +1,12 @@
+@import '../../theme/typo.scss';
+
 .container {
     width: 100%;
     border-bottom: 2px solid #C4C4C4;
 }
 
 .title {
+    font-family: $font-family-header;
     font-size: 28px;
     color: #002445;
     text-transform: uppercase;

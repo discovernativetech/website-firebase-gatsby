@@ -42,7 +42,7 @@ const AboutUs = ({ data }) => {
       />
     )
   })
-  const maxHeaderHeight = "800px"
+  const maxHeaderHeight = "600px"
   const description =
     'Native, a travel-based social enterprise, aimed to rewrite the narrative of what it means to be a "native" person by creating opportunities for anyone to share their inherent skills and stories. Founded in 2018, we started off on Airbnb as a social impact experience and just a year later, we evolved into a small business.'
   return (

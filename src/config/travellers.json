@@ -1,8 +1,11 @@
 [
     {
-        "experienceSummary": "Embark on a 3-4 hour journey through the village of Kampung Sungai Lalang Bahru and their neighbouring forests. This adventure will allow guests to experience Orang Asli culture through the eyes of the people who have been its custodians for thousands of years. Our Native hosts from the Temuan Tribe will act as both guides and teachers, sharing indigenous knowledge and stories along the path with insights on flora and fauna, cultural beliefs, and even their modern day struggles. Guests will then be given access to a host’s home where you enjoy a post-hike homecooked lunch of Temuan dishes with his family.",
-        "showcaseImage1": "../images/travellersShowcase1-min.jpg",
-        "showcaseImage2": "../images/travellersShowcase2-min.jpg",
+        "slug": "temuan-trails",
+        "title": "TEMUAN VILLAGE TRAIL",
+        "headerImage": "../images/temuan-trails-header.jpg",
+        "airbnbLink": "https://www.airbnb.com/experiences/182216",
+        "summaryTitle": "A 3-4 hour journey through the village of Kampung Sungai Lalang Bahru",
+        "experienceSummary": "Our Native hosts from the Temuan Tribe will act as both guides and teachers, sharing indigenous knowledge and stories along the path with insights on flora and fauna, cultural beliefs, and even their modern day struggles. Guests will then be given access to a host’s home where you enjoy a post-hike homecooked lunch of Temuan dishes with his family.",
         "itinerary": [
             {
                 "title": "6:30AM",
@@ -10,27 +13,28 @@
             },
             {
                 "title": "7:30AM",
-                "description": "Arrival at Kampung Sungai Lalang Bahru (The Orang Asli Village)."
+                "description": "Arrival at Kampung Sungai Lalang Bahru (The Orang Asli Village).",
+                "image": "../images/temuan-1.jpg"
             },
             {
                 "title": "8:00AM",
-                "description": "Begin Guided Village Trail."
+                "description": "Begin Guided Village Trail.",
+                "image": "../images/temuan-2.jpg"
             },
             {
                 "title": "8:30AM",
-                "description": "Begin Guided Forest Hiking Trail."
-            },
-            {
-                "title": "11:45AM",
-                "description": "Return to Village and Freshen Up."
+                "description": "Begin Guided Forest Hiking Trail.",
+                "image": "../images/temuan-3.jpg"
             },
             {
                 "title": "12:00PM",
-                "description": "Lunch at Villager's Home (Prepared by villagers' family)."
+                "description": "Lunch at Villager's Home (local Asli cuisine prepared by guide’s family). ",
+                "image": "../images/temuan-4.jpg"
             },
             {
                 "title": "12:45PM",
-                "description": "Depart Kampung Sungai Lalang Bahru."
+                "description": "Depart Kampung Sungai Lalang Bahru.",
+                "image": "../images/temuan-5.jpg"
             },
             {
                 "title": "14:00PM",
@@ -60,7 +64,6 @@
         "faq": [
             {
                 "question": "WHAT IS PROVIDED?",
-                "icon": "../images/icon-whatisprovided.png",
                 "answers": [
                     "Experienced coordinator and trail guides",
                     "Return trip transportation",
@@ -70,7 +73,115 @@
             },
             {
                 "question": "WHAT TO BRING?",
-                "icon": "../images/icon-whattobring.png",
+                "answers": [
+                    "Sunscreen",
+                    "Long pants",
+                    "Sturdy Trail Shoes (Note: high likelihood we may need to walk in shallow rivers)",
+                    "Water Bottle",
+                    "Personal Medicine"
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "raman-school",
+        "title": "Gombak Outbound School",
+        "headerImage": "../images/gombak-header.JPG",
+        "airbnbLink": "https://www.airbnb.com/experiences/182216",
+        "summaryTitle": "Learn the dos and don’ts of the jungle the Orang Asli way",
+        "experienceSummary": "Travellers will learn the basic survival skills of the Orang Asli in the jungle, learning about the use of flora and fauna, the basic skills of food searching and prepping, and experience the community’s culture of music and art.",
+        "itinerary": [
+            {
+                "title": "8:15AM",
+                "description": "Depart from pick-up point."
+            },
+            {
+                "title": "9:00AM",
+                "description": "Arrival at Kampung Batu 12. Meet the local expert and have introduction to the village at the Orang Asli museum.",
+                "image": "../images/temuan-1.jpg"
+            },
+            {
+                "title": "9:15AM",
+                "description": "Begin Trek to Gombak Outbound School site.",
+                "image": "../images/temuan-2.jpg"
+            },
+            {
+                "title": "10:00AM",
+                "description": "Begin Guided Forest Hiking Trail.",
+                "image": "../images/temuan-3.jpg"
+            },
+            {
+                "title": "10:30AM",
+                "description": "Build a 1-day shelter with ‘bertam’ leaves.",
+                "image": "../images/temuan-4.jpg"
+            },
+            {
+                "title": "11:00AM",
+                "description": "Look for wood and begin fire preparation.",
+                "image": "../images/temuan-5.jpg"
+            },
+            {
+                "title": "11:30AM",
+                "description": "Look for wood and begin fire preparation.",
+                "image": "../images/temuan-5.jpg"
+            },
+            {
+                "title": "1:00PM",
+                "description": "Lunch."
+            },
+            {
+                "title": "1:30PM",
+                "description": "Weaving demonstration.."
+            },
+            {
+                "title": "2:00PM",
+                "description": "Blowpipe and puzzle game."
+            },
+            {
+                "title": "3:00PM",
+                "description": "Begin Trek back to pick-up point."
+            },
+            {
+                "title": "3:45PM",
+                "description": "Depart Kampung Baru 12."
+            },
+            {
+                "title": "4:30PM",
+                "description": "Arrival at drop-off point."
+            }
+        ],
+        "testimonials": [
+            {
+                "name": "Jason",
+                "userIcon": "https://firebasestorage.googleapis.com/v0/b/native-app-dev-486f1.appspot.com/o/customer-jason.jpg?alt=media",
+                "location": "California, United States",
+                "quoteText": "That was a wonderful experience- being able to learn about village life from our Orang Asli guides, and our knowledgeable and kind organizers/translators,was an absolutely unique experience."
+            },
+            {
+                "name": "Pei She",
+                "userIcon": "https://firebasestorage.googleapis.com/v0/b/native-app-dev-486f1.appspot.com/o/customer-peishe.jpg?alt=media",
+                "location": "Melbourne, Australia",
+                "quoteText": " Overall a great little excursion into the outdoors, led by locals Faizul and Busi who were well acquainted with the forest and the land. Highlight of the day was getting to visit the home of Faizul and having a home cooked meal by his wife, where we chatted and listened to stories of the village and the houses that have been built as part of EPIC Homes."
+            },
+            {
+                "name": "Ying",
+                "userIcon": "https://firebasestorage.googleapis.com/v0/b/native-app-dev-486f1.appspot.com/o/customer-ying.jpg?alt=media",
+                "location": "Beijing, China",
+                "quoteText": "这是一段非常美好的经历,已经厌倦了城市游,浮于表面的游客观光之旅,这个Airbnb经历完全是我想体验的内容:没被过度开发过的原生态自然."
+            }
+        ],
+        "faq": [
+            {
+                "question": "WHAT IS PROVIDED?",
+                "answers": [
+                    "Experienced coordinator and trail guides",
+                    "Return trip transportation",
+                    "A local indigenous meal prepared by the villagers",
+                    "Water (bring your own water bottle to refill)"
+                ]
+            },
+            {
+                "question": "WHAT TO BRING?",
                 "answers": [
                     "Sunscreen",
                     "Long pants",
