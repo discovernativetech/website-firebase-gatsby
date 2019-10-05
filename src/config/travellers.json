@@ -83,7 +83,8 @@
                     "Personal Medicine"
                 ]
             }
-        ]
+        ],
+        "bookingToolHorizontal": "<div class='airbnb-embed-frame' data-id='182216' data-view='experience_booking' data-eid='MTcyNDk0NTg5' data-currency='USD'><a href='https://www.airbnb.com/experiences/182216?source=booking_widget'>View On Airbnb</a><a href='https://www.airbnb.com/experiences/182216?source=booking_widget' rel='nofollow'></a></div>"
     },
     {
         "slug": "raman-school",
@@ -188,6 +189,7 @@
                     "Personal Medicine"
                 ]
             }
-        ]
+        ],
+        "bookingToolHorizontal": ""
     }
 ]

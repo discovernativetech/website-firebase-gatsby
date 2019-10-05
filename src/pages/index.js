@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
       <MDBContainer>
         <MultiColumns>
           {aboutNativeInfo.map((node, index) => (
-            <div className={styles.oneThirdWidth}>
+            <div className={styles.oneThirdWidth} key={index}>
               <SimpleBlock
                 key={index}
                 title={node.title}
