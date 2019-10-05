@@ -1,9 +1,11 @@
 [
     {
         "slug": "temuan-trails",
-        "title": "TEMUAN VILLAGE TRAIL",
+        "title": "Temuan Village Trail",
+        "listingThumbnail": "../images/listing-temuan-thumbnail.jpg",
         "headerImage": "../images/temuan-trails-header.jpg",
         "airbnbLink": "https://www.airbnb.com/experiences/182216",
+        "listingSummary": "Travellers will embark on a 3-4 hour long nature journey through the protected forests of the Orang Asli Temuan community alongside the locals themselves who will act as guides and teachers along the path - teaching travellers indigenous knowledge and stories. At the end of every experience, our local guide and his family will then prepare a post-hike meal (local Asli cuisine) for travellers to enjoy at his home.",
         "summaryTitle": "A 3-4 hour journey through the village of Kampung Sungai Lalang Bahru",
         "experienceSummary": "Our Native hosts from the Temuan Tribe will act as both guides and teachers, sharing indigenous knowledge and stories along the path with insights on flora and fauna, cultural beliefs, and even their modern day struggles. Guests will then be given access to a host’s home where you enjoy a post-hike homecooked lunch of Temuan dishes with his family.",
         "itinerary": [
@@ -81,13 +83,16 @@
                     "Personal Medicine"
                 ]
             }
-        ]
+        ],
+        "bookingToolHorizontal": "<div class='airbnb-embed-frame' data-id='182216' data-view='experience_booking' data-eid='MTcyNDk0NTg5' data-currency='USD'><a href='https://www.airbnb.com/experiences/182216?source=booking_widget'>View On Airbnb</a><a href='https://www.airbnb.com/experiences/182216?source=booking_widget' rel='nofollow'></a></div>"
     },
     {
         "slug": "raman-school",
         "title": "Gombak Outbound School",
+        "listingThumbnail": "../images/listing-raman-thumbnail.jpg",
         "headerImage": "../images/gombak-header.JPG",
         "airbnbLink": "https://www.airbnb.com/experiences/182216",
+        "listingSummary": "Travellers will commit to a 1-day programme that teaches the basic survival skills of the Orang Asli Semai community in the jungle. Travellers will learn about the use of flora and fauna, the basic skills of foraging, and experience the community’s culture of music and art.",
         "summaryTitle": "Learn the dos and don’ts of the jungle the Orang Asli way",
         "experienceSummary": "Travellers will learn the basic survival skills of the Orang Asli in the jungle, learning about the use of flora and fauna, the basic skills of food searching and prepping, and experience the community’s culture of music and art.",
         "itinerary": [
@@ -97,33 +102,27 @@
             },
             {
                 "title": "9:00AM",
-                "description": "Arrival at Kampung Batu 12. Meet the local expert and have introduction to the village at the Orang Asli museum.",
-                "image": "../images/temuan-1.jpg"
+                "description": "Arrival at Kampung Batu 12. Meet the local expert and have introduction to the village at the Orang Asli museum."
             },
             {
                 "title": "9:15AM",
-                "description": "Begin Trek to Gombak Outbound School site.",
-                "image": "../images/temuan-2.jpg"
+                "description": "Begin Trek to Gombak Outbound School site."
             },
             {
                 "title": "10:00AM",
-                "description": "Begin Guided Forest Hiking Trail.",
-                "image": "../images/temuan-3.jpg"
+                "description": "Begin Guided Forest Hiking Trail."
             },
             {
                 "title": "10:30AM",
-                "description": "Build a 1-day shelter with ‘bertam’ leaves.",
-                "image": "../images/temuan-4.jpg"
+                "description": "Build a 1-day shelter with ‘bertam’ leaves."
             },
             {
                 "title": "11:00AM",
-                "description": "Look for wood and begin fire preparation.",
-                "image": "../images/temuan-5.jpg"
+                "description": "Look for wood and begin fire preparation."
             },
             {
                 "title": "11:30AM",
-                "description": "Look for wood and begin fire preparation.",
-                "image": "../images/temuan-5.jpg"
+                "description": "Look for wood and begin fire preparation."
             },
             {
                 "title": "1:00PM",
@@ -190,6 +189,7 @@
                     "Personal Medicine"
                 ]
             }
-        ]
+        ],
+        "bookingToolHorizontal": ""
     }
 ]

@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "learning-tour",
+    "title": "Learning Tour",
+    "listingThumbnail": "../images/listing-learning-tour-thumbnail.jpg",
+    "headerImage": "",
+    "airbnbLink": "",
+    "listingSummary": "This programme offers a <b>1-day</b> opportunity to learn local realities through a Native experience where participants will personally engage with Orang Asli communities, talk to changemakers and social entrepreneurs, while developing their skills. Participants will then engage in facilated discussions to share their learning outcomes.",
+    "summaryTitle": "",
+    "experienceSummary": "",
+    "itinerary": [
+    ],
+    "testimonials": [
+    ],
+    "faq": [
+    ]
+  },
+  {
+    "slug": "skills-based",
+    "title": "Skills Based Experience",
+    "listingThumbnail": "../images/listing-skills-based-thumbnail.jpg",
+    "headerImage": "",
+    "airbnbLink": "",
+    "listingSummary": "This <b>2-day programme</b> will revolve around developing and using the skills and talents of individuals, with the outcome depending on the interest of the group. Native will provide a real-life case study and act as the care provider, while participants contribute their expertise to achieve their desired goal.",
+    "summaryTitle": "",
+    "experienceSummary": "",
+    "itinerary": [
+    ],
+    "testimonials": [
+    ],
+    "faq": [
+    ]
+  }
+]

@@ -26,15 +26,15 @@ const IndexPage = ({ data }) => {
   const dropDownOptions = [
     {
       title: "Traveller",
-      link: "/travellers-experiences",
+      link: "/traveller-experiences",
     },
     {
       title: "Company",
-      link: "/travellers-experiences",
+      link: "/traveller-experiences",
     },
     {
       title: "School",
-      link: "/travellers-experiences",
+      link: "/traveller-experiences",
     },
   ]
 
@@ -47,8 +47,8 @@ const IndexPage = ({ data }) => {
       <BackgroundSection
         childrenPosition={{ left: "25%", top: "45%" }}
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ maxHeight: "600px" }}
-        imageStyles={{ maxHeight: "600px" }}
+        containerStyles={{ height: "600px" }}
+        imageStyles={{ height: "100%" }}
       >
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>
@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
       <MDBContainer>
         <MultiColumns>
           {aboutNativeInfo.map((node, index) => (
-            <div className={styles.oneThirdWidth}>
+            <div className={styles.oneThirdWidth} key={index}>
               <SimpleBlock
                 key={index}
                 title={node.title}

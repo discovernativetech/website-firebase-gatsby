@@ -20,15 +20,15 @@ const navItems = [
     menu: [
       {
         title: "Travellers",
-        path: "/travellers-experiences",
+        path: "/traveller-experiences",
       },
       {
         title: "Company",
-        path: "/travellers-experiences",
+        path: "/team-experiences",
       },
       {
         title: "School",
-        path: "/travellers-experiences",
+        path: "/traveller-experiences",
       },
     ],
   },

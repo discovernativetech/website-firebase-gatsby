@@ -11,7 +11,7 @@ const BackgroundSection = ({ image, imageStyles = {}, containerStyles = {}, titl
 
   return (
     <div className={styles.background} style={containerStyles}>
-      <Img fluid={image} imgStyle={imageStyles}/>
+      <Img fluid={image} style={imageStyles}/>
       <span style={itemsPosition} className={styles.children}>{children}</span>
       {/* <span className={styles.title}>{title}</span> */}
     </div>
