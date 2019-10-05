@@ -49,6 +49,7 @@ const Newsletter = () => {
                 handleBlur={handleBlur}
                 value={values.email}
                 error={errors.email}
+                touched={false}
               />
               <div className={styles.button}>
                 <Button
