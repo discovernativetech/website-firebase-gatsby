@@ -33,10 +33,10 @@ const Footer = () => {
                                 <Link className={styles.link} to="/traveller-experiences">The Experience</Link>
                             </span>
                             <span className={styles.navLink}>
-                                <Link className={styles.link} to="/coming-soon">Testimonials</Link>
+                                <Link className={styles.link} to="/coming-soon">Impact</Link>
                             </span>
                             <span className={styles.navLink}>
-                                <Link className={styles.link} to="/coming-soon">FAQ</Link>
+                                <Link className={styles.link} to="/coming-soon">Journal</Link>
                             </span>
                         </div>
                         <div className={styles.infoContainer}>
