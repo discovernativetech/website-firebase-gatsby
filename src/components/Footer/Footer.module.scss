@@ -1,3 +1,8 @@
+@import '../../theme/colors.scss';
+@import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/animation.scss';
+
 @media (min-width: 320px) and (max-width: 600px) {
     .linksContainer {
         flex-direction: column !important;
@@ -13,6 +18,7 @@
     min-height: 250px;
     background-color: #002445;
     color: #ffffff;
+    box-shadow: $box-shadow-standard;
 }
 
 .innerContainer {
@@ -42,13 +48,19 @@
     font-weight: 600;
     letter-spacing: 0.3px;
     font-size: 18px;
-    margin-bottom: 1px !important;
+    margin-bottom: $grid-small;
 }
 
-.border {
-    font-weight: bold;
+.p {
+    margin-bottom: 0px;
 }
 
 .link{
     color: #ffffff;
+}
+
+.copyrightContainer {
+    background-color: $light-grey-color;
+    text-align: center;
+    padding: $grid-small;
 }
