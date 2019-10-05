@@ -4,13 +4,13 @@
 @import '../../theme/typo.scss';
 
 .rowContainer {
-    padding: $grid-tiny;
+    font-family: $font-family-standard;
 }
 
 .columnContainer {
-    padding: $grid-tiny;
     display: flex;
     flex-direction: column;
+    font-family: $font-family-standard;
 }
 
 .label {
@@ -18,10 +18,9 @@
 }
 
 .textbox {
-    height: $font-standard;
-    margin: $grid-tiny;
     min-width: 200px;
     font-size: $font-standard;
+    height: 50px;
 }
 
 .message {

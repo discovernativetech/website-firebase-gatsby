@@ -35,11 +35,15 @@
     color: #ffffff;
 }
 
+.newsletterContainer {
+    margin: $grid-small 0px;
+}
+
 .infoContainer {
-    width: 33%; 
-    margin: 5px;
+    margin: $grid-tiny $grid-medium;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .infoTitle {
@@ -63,4 +67,5 @@
     background-color: $light-grey-color;
     text-align: center;
     padding: $grid-small;
+    color: black;
 }

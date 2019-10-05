@@ -1,9 +1,9 @@
-import React from "react";
-import styles from "./Textbox.module.scss";
+import React from "react"
+import styles from "./Textbox.module.scss"
 
 const Textbox = props => {
   const {
-    type = 'text',
+    type = "text",
     labelText,
     direction = "row",
     handleChange,
@@ -13,16 +13,18 @@ const Textbox = props => {
     error,
     touched,
     placeholder,
-  } = props;
+  } = props
 
   const containerStyle =
-    direction === "row" ? styles.rowContainer : styles.columnContainer;
+    direction === "row" ? styles.rowContainer : styles.columnContainer
 
   return (
     <div className={containerStyle}>
-      <label className={styles.label} htmlFor={name}>
-        {labelText}
-      </label>
+      {labelText && (
+        <label className={styles.label} htmlFor={name}>
+          {labelText}
+        </label>
+      )}
       <input
         className={styles.textbox}
         type={type}
@@ -31,10 +33,10 @@ const Textbox = props => {
         onBlur={handleBlur}
         value={value}
         placeholder={placeholder}
-      />
-      {error && touched && <span className={styles.message}>{error}</span>}
+      /><br/>
+      {(error || touched) && <span className={styles.message}>{error}</span>}
     </div>
-  );
-};
+  )
+}
 
-export default Textbox;
+export default Textbox

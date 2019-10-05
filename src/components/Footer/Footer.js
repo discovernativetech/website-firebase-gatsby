@@ -18,7 +18,11 @@ const Footer = () => {
                     </div>
                     <div className={styles.linksContainer}>
                         <div className={styles.infoContainer}>
-                            <Newsletter />
+                            <p className={styles.infoTitle}>Stay Connected</p>
+                            <p className={styles.p}>Join us and receive our bi-weekly newsletters.</p>
+                            <div className={styles.newsletterContainer}>
+                                <Newsletter />
+                            </div>
                         </div>
                         <div className={styles.infoContainer}>
                             <p className={styles.infoTitle}>Navigate</p>
