@@ -1,0 +1,49 @@
+@import "../../theme/colors.scss";
+@import "../../theme/typo.scss";
+@import "../../theme/layout.scss";
+
+.modalContainer > div {
+  background: linear-gradient(
+    180deg,
+    rgba(237, 67, 93, 1) 0%,
+    rgba(9, 9, 121, 1) 75%
+  ) !important;
+}
+
+.header {
+  border-bottom: none !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $grid-medium;
+  color: $white-color;
+}
+
+.title {
+  font-family: $font-family-header;
+  font-size: $font-large;
+  font-weight: $font-weight-bold;
+}
+
+.description {
+  font-size: $font-standard;
+  text-align: center;
+}
+
+.formWrap {
+  width: 70%;
+}
+
+.button {
+  margin: $grid-medium 0px;
+  text-align: center;
+}
+
+.input {
+  margin: $grid-small 0px;
+  color: $white-color;
+}

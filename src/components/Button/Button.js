@@ -4,6 +4,7 @@ import ReactGA from "react-ga"
 import styles from "./Button.module.scss"
 
 const Button = ({
+  type = "button",
   text,
   link,
   outlineColor,
@@ -32,6 +33,7 @@ const Button = ({
   return (
     <ButtonWrapper link={link} newTab={newTab}>
       <button
+        type={type}
         className={styles.button}
         style={customStyle}
         onClick={sendEvent(`${text} - ${link}`)}

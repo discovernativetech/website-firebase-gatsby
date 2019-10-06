@@ -41,15 +41,15 @@
         "travellerSlides": [
             {
                 "image": "../images/travellers-carousel.jpg",
-                "link": "/travellers-experiences",
+                "link": "/temuan-trails",
                 "description": "Catch an intimate glimpse into how nature and culture go hand-in-hand on a fascinating day trip to Kampung Sungai Lalang Bahru, Semenyih."
             }
         ],
         "teamSlides": [
             {
                 "image": "../images/teams-carousel.jpg",
-                "link": "https://www.airbnb.com/experiences/182216",
-                "description": "Catch an intimate glimpse into how nature and culture go hand-in-hand on a fascinating day trip to Kampung Sungai Lalang Bahru, Semenyih."
+                "link": "/team-experiences",
+                "description": "Learn and experience the Indigenous culture and traditions in customized experiences for organisations such as corporates and schools."
             }
         ]
     }
