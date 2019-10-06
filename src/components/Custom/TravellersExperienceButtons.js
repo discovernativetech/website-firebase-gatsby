@@ -6,20 +6,24 @@ import styles from "./TravellersExperienceButtons.module.scss"
 const TravellersExperienceButtons = ({ learnMoreLink, bookingLink }) => {
   return (
     <div className={styles.container}>
-      <Button
-        text={"LEARN MORE"}
-        backgroundColor={"#ED435D"}
-        textColor={"#ffff"}
-        link={learnMoreLink}
-        newTab={false}
-      />
-      <Button
-        text={"BOOK THIS EXPERIENCE"}
-        backgroundColor={"#ED435D"}
-        textColor={"#ffff"}
-        link={bookingLink}
-        newTab={false}
-      />
+      <div className={styles.button}>
+        <Button
+          text={"LEARN MORE"}
+          backgroundColor={"#ED435D"}
+          textColor={"#ffff"}
+          link={learnMoreLink}
+          newTab={false}
+        />
+      </div>
+      <div className={styles.button}>
+        <Button
+          text={"BOOK THIS EXPERIENCE"}
+          backgroundColor={"#ED435D"}
+          textColor={"#ffff"}
+          link={bookingLink}
+          newTab={false}
+        />
+      </div>
     </div>
   )
 }

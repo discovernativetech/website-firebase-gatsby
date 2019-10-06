@@ -68,11 +68,16 @@
 
 .imageContent {
   margin-right: $grid-medium;
+  width: 50%;
+}
+
+.info {
+  width: 50%;
 }
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
+  padding: $grid-medium $grid-large;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -112,11 +117,25 @@
   /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
-    left: 15px;
+    left: 18px;
   }
 
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+
+  .content {
+    padding: $grid-small;
+    flex-direction: column;
+  }
+
+  .imageContent {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .info {
+    width: 100%;
   }
 }

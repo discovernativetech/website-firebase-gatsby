@@ -22,3 +22,9 @@
   display: flex;
   justify-content: space-betwen;
 }
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .backgroundHeaderText {
+    font-size: $font-xxlarge;
+  }
+}

@@ -1,6 +1,7 @@
 @media (min-width: 320px) and (max-width: 600px) {
     .qnaContainer {
-      flex-direction: column;
+      flex-direction: column !important;
+      width: 100%;
     }
     .leftBlockContainer {
         width: 100% !important;
@@ -11,6 +12,10 @@
         width: 100% !important;
         margin: 10px 0px;
         padding: 0px 10px;
+    }
+
+    .container {
+        flex-direction: column;
     }
 }
 

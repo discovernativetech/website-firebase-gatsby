@@ -36,11 +36,12 @@
   color: $tertiary-color;
   text-transform: uppercase;
   text-align:center;
+  margin-top: $grid-small;
 }
 
 .description {
   font-size: $font-standard;
-  padding: $grid-large;
+  padding: $grid-small $grid-large;
   line-height: 30px;
 }
 
@@ -52,3 +53,28 @@
 .children {
   width: 100%;
 }
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: initial;
+  }
+  
+  .leftBlockContainer {
+    width: 100%;
+  }
+  
+  .rightBlockContainer {
+    width: 100%;
+    padding: $grid-small;
+  }
+  
+  .invertedContainer {
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+} 
