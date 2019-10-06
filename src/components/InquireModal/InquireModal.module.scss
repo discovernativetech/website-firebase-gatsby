@@ -47,3 +47,10 @@
   margin: $grid-small 0px;
   color: $white-color;
 }
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .formWrap {
+    width: 90%;
+  }
+}

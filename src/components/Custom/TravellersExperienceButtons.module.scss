@@ -1,4 +1,16 @@
+@import '../../theme/layout.scss';
+
 .container {
   display: flex;
   justify-content: space-around;
+}
+
+.button {
+  margin: $grid-small $grid-tiny;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }

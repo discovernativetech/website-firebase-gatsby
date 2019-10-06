@@ -59,7 +59,7 @@ class TravellersExperiences extends Component {
           title={i.title}
           description={i.description}
           isLeft={Boolean(index % 2)}
-          image={i.image && i.image.childImageSharp.fixed}
+          image={i.image && i.image.childImageSharp.fluid}
         />
       )
     })
@@ -135,8 +135,8 @@ export const query = graphql`
             description
             image {
               childImageSharp {
-                fixed(width: 450, height: 300) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 540, maxHeight: 370) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
