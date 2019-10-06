@@ -20,7 +20,6 @@ const AboutUs = ({ data }) => {
     hosts,
   } = data.allAboutusJson.edges[0].node
   const descriptionImage = parallaxImage.childImageSharp.original.src;
-  console.log(hosts)
   const teamProfiles = team.map((staff, i) => {
     return (
       <StaffProfile

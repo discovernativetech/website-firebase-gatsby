@@ -28,13 +28,13 @@ const navItems = [
       },
       {
         title: "School",
-        path: "/traveller-experiences",
+        path: "/coming-soon",
       },
     ],
   },
   {
     title: "Impact",
-    path: "/coming-soon",
+    path: "/impact",
     menu: [],
   },
   {

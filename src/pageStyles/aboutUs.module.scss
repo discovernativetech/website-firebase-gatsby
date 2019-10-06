@@ -45,7 +45,7 @@
     margin: $grid-large 0px;
 }
 
-@media (min-width: 120px) and (max-width: 790px) {
+@media (min-width: 320px) and (max-width: 600px) {
     .staffContainer {
         flex-direction: column;
     }

@@ -1,0 +1,22 @@
+[
+  {
+    "fact": "2",
+    "image": "../images/community-engaged.png",
+    "title": "Community Engaged"
+  },
+  {
+    "fact": "5",
+    "image": "../images/native-household.png",
+    "title": "Native Host Households"
+  },
+  {
+    "fact": "RM Y",
+    "image": "../images/back-to-community.png",
+    "title": "Back to the Community"
+  },
+  {
+    "fact": "100",
+    "image": "../images/stories-engaged.png",
+    "title": "Stories Engaged"
+  }
+]
