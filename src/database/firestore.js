@@ -1,4 +1,4 @@
-import firebase from '../config/firebaseConfig';
+import firebase from '../config/firebase';
 
 const db = firebase.firestore();
 

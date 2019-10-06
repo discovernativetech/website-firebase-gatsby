@@ -44,6 +44,7 @@ const Newsletter = () => {
               <Textbox
                 name="email"
                 type="email"
+                direction="column"
                 placeholder="Email address"
                 handleChange={handleChange}
                 handleBlur={handleBlur}

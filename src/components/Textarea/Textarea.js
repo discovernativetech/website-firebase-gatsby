@@ -1,10 +1,11 @@
 import React from "react"
-import styles from "./Textbox.module.scss"
+import styles from "./Textarea.module.scss"
 
-const Textbox = props => {
+const Textarea = props => {
   const {
-    type = "text",
     labelText,
+    cols = "50",
+    rows = "5",
     direction = "row",
     handleChange,
     handleBlur,
@@ -25,9 +26,10 @@ const Textbox = props => {
           {labelText}
         </label>
       )}
-      <input
+      <textarea
+        rows={rows}
+        cols={cols}
         className={styles.textbox}
-        type={type}
         name={name}
         onChange={handleChange}
         onBlur={handleBlur}
@@ -39,4 +41,4 @@ const Textbox = props => {
   )
 }
 
-export default Textbox
+export default Textarea
