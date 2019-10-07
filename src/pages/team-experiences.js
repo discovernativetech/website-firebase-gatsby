@@ -35,7 +35,11 @@ const TeamExperiencesList = ({ data }) => {
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>TEAMS</span>
           <p className={styles.headerDescriptionText}>
-          Curated for changemakers and community leaders that are interested in the field <br/> of short-term learning-based travel. We offer programmes to develop a connection <br/> with local communities and support the preservation of their culture. Each <br/> programme is catered towards different learning objectives.
+            Curated for changemakers and community leaders that are interested
+            in the field of short-term learning-based travel. We offer
+            programmes to develop a connection with local communities and
+            support the preservation of their culture. Each programme is catered
+            towards different learning objectives.
           </p>
         </div>
       </BackgroundSection>
@@ -46,9 +50,7 @@ const TeamExperiencesList = ({ data }) => {
 
 export const query = graphql`
   query {
-    fullImageHeader: file(
-      relativePath: { eq: "teams-listing-header.jpg" }
-    ) {
+    fullImageHeader: file(relativePath: { eq: "teams-listing-header.jpg" }) {
       childImageSharp {
         fluid(maxHeight: 600, fit: CONTAIN, quality: 100) {
           ...GatsbyImageSharpFluid

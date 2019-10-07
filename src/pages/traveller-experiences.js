@@ -38,10 +38,10 @@ const TravellerExperienceList = ({ data }) => {
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>TRAVELLERS</span>
           <p className={styles.headerDescriptionText}>
-            Curated for travellers who are interested to travel with a purpose.{" "}
-            <br /> Immerse yourself in a Native experience and benefit the
-            communities you visit. We offer multiple experiences, each embarking
-            on an adventure with different Orang Asli Tribes in Malaysia.
+            Curated for travellers who are interested to travel with a purpose.
+            Immerse yourself in a Native experience and benefit the communities
+            you visit. We offer multiple experiences, each embarking on an
+            adventure with different Orang Asli Tribes in Malaysia.
           </p>
         </div>
       </BackgroundSection>
@@ -56,7 +56,7 @@ export const query = graphql`
       relativePath: { eq: "travellers-listing-header.jpg" }
     ) {
       childImageSharp {
-        fluid(maxHeight: 600,fit: CONTAIN, quality: 100) {
+        fluid(maxHeight: 600, fit: CONTAIN, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
