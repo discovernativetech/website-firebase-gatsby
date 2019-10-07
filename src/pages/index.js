@@ -30,11 +30,11 @@ const IndexPage = ({ data }) => {
     },
     {
       title: "Company",
-      link: "/traveller-experiences",
+      link: "/team-experiences",
     },
     {
       title: "School",
-      link: "/traveller-experiences",
+      link: "/team-experiences",
     },
   ]
 
