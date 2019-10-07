@@ -33,6 +33,7 @@
     display: flex;
     margin: 10px 0px;
     color: #ffffff;
+    border-top: 2px solid $primary-color;
 }
 
 .newsletterContainer {
@@ -40,7 +41,8 @@
 }
 
 .infoContainer {
-    margin: $grid-tiny $grid-medium;
+    margin: $grid-small $grid-medium;
+    margin-top: $grid-large;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
