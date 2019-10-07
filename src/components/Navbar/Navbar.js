@@ -23,13 +23,9 @@ const navItems = [
         path: "/traveller-experiences",
       },
       {
-        title: "Company",
+        title: "Organisations",
         path: "/team-experiences",
-      },
-      {
-        title: "School",
-        path: "/coming-soon",
-      },
+      }
     ],
   },
   {
