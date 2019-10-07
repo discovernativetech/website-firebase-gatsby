@@ -33,7 +33,7 @@ const Footer = () => {
                                 <Link className={styles.link} to="/traveller-experiences">The Experience</Link>
                             </span>
                             <span className={styles.navLink}>
-                                <Link className={styles.link} to="/coming-soon">Impact</Link>
+                                <Link className={styles.link} to="/impact">Impact</Link>
                             </span>
                             <span className={styles.navLink}>
                                 <Link className={styles.link} to="/coming-soon">Journal</Link>

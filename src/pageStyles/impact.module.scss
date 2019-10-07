@@ -1,0 +1,31 @@
+@import '../theme/colors.scss';
+@import '../theme/typo.scss';
+@import '../theme/layout.scss';
+
+.headerTitle {
+  @extend %backgroundHeaderText;
+  font-size: $font-xlarge;
+}
+
+.content {
+  margin: $grid-large 0px;
+  line-height: 30px;
+  color: $dark-grey-color;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $grey-background-color;
+  margin-bottom: $grid-large;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .infoContainer {
+    flex-direction: column;
+  }
+
+  .headerTitle {
+    font-size: $font-large;
+  }
+}
