@@ -2,12 +2,8 @@
 @import '../theme/typo.scss';
 @import '../theme/layout.scss';
 
-.backgroundHeaderText {
+.backgroundHeader {
     @extend %backgroundHeaderText;
-    text-shadow: 2px 2px 5px grey;
-    letter-spacing: 0px;
-    font-weight: $font-weight-bold;
-    font-family: $font-family-header;
 }
 
 .textBanner {
@@ -46,6 +42,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+
+    .backgroundHeader {
+        font-size: 40px!important;
+        white-space: nowrap;
+    }
+
+    .descriptionBanner {
+        font-size: $font-standard !important;
+    }
+
     .staffContainer {
         flex-direction: column;
     }
@@ -55,6 +61,6 @@
     }
 
     .textBanner {
-        font-size: $font-xlarge !important;
+        font-size: $font-large !important;
     }
 }

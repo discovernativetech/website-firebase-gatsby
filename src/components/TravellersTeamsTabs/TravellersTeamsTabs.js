@@ -34,7 +34,7 @@ class TravellersTeamsTabs extends Component {
         return (
           <MDBCarouselItem itemId={index+1} key={index}>
             <MDBView>
-              <Preview image={t.image.childImageSharp.fluid} imageAlt={t.description} description={t.description} link={t.link} linkText={'VIEW THIS EXPERIENCE'} />
+              <Preview title={t.title} image={t.image.childImageSharp.fluid} imageAlt={t.description} description={t.description} link={t.link} linkText={'VIEW THIS EXPERIENCE'} />
             </MDBView>
           </MDBCarouselItem>
         )
@@ -44,7 +44,7 @@ class TravellersTeamsTabs extends Component {
         return (
           <MDBCarouselItem itemId={index+1} key={index}>
             <MDBView>
-              <Preview image={t.image.childImageSharp.fluid} imageAlt={t.description} description={t.description} link={t.link} linkText={'VIEW THIS EXPERIENCE'} />
+              <Preview title={t.title} image={t.image.childImageSharp.fluid} imageAlt={t.description} description={t.description} link={t.link} linkText={'VIEW THIS EXPERIENCE'} />
             </MDBView>
           </MDBCarouselItem>
         )

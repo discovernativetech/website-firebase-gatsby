@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import BackgroundSection from "../components/BackgroundSection/BackgroundSection"
+import SEO from "../components/seo"
 
 import styles from "../pageStyles/traveller-experiences.module.scss"
 import LeftRightBlock from "../components/LeftRightBlock/LeftRightBlock"
@@ -27,22 +28,22 @@ const TravellerExperienceList = ({ data }) => {
     )
   })
 
+  const description = `Curated for travellers who are interested to travel with a purpose.
+  Immerse yourself in a Native experience and benefit the communities
+  you visit. We offer multiple experiences, each embarking on an
+  adventure with different Orang Asli Tribes in Malaysia.`
+
   return (
     <Layout>
+      <SEO title="Traveller's Experiences" description={description} />
       <BackgroundSection
         childrenPosition={{ left: "50%", top: "50%" }}
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ height: "600px" }}
-        imageStyles={{ height: "100%" }}
+        containerStyles={{ height: "550px" }}
       >
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>TRAVELLERS</span>
-          <p className={styles.headerDescriptionText}>
-            Curated for travellers who are interested to travel with a purpose.
-            Immerse yourself in a Native experience and benefit the communities
-            you visit. We offer multiple experiences, each embarking on an
-            adventure with different Orang Asli Tribes in Malaysia.
-          </p>
+          <p className={styles.headerDescriptionText}>{description}</p>
         </div>
       </BackgroundSection>
       <MDBContainer>{experienceBlocks}</MDBContainer>

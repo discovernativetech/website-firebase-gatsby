@@ -41,7 +41,6 @@ const AboutUs = ({ data }) => {
       />
     )
   })
-  const maxHeaderHeight = "600px"
   const description =
     'Native, a travel-based social enterprise, aimed to rewrite the narrative of what it means to be a "native" person by creating opportunities for anyone to share their inherent skills and stories. Founded in 2018, we started off on Airbnb as a social impact experience and just a year later, we evolved into a small business.'
   return (
@@ -49,8 +48,7 @@ const AboutUs = ({ data }) => {
       <SEO title="About Us" description={description} />
       <BackgroundSection
         image={mainImage.childImageSharp.fluid}
-        imageStyles={{ maxHeight: maxHeaderHeight }}
-        containerStyles={{ maxHeight: maxHeaderHeight }}
+        imageStyles={{ maxHeight: '550px' }}
       >
         <span className={styles.backgroundHeader}>ABOUT US</span>
       </BackgroundSection>
@@ -70,13 +68,13 @@ const AboutUs = ({ data }) => {
         <p className={styles.content}>{summaryP1}</p>
         <p className={styles.content}>{summaryP2}</p>
         <div className={styles.titleContainer}>
-          <SectionTitle title={"MEET OUR TEAM"} />
-        </div>
-        <div className={styles.staffContainer}>{teamProfiles}</div>
-        <div className={styles.titleContainer}>
           <SectionTitle title={"MEET OUR EXPERIENCE HOSTS"} />
         </div>
         <div className={styles.staffContainer}>{hostProfiles}</div>
+        <div className={styles.titleContainer}>
+          <SectionTitle title={"MEET OUR TEAM"} />
+        </div>
+        <div className={styles.staffContainer}>{teamProfiles}</div>
       </MDBContainer>
     </Layout>
   )

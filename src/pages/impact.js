@@ -2,12 +2,13 @@ import React from "react"
 import { MDBContainer } from "mdbreact"
 import Layout from "../components/layout"
 import InfoBlock from "../components/InfoBlock/InfoBlock"
+import SEO from "../components/seo"
 
 import styles from "../pageStyles/impact.module.scss"
 import BackgroundSection from "../components/BackgroundSection/BackgroundSection"
 
 const Impact = ({ data }) => {
-  const facts = data.allImpactJson.edges.map(({node}, i) => {
+  const facts = data.allImpactJson.edges.map(({ node }, i) => {
     return (
       <InfoBlock
         key={i}
@@ -20,10 +21,15 @@ const Impact = ({ data }) => {
 
   return (
     <Layout>
+      <SEO
+        title="Our Impact"
+        description="We believe all communities can and should be empowered to create
+        value through their cultures"
+      />
       <BackgroundSection
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ height: "600px" }}
-        imageStyles={{ height: "100%" }}
+        containerStyles={{ height: "550px" }}
+        childrenFullWidth
       >
         <p className={styles.headerTitle}>
           We believe all communities can and should be empowered to create value
@@ -48,9 +54,7 @@ const Impact = ({ data }) => {
             travel footprint.
           </p>
         </div>
-        <div className={styles.infoContainer}>
-          {facts}
-        </div>
+        <div className={styles.infoContainer}>{facts}</div>
       </MDBContainer>
     </Layout>
   )

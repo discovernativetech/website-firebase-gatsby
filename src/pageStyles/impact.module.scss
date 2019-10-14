@@ -5,6 +5,8 @@
 .headerTitle {
   @extend %backgroundHeaderText;
   font-size: $font-xlarge;
+  margin: 0px $grid-large;
+  text-align: center;
 }
 
 .content {

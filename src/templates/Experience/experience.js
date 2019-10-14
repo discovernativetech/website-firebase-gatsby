@@ -70,8 +70,7 @@ class TravellersExperiences extends Component {
         <BackgroundSection
           childrenPosition={{ right: "-15%", bottom: "5%" }}
           image={headerImage.childImageSharp.fluid}
-          containerStyles={{ height: "600px" }}
-          imageStyles={{ height: "100%" }}
+          containerStyles={{ height: "550px" }}
         >
           <span className={styles.backgroundHeader}>{title}</span>
         </BackgroundSection>

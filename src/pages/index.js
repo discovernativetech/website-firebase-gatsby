@@ -47,29 +47,20 @@ const IndexPage = ({ data }) => {
       <BackgroundSection
         childrenPosition={{ left: "25%", top: "45%" }}
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ height: "600px" }}
-        imageStyles={{ height: "100%" }}
+        containerStyles={{ height: "550px" }}
       >
-        <div className={styles.backgroundItemsBlock}>
+        <span className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>
             Discover Malaysia <br /> the Native way
           </span>
           <Dropdown options={dropDownOptions} defaultText={"I am a"} />
-        </div>
+        </span>
       </BackgroundSection>
       <div className={styles.aboutNativeSection}>
-        <MDBContainer>
-          <div className={styles.secondaryBackgroundBlock}>
-            <h1 className={styles.sectionTitle}>
-              Discover Malaysia The Native Way
-            </h1>
-            <Dropdown options={dropDownOptions} defaultText={"I am a"} />
-          </div>
-        </MDBContainer>
         <TextBanner
           containerStyle={styles.textBanner}
           text={
-            "Rewrite the narrative through your travels. <br/> Be part of the Native story."
+            "Rewrite the narrative through your travels. Be part of the Native story."
           }
         />
         <TextBanner
@@ -180,6 +171,7 @@ export const query = graphql`
                 }
               }
             }
+            title
             link
             description
           }
@@ -191,6 +183,7 @@ export const query = graphql`
                 }
               }
             }
+            title
             link
             description
           }

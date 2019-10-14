@@ -78,8 +78,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
-    .backgroundItemsBlock{
-        display: none;
+
+    .backgroundHeaderText {
+        font-size: 40px;
     }
 
     .secondaryBackgroundBlock {
@@ -89,10 +90,12 @@
     }
 
     .textBanner {
-        font-size: $font-xlarge !important;
+        font-size: $font-large !important;
+        text-align: center;
+        
     }
 
     .visionMissionStyle {
-        font-size: $font-large !important;
+        font-size: $font-standard !important;
     }
 }

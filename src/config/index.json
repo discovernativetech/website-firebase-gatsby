@@ -41,7 +41,8 @@
         "travellerSlides": [
             {
                 "image": "../images/travellers-carousel.jpg",
-                "link": "/temuan-trails",
+                "link": "/traveller-experiences",
+                "title": "TEMUAN VILLAGE TRAIL",
                 "description": "Catch an intimate glimpse into how nature and culture go hand-in-hand on a fascinating day trip to Kampung Sungai Lalang Bahru, Semenyih."
             }
         ],
@@ -49,6 +50,7 @@
             {
                 "image": "../images/teams-carousel.jpg",
                 "link": "/team-experiences",
+                "title": "LEARNING TOUR",
                 "description": "Learn and experience the Indigenous culture and traditions in customized experiences for organisations such as corporates and schools."
             }
         ]

@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import BackgroundSection from "../components/BackgroundSection/BackgroundSection"
+import SEO from "../components/seo"
 
 import styles from "../pageStyles/team-experiences.module.scss"
 import LeftRightBlock from "../components/LeftRightBlock/LeftRightBlock"
@@ -24,23 +25,23 @@ const TeamExperiencesList = ({ data }) => {
     )
   })
 
+  const description = `Curated for changemakers and community leaders that are interested
+  in the field of short-term learning-based travel. We offer
+  programmes to develop a connection with local communities and
+  support the preservation of their culture. Each programme is catered
+  towards different learning objectives.`
+
   return (
     <Layout>
+      <SEO title="Team's Experiences" description={description} />
       <BackgroundSection
         childrenPosition={{ left: "50%", top: "50%" }}
         image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ height: "600px" }}
-        imageStyles={{ height: "100%" }}
+        containerStyles={{ height: "550px" }}
       >
         <div className={styles.backgroundItemsBlock}>
           <span className={styles.backgroundHeaderText}>TEAMS</span>
-          <p className={styles.headerDescriptionText}>
-            Curated for changemakers and community leaders that are interested
-            in the field of short-term learning-based travel. We offer
-            programmes to develop a connection with local communities and
-            support the preservation of their culture. Each programme is catered
-            towards different learning objectives.
-          </p>
+          <p className={styles.headerDescriptionText}>{description}</p>
         </div>
       </BackgroundSection>
       <MDBContainer>{experienceBlocks}</MDBContainer>
