@@ -2,8 +2,15 @@
 @import '../theme/layout.scss';
 @import '../theme/colors.scss';
 
+.fullWidth {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .backgroundItemsBlock {
   text-align: center;
+  width: 60%;
 }
 
 .backgroundHeaderText {
@@ -20,5 +27,12 @@
 
 .buttons {
   display: flex;
-  justify-content: space-betwen;
+  justify-content: space-between;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .backgroundItemsBlock{
+    width: 100% !important;
+    padding: 0px $grid-small;
+  }
 }

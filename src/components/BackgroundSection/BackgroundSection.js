@@ -15,8 +15,8 @@ const BackgroundSection = ({
   const itemsPosition = childrenPosition || {
     left: "50%",
     top: "50%",
-    width: childrenFullWidth ? '100%' : 'initial'
   }
+  itemsPosition.width = childrenFullWidth ? "100%" : "initial"
 
   return (
     <div className={styles.background} style={containerStyles}>

@@ -73,14 +73,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 100%;
-
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
 
     .backgroundHeaderText {
         font-size: 40px;
+        text-align: center;
+    }
+
+    .backgroundItemsBlock {
+        text-align: center;
     }
 
     .secondaryBackgroundBlock {

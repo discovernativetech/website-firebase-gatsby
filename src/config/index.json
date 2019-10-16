@@ -26,9 +26,10 @@
                 ]
             },
             {
-                "title": "Awards",
+                "title": "Supporters",
                 "images": [
-                    "../images/sif_logo.png"
+                    "../images/sif_logo.png",
+                    "../images/ashoka-logo.png"
                 ]
             },
             {

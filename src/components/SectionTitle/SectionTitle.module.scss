@@ -14,3 +14,9 @@
     margin: 20px 0px;
     font-weight: 600;
 }
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .title {
+        font-size: $font-large;
+    }
+}

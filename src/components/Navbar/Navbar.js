@@ -45,9 +45,9 @@ const Navbar = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo.png" }) {
+      logo: file(relativePath: { eq: "logo-horizontal.png" }) {
         childImageSharp {
-          fixed(width: 60, height: 60) {
+          fixed(width: 176, height: 60, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }

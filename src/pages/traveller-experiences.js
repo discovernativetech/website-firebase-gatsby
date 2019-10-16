@@ -37,13 +37,15 @@ const TravellerExperienceList = ({ data }) => {
     <Layout>
       <SEO title="Traveller's Experiences" description={description} />
       <BackgroundSection
-        childrenPosition={{ left: "50%", top: "50%" }}
+        childrenFullWidth={true}
         image={data.fullImageHeader.childImageSharp.fluid}
         containerStyles={{ height: "550px" }}
       >
-        <div className={styles.backgroundItemsBlock}>
-          <span className={styles.backgroundHeaderText}>TRAVELLERS</span>
-          <p className={styles.headerDescriptionText}>{description}</p>
+        <div className={styles.fullWidth}>
+          <div className={styles.backgroundItemsBlock}>
+            <span className={styles.backgroundHeaderText}>TRAVELLERS</span>
+            <p className={styles.headerDescriptionText}>{description}</p>
+          </div>
         </div>
       </BackgroundSection>
       <MDBContainer>{experienceBlocks}</MDBContainer>

@@ -1,7 +1,7 @@
 import React from 'react';
 // import Img from "gatsby-image"
 import SectionTitle from '../SectionTitle/SectionTitle';
-import styles from './FAQ.module.css';
+import styles from './FAQ.module.scss';
 
 const FAQ = ({ data }) => {
     const QnAs = data && data.map((d, i) => {

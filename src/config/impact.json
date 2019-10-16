@@ -2,21 +2,21 @@
   {
     "fact": "2",
     "image": "../images/community-engaged.png",
-    "title": "Community Engaged"
+    "title": "Partner Communities"
   },
   {
-    "fact": "5",
+    "fact": "15",
     "image": "../images/native-household.png",
-    "title": "Native Host Households"
+    "title": "Native Host Households Supported"
   },
   {
     "fact": "RM5,000+",
     "image": "../images/back-to-community.png",
-    "title": "Back to the Community"
+    "title": "Contributed to Our Community Partners"
   },
   {
-    "fact": "100",
+    "fact": "150",
     "image": "../images/stories-engaged.png",
-    "title": "Stories Engaged"
+    "title": "Cross-culture interactions"
   }
 ]

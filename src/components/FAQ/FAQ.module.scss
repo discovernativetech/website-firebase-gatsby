@@ -1,0 +1,66 @@
+@import "../../theme/layout.scss";
+
+.container {
+  display: flex;
+  margin: $grid-large 0px;
+}
+
+.qnaContainer {
+  display: flex;
+  margin: $grid-small 0px;
+  width: 50%;
+}
+
+.leftBlockContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  font-size: 22px;
+  font-weight: 700;
+  color: #002445;
+}
+
+.iconContainer {
+  width: 113px;
+}
+
+.rightBlockContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .container {
+    margin: $grid-small 0px;
+  }
+  
+  .qnaContainer {
+    flex-direction: column !important;
+    width: 100%;
+    margin: $grid-small 0px;
+  }
+
+  .leftBlockContainer {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .rightBlockContainer {
+    width: 100% !important;
+    margin: 10px 0px;
+    padding: 0px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}

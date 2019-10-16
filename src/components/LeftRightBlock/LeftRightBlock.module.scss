@@ -5,7 +5,7 @@
 
 .container {
   display: flex;
-  height: 500px;
+  min-height: 500px;
   margin: $grid-small 0px;
   box-shadow: $box-shadow-standard;
 }
@@ -58,6 +58,14 @@
   .container {
     flex-direction: column;
     height: initial;
+  }
+
+  .title {
+    margin: $grid-small;
+  }
+
+  .description {
+    padding: $grid-small;
   }
   
   .leftBlockContainer {
