@@ -1,5 +1,11 @@
 @import '../../theme/layout.scss';
 
 .button {
-    margin: $grid-small;
+    margin: $grid-small $grid-large;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .button {
+        margin: $grid-small;
+    }
 }

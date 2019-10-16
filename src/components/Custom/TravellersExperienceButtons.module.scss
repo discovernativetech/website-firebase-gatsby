@@ -3,10 +3,11 @@
 .container {
   display: flex;
   justify-content: space-around;
+  margin: $grid-small $grid-large;
 }
 
 .button {
-  margin: $grid-small;
+  // margin: $grid-small;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
