@@ -23,7 +23,7 @@ const navItems = [
         path: "/traveller-experiences",
       },
       {
-        title: "Organisations",
+        title: "Teams",
         path: "/team-experiences",
       }
     ],
