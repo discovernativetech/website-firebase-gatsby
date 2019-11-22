@@ -85,5 +85,70 @@
             }
         ],
         "bookingToolHorizontal": "<div class='airbnb-embed-frame' data-id='182216' data-view='experience_booking' data-eid='MTcyNDk0NTg5' data-currency='USD'><a href='https://www.airbnb.com/experiences/182216?source=booking_widget'>View On Airbnb</a><a href='https://www.airbnb.com/experiences/182216?source=booking_widget' rel='nofollow'></a></div>"
+    },
+    {
+        "slug": "outbound-school",
+        "title": "Gombak Indigenous Affairs",
+        "listingThumbnail": "../images/gombak-thumbnail.jpg",
+        "headerImage": "../images/gombak-header.jpg",
+        "airbnbLink": "",
+        "listingSummary": "Travellers will embark on a 3-4 hour long nature journey through the protected forests of the Orang Asli Temuan community alongside the locals themselves who will act as guides and teachers along the path - teaching travellers indigenous knowledge and stories. At the end of every experience, our local guide and his family will then prepare a post-hike meal (local Asli cuisine) for travellers to enjoy at his home.",
+        "summaryTitle": "Learn the dos and don’ts of the jungle the Orang Asli way",
+        "experienceSummary": "Let our veteran Native Hosts guide you through a hands on experience in his home village, Gombak. Learn the traditional survival skills of the Orang Asli inherited through generations and apply them in the jungle, while appreciating the community’s culture of music and art.",
+        "itinerary": [
+          {
+            "title": "8:00AM",
+            "description": "Depart from pick-up point."
+          },
+          {
+            "title": "9:00AM",
+            "description": "Arrival at Kampung Batu 12. Begin Trek to Gombak Indigenous Affairs site.",
+            "image": "../images/gombak-9am.jpg"
+          },
+          {
+            "title": "9:30AM",
+            "description": "Teabreak."
+          },
+          {
+            "title": "10:00AM",
+            "description": "Forage 101. Start building a temporary shelter.",
+            "image": "../images/gombak-10am.jpg"
+          },
+          {
+            "title": "11:00AM",
+            "description": "Begin fire preparation and prepare lunch.",
+            "image": "../images/gombak-11am.jpg"
+          },
+          {
+            "title": "1:00PM",
+            "description": "Lunch."
+          },
+          {
+            "title": "1:30PM",
+            "description": "Weaving demonstration. Make an Asli headdress using plant materials."
+          },
+          {
+            "title": "2:30PM",
+            "description": "Blowpipe and puzzle game.",
+            "image": "../images/gombak-230pm.jpg"
+          },
+          {
+            "title": "3:00PM",
+            "description": "Begin Trek back to pick-up point."
+          },
+          {
+            "title": "3:30PM",
+            "description": "Depart Kampung Baru 12."
+          },
+          {
+            "title": "4:30PM",
+            "description": "Arrival at drop-off point."
+          }
+        ],
+        "testimonials": [
+        ],
+        "faq": [
+        ],
+        "bookingToolHorizontal": ""
     }
 ]

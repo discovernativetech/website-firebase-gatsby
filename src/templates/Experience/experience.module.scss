@@ -1,7 +1,8 @@
 @import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
 
 .container {
-    padding: 50px 0px 0px 0px;
+    padding: $grid-large 0px;
 }
 
 .backgroundHeader {
@@ -45,6 +46,14 @@
 .buttonContainer {
     text-align: right;
     margin: 20px 5px;
+}
+
+.comingSoon {
+    font-size: $font-large;
+    font-weight: $font-weight-bold;
+    color: $tertiary-color;
+    margin: $grid-small 0px;
+    text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {

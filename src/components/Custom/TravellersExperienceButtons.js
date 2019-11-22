@@ -15,15 +15,17 @@ const TravellersExperienceButtons = ({ learnMoreLink, bookingLink }) => {
           newTab={false}
         />
       </div>
-      <div className={styles.button}>
-        <Button
-          text={"BOOK THIS EXPERIENCE"}
-          backgroundColor={"#ED435D"}
-          textColor={"#ffff"}
-          link={bookingLink}
-          newTab={false}
-        />
-      </div>
+      {bookingLink && (
+        <div className={styles.button}>
+          <Button
+            text={"BOOK THIS EXPERIENCE"}
+            backgroundColor={"#ED435D"}
+            textColor={"#ffff"}
+            link={bookingLink}
+            newTab={false}
+          />
+        </div>
+      )}
     </div>
   )
 }

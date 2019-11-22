@@ -83,33 +83,48 @@ class TravellersExperiences extends Component {
           <Timeline className={styles.itineraryTimeline}>
             {itineraryContents}
           </Timeline>
-          <div className={styles.buttonContainer}>
-            <Button
-              text={"BOOK THIS EXPERIENCE"}
-              backgroundColor={"#ED435D"}
-              textColor={"#ffff"}
-              link={airbnbLink}
-              newTab={true}
-            />
-          </div>
-          {this.airbnbWidgetEnabled && (
-            <>
-              <SectionTitle title={"UPCOMING EXPERIENCES"} />
-              <div className={styles.bookingToolContainer}>
-                <div
-                  id="airbnbBookingTool"
-                  className={styles.airbnbBookingTool}
-                  dangerouslySetInnerHTML={{ __html: bookingToolHorizontal }}
-                />
-              </div>
-            </>
+          {airbnbLink && (
+            <div className={styles.buttonContainer}>
+              <Button
+                text={"BOOK THIS EXPERIENCE"}
+                backgroundColor={"#ED435D"}
+                textColor={"#ffff"}
+                link={airbnbLink}
+                newTab={true}
+              />
+            </div>
           )}
-          <Testimonials testimonials={testimonials} />
-          <FAQ data={faq} />
+
+          <SectionTitle title={"UPCOMING EXPERIENCES"} />
+          {this.airbnbWidgetEnabled ? (
+            <div className={styles.bookingToolContainer}>
+              <div
+                id="airbnbBookingTool"
+                className={styles.airbnbBookingTool}
+                dangerouslySetInnerHTML={{ __html: bookingToolHorizontal }}
+              />
+            </div>
+          ) : (
+            <ComingSoon />
+          )}
+
+          <SectionTitle title={"TESTIMONIALS"} />
+          {testimonials.length > 0 ? (
+            <Testimonials testimonials={testimonials} />
+          ) : (
+            <ComingSoon />
+          )}
+
+          <SectionTitle title={"FAQ"} />
+          {faq.length > 0 ? <FAQ data={faq} /> : <ComingSoon />}
         </MDBContainer>
       </Layout>
     )
   }
+}
+
+const ComingSoon = () => {
+  return <div className={styles.comingSoon}>Coming Soon</div>
 }
 
 export const query = graphql`
