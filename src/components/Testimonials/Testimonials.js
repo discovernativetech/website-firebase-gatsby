@@ -1,7 +1,6 @@
 import React from 'react';
 import { MDBCarouselItem } from 'mdbreact';
 import styles from './Testimonials.module.css'
-import SectionTitle from '../SectionTitle/SectionTitle';
 import TestimonialItem from '../TestimonialItem/TestimonialItem';
 import Slider from '../Slider/Slider';
 
@@ -20,9 +19,6 @@ const Testimonials = ({testimonials, useSlider = false}) => {
   }
   return (
     <div className={styles.container}>
-      <div className={styles.titleContainer}>
-        <SectionTitle title={"Testimonials"} />
-      </div>
       {useSlider ? 
         (
           <Slider items={testimonialsItems} showControls={true} />
