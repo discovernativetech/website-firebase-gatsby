@@ -51,12 +51,16 @@
 .comingSoon {
     font-size: $font-large;
     font-weight: $font-weight-bold;
-    color: $tertiary-color;
+    color: $primary-color;
     margin: $grid-small 0px;
-    text-align: center;
+    text-align: left;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+
+    .backgroundHeader {
+        font-size: 48px;
+    }
 
     .showcaseImages {
         flex-direction: column;

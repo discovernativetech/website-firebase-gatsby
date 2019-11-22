@@ -68,7 +68,6 @@ class TravellersExperiences extends Component {
       <Layout>
         <SEO title="Travellers" description={experienceSummary} />
         <BackgroundSection
-          childrenPosition={{ right: "-15%", bottom: "5%" }}
           image={headerImage.childImageSharp.fluid}
           containerStyles={{ height: "550px" }}
         >
