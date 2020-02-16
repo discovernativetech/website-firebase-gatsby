@@ -1,0 +1,18 @@
+@import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
+
+.itemContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: $font-xlarge;
+  width: 60%;
+}

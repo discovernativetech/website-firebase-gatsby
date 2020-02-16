@@ -55,5 +55,64 @@
                 "description": "Learn and experience the Indigenous culture and traditions in customized experiences for organisations such as corporates and schools."
             }
         ]
+    },
+    {
+        "aboutNative": [
+            {
+                "title": "UNIQUE ADVENTURES",
+                "image": "../images/v2/landing-icon-1.png",
+                "description": "Embark on a Native experience led by indigenous communities"
+            },
+            {
+                "title": "EXPERT NATIVE HOST",
+                "image": "../images/v2/landing-icon-2.png",
+                "description": "Expect personal encounters with local traditions and culture"
+            },
+            {
+                "title": "ALL INCLUSIVE PRICING",
+                "image": "../images/v2/landing-icon-3.png",
+                "description": "Travel hassle free as transportation, equipment and meals are all provided"
+            }
+        ],
+        "whatWeOffer": [
+            {
+                "title": "TEMUAN VILLAGE TRAIL",
+                "highlights": [
+                    {
+                        "icon": "../images/v2/mountain.svg",
+                        "text": "Hiking Trail"
+                    },
+                    {
+                        "icon": "../images/v2/waterfalls.svg",
+                        "text": "Waterfalls"
+                    },
+                    {
+                        "icon": "../images/v2/food.svg",
+                        "text": "Local Cuisine"
+                    }
+                ],
+                "description": "Situated 50-minutes away from the capital city of Malaysia, guests can expect to learn the tricks of the rainforest and build a deeper connection to the Orang Asli Temuan community through the act of story-telling and cultural exchange.",
+                "image": "gia-cover.png"
+            },
+            {
+                "title": "GOMBAK INDIGENOUS AFFAIRS",
+                "highlights": [
+                    {
+                        "icon": "../images/v2/foraging.svg",
+                        "text": "Foraging"
+                    },
+                    {
+                        "icon": "../images/v2/fire.svg",
+                        "text": "Fire Starting"
+                    },
+                    {
+                        "icon": "../images/v2/camp.svg",
+                        "text": "Build Shelter"
+                    }
+                ],
+                "description": "Based in the largest Orang Asli settlement in Peninsular Malaysia, guests will focus on reviving different aspects of the basecamp with activities ranging from building the structure, putting up the walls, to weaving the roof using traditional Semai tribe methods.",
+                "image": "../images/tt-cover.png"
+            }
+        ]
     }
 ]

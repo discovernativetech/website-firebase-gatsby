@@ -1,106 +1,13 @@
-@import '../theme/colors.scss';
 @import '../theme/typo.scss';
 @import '../theme/layout.scss';
+@import '../theme/colors.scss';
 
-.backgroundHeaderText {
-    @extend %backgroundHeaderText;
-    text-shadow: 2px 2px 5px grey;
-    letter-spacing: 0px;
-    font-weight: $font-weight-bold;
-    font-family: $font-family-header;
+.carouselContainer {
+  height: 500px;
+  background-color: black;
+  color: white;
 }
 
-.textBanner {
-    font-size: $font-xxxlarge !important;
-    font-weight: $font-weight-bolder;
-    color: $tertiary-color !important;
-    font-family: $font-family-header;
-}
-
-.visionMissionStyle {
-    font-size: $font-midLarge !important;
-    font-weight: $font-weight-light;
-}
-
-.aboutNativeSection {
-    color: $tertiary-color;
-    margin-bottom: $grid-xlarge;
-}
-
-.secondaryBackgroundBlock {
-    display: none;
-    margin-top: $grid-medium;
-}
-
-.sectionTitle {
-    font-weight: 600;
-    font-size: 50px;
-    text-align: center;
-}
-
-.sectionSub {
-    font-weight: bold;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.sectionContent {
-    margin: 20px 0px;
-}
-
-.affliatesContainer {
-    margin: 30px 0px;
-}
-
-.oneThirdWidth {
-    width: 300px;
-}
-
-.logos {
-    max-width: 200px;
-    max-height: 100px;
-    margin: 10px;
-}
-
-.affliatesTitle {
-    font-weight: 600;
-    color: #ED435D;
-    font-size: 26px;
-}
-
-.logoContainer {
-    margin: 30px 0px 10px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100%;
-}
-
-@media (min-width: 320px) and (max-width: 600px) {
-
-    .backgroundHeaderText {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .backgroundItemsBlock {
-        text-align: center;
-    }
-
-    .secondaryBackgroundBlock {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .textBanner {
-        font-size: $font-large !important;
-        text-align: center;
-        
-    }
-
-    .visionMissionStyle {
-        font-size: $font-standard !important;
-    }
+.downloadButton {
+  text-align: center;
 }

@@ -16,14 +16,17 @@ const SimpleBlock = ({
           <Img fixed={image} />
         </div>
       )}
-      <div className={styles.titleContainer}>
-        <span className={`${styles.title} ${titleClass}`}>{title}</span>
-      </div>
-      {description && (
-        <div className={styles.descriptionContainer}>
-          <p className={styles.description}>{description}</p>
+      <div className={styles.textContainer}>
+        <div className={styles.titleContainer}>
+          <span className={`${styles.title} ${titleClass}`}>{title}</span>
         </div>
-      )}
+        {description && (
+          <div className={styles.descriptionContainer}>
+            <p className={styles.description}>{description}</p>
+          </div>
+        )}
+      </div>
+
       {children}
     </div>
   )

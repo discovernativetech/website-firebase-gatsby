@@ -1,7 +1,8 @@
 @import './colors.scss';
 
 $font-family-header: 'Raleway', 'san-serif';
-$font-family-standard: 'Open Sans', 'san-serif';
+$font-family-standard: 'Arial', 'san-serif';
+$font-family-serif: 'Arial', 'san-serif';
 
 $font-tiny: 8px;
 $font-small: 12px;
@@ -24,4 +25,20 @@ $font-weight-bolder: 900;
     font-size: $font-xxxlarge;
     font-weight: $font-weight-bolder;
     letter-spacing: 0.3px;
+}
+
+%blockTitleText {
+    color: $primary-color;
+    font-size: $font-xlarge;
+    font-weight: $font-weight-bolder;
+    letter-spacing: 0.3px;
+    font-family: $font-family-header;
+}
+
+%blockSubtitleText {
+    color: $secondary-color;
+    font-size: $font-small;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    font-family: $font-family-header;
 }
