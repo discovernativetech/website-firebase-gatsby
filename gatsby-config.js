@@ -10,6 +10,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /v2/
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [`/coming-soon`, `/page-2`],

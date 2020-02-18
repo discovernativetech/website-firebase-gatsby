@@ -1,0 +1,34 @@
+@import '../../theme/colors.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/typo.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0px;
+  border: 2px solid $light-grey-color;
+  padding: $grid-small;
+  font-size: $font-standard;
+  color: $dark-grey-color;
+  margin: 0px $grid-medium;
+  position: relative;
+}
+
+.iconsContainer {
+  position: absolute;
+  top: -30px;
+}
+
+.textContainer {
+  margin-top: $grid-large;
+}
+
+.name {
+  text-align: center
+}
+
+.icon {
+  border-radius: 50%;
+  margin: 0px 2px;
+}

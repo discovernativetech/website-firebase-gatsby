@@ -16,6 +16,7 @@
     "gatsby-plugin-offline": "^2.2.2",
     "gatsby-plugin-page-creator": "^2.1.40",
     "gatsby-plugin-react-helmet": "^3.1.1",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.2.4",
     "gatsby-plugin-sitemap": "^2.2.5",
     "gatsby-source-filesystem": "^2.1.4",
@@ -42,7 +43,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "rm -rf .cache && gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",

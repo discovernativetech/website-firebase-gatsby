@@ -5,15 +5,17 @@ import styles from "./SimpleBlock.module.scss"
 const SimpleBlock = ({
   title,
   titleClass = "",
+  descriptionClass = "",
   description,
-  image,
+  imageSharp,
   children,
 }) => {
+  const image = imageSharp.fixed ? <Img fixed={imageSharp.fixed} /> : <Img fluid={imageSharp.fluid} /> 
   return (
     <div className={styles.container}>
       {image && (
         <div className={styles.iconContainer}>
-          <Img fixed={image} />
+           {image}
         </div>
       )}
       <div className={styles.textContainer}>
@@ -21,7 +23,7 @@ const SimpleBlock = ({
           <span className={`${styles.title} ${titleClass}`}>{title}</span>
         </div>
         {description && (
-          <div className={styles.descriptionContainer}>
+          <div className={`${descriptionClass}`}>
             <p className={styles.description}>{description}</p>
           </div>
         )}

@@ -11,3 +11,23 @@
 .downloadButton {
   text-align: center;
 }
+
+.highlightBlock {
+  max-width: 320px;
+}
+
+.plainText {
+  padding: $grid-small;
+}
+
+.borderedText {
+  width: 260px;
+  padding: $grid-small;
+  border: 2px solid $light-grey-color;
+  display: flex;
+  justify-content: center;
+}
+
+// .blockContainer {
+//   max-width: 220px;
+// }

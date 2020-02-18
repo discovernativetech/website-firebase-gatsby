@@ -83,7 +83,7 @@
                         "text": "Hiking Trail"
                     },
                     {
-                        "icon": "../images/v2/waterfalls.svg",
+                        "icon": "../images/v2/waterfall.svg",
                         "text": "Waterfalls"
                     },
                     {
@@ -92,7 +92,7 @@
                     }
                 ],
                 "description": "Situated 50-minutes away from the capital city of Malaysia, guests can expect to learn the tricks of the rainforest and build a deeper connection to the Orang Asli Temuan community through the act of story-telling and cultural exchange.",
-                "image": "gia-cover.png"
+                "image": "../images/v2/gia-cover.png"
             },
             {
                 "title": "GOMBAK INDIGENOUS AFFAIRS",
@@ -111,7 +111,41 @@
                     }
                 ],
                 "description": "Based in the largest Orang Asli settlement in Peninsular Malaysia, guests will focus on reviving different aspects of the basecamp with activities ranging from building the structure, putting up the walls, to weaving the roof using traditional Semai tribe methods.",
-                "image": "../images/tt-cover.png"
+                "image": "../images/v2/tt-cover.png"
+            }
+        ],
+        "whyWeDoIt": [
+            {
+                "image": "../images/v2/showcase.jpg",
+                "description": "Showcase the cultural heritage of the Orang Asli through community programmes."
+            },
+            {
+                "image": "../images/v2/sustainable.jpg",
+                "description": "Boost sustainable livelihoods of marginalised communities through part-time work."
+            },
+            {
+                "image": "../images/v2/empower.jpg",
+                "description": "Empower ordinary citizens to become ambassadors of Malaysian hospitality and tourism."
+            }
+        ],
+        "testimonials": [
+            {
+                "name": "Jason, United States",
+                "userIcon": "../images/v2/jason.jpg",
+                "countryIcon": "../images/v2/united_states.png",
+                "quoteText": "That was a wonderful experience- being able to learn about village life from our Orang Asli guides, and our knowledgeable and kind organizers/translators,was an absolutely unique experience. There was clearly a lot of mutual respect and friendship between them all, and that brought a warmth to the tour. Please take this opportunity to see another part of malaysia. It’s well worth it."
+            },
+            {
+                "name": "Meewun, Australia",
+                "userIcon": "../images/v2/meewun.png",
+                "countryIcon": "../images/v2/australia.png",
+                "quoteText": "It was very special to trek through rough terrain, under the cover of native trees with clear running streams. The guides took it slow so we always felt comfortable and looked after. We heard bird songs and saw some monkeys, all this within striking distance of KL. What makes this trip stand out is that it is low key. We highly recommend the trip and wish the villagers all success for this highly worthwhile enterprise that brings benefits to the locals."
+            },
+            {
+                "name": "Leslie, Malaysia",
+                "userIcon": "../images/v2/leslie.jpg",
+                "countryIcon": "../images/v2/malaysia.png",
+                "quoteText": "是一个我前所未有的徒步旅行和马来西亚土著乡村文化体验｡旅途中,当地土著给我们分享了许多,例如在森林里的禁忌､他们的信仰以及介绍各种植物种类和用途,在最后还为我们提供了他们亲自烹饪的美味佳肴,这不仅让我们品尝到当地土著特有的美食也使我们更加了解当地的饮食习惯和风俗｡这对于我这一位在大城市奋斗的青年来说确实是一个非常棒体验,让我对马来西亚的当地土著有更深一层的了解｡我个人强力推荐!"
             }
         ]
     }

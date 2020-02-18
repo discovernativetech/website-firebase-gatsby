@@ -22,8 +22,12 @@
 .description {
     font-family: $font-family-header;
     font-size: $font-small;
+    margin-bottom: 0px;
 }
 
 .textContainer {
-    padding: 0px $grid-xxlarge;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

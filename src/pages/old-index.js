@@ -80,7 +80,7 @@ const IndexPage = ({ data }) => {
                 key={index}
                 title={node.title}
                 description={node.description}
-                image={node.image.childImageSharp.fixed}
+                imageSharp={node.image.childImageSharp}
               />
             </div>
           ))}

@@ -1,0 +1,84 @@
+@import "../../theme/typo.scss";
+@import "../../theme/layout.scss";
+@import "../../theme/colors.scss";
+
+.iconHighlight {
+  margin: $grid-small 0px;
+}
+
+.icon {
+  margin-right: $grid-small;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+  font-weight: $font-weight-semi;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.imageContainer {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.imageTitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: $font-large;
+}
+
+.description {
+  font-size: $font-small;
+  color: $dark-grey-color;
+}
+
+.hoverContainer {
+  position: absolute;
+  bottom: -15%;
+  background-color: $tertiary-color;
+  color: white;
+  width: 100%;
+  opacity: 0;
+  padding: $grid-medium 0px;
+}
+
+.imageContainer:hover .hoverContainer {
+  opacity: 1;
+  bottom: 0%;
+  transition: bottom 0.3s ease-out;
+}
+
+.bookingTitle {
+  font-size: 16px;
+  margin: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 16px;
+  margin: 0px $grid-tiny;
+}
+
+.bookingCaption {
+  font-size: $font-small;
+  margin: 0px !important;
+  color: $primary-color;
+}
+
+.highlightsContainer {
+  border: 2px solid $light-grey-color;
+  padding: $grid-small $grid-medium;
+}
