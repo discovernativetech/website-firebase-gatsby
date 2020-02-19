@@ -1,0 +1,48 @@
+@import "../../theme/typo.scss";
+@import "../../theme/layout.scss";
+@import "../../theme/colors.scss";
+
+.container {
+  padding: 0px $grid-xlarge;
+  position: relative;
+  // overflow: auto;
+}
+
+.coverImage {
+  // width: 50%;
+  z-index: 1;
+  // float: right;
+}
+
+.imageContainer {
+  overflow: auto;
+}
+
+.fullWidth {
+  width: 50%;
+  float: right;
+}
+
+.articleContainer {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  background-color: $beige-color;
+  width: 50%;
+  z-index: 999;
+  transform: translate(0%, -50%);
+  padding: $grid-small $grid-large;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: -22.5px;
+  left: 5%;
+}
+
+.title {
+  font-size: 20px;
+  color: $primary-color;
+  font-weight: $font-weight-bold;
+  margin-bottom: $grid-medium;
+}

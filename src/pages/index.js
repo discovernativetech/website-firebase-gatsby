@@ -10,6 +10,7 @@ import { ImageHighlightsBlock } from "../components/CardBlock/ImageHighlightsBlo
 import { MDBContainer } from "mdbreact"
 import Testimonials from "../components/Testimonials/Testimonials"
 import SectionTitle from "../components/SectionTitle/SectionTitle"
+import { ArticlePreview } from "../components/ArticlePreview/ArticlePreview"
 
 const carouselData = [
   {
@@ -32,8 +33,9 @@ export const LandingPage = props => {
     whatWeOffer,
     whyWeDoIt,
     testimonials,
+    articlePreview,
   } = props.data.allIndexJson.edges[1].node
-  console.log(whyWeDoIt)
+  console.log(articlePreview)
   return (
     <div className={styles.container}>
       <Carousel data={carouselData} />
@@ -98,6 +100,12 @@ export const LandingPage = props => {
           }
         />
         <Testimonials testimonials={testimonials} />
+        <ArticlePreview
+          title={articlePreview.title}
+          text={articlePreview.text}
+          image={articlePreview.image.childImageSharp.fluid}
+          link={articlePreview.link}
+        />
       </MDBContainer>
     </div>
   )
@@ -108,6 +116,18 @@ export const query = graphql`
     allIndexJson {
       edges {
         node {
+          articlePreview {
+            title
+            text
+            link
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
           testimonials {
             name
             quoteText

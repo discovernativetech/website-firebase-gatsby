@@ -147,6 +147,12 @@
                 "countryIcon": "../images/v2/malaysia.png",
                 "quoteText": "是一个我前所未有的徒步旅行和马来西亚土著乡村文化体验｡旅途中,当地土著给我们分享了许多,例如在森林里的禁忌､他们的信仰以及介绍各种植物种类和用途,在最后还为我们提供了他们亲自烹饪的美味佳肴,这不仅让我们品尝到当地土著特有的美食也使我们更加了解当地的饮食习惯和风俗｡这对于我这一位在大城市奋斗的青年来说确实是一个非常棒体验,让我对马来西亚的当地土著有更深一层的了解｡我个人强力推荐!"
             }
-        ]
+        ],
+        "articlePreview": {
+            "title": "MEET OUR VETERAN NATIVE HOST",
+            "link": "https://www.airbnb.com/",
+            "image": "../images/v2/veteran.jpg",
+            "text": "Raman Bah Tuin is an Orang Asli from the Semai tribe whose efforts in the past decades have helped push the Orang Asli agenda to where it is today in Peninsular Malaysia. Over the last 30 years, he has shared his knowledge and expertise on tradition and cultural practices with hundreds of curious travellers and apprentices that he calls his “students”. He passes on the rich heritage of the Orang Asli through outdoor activities in the jungle, and the preservation of cultural arts and crafts. <br/><br/> After taking a 2-year break since his wife's passing, he has decided to co-create a Native experience with us in hopes to restore the village's pioneering campsite gradually to it's former livelihood."
+        }
     }
 ]

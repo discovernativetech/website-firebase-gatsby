@@ -7,8 +7,8 @@ const TestimonialItem = ({ quote, name, countryIcon, userIcon }) => {
   return (
     <div className={styles.container}>
       <div className={styles.iconsContainer}>
-        <Img className={styles.icon} fixed={countryIcon} />
         <Img className={styles.icon} fixed={userIcon} />
+        <Img className={styles.icon} fixed={countryIcon} />
       </div>
       <div className={styles.textContainer}>
         <p className={styles.name}>{name}</p>
