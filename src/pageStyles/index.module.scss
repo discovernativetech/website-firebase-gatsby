@@ -28,6 +28,32 @@
   justify-content: center;
 }
 
+.whiteSectionTitle p {
+  color: white !important;
+}
+
+.impactSection {
+  background-position-x: center;
+  padding: $grid-large;
+  min-height: 600px;
+  background-size: cover;
+  padding: $grid-large $grid-small;
+}
+
+.impactContainer {
+  background-color: white;
+  padding: $grid-medium $grid-large;
+  margin-top: $grid-xxlarge;
+}
+
+.impactTitle p {
+  font-size: $font-large;
+  color: $primary-color;
+  font-weight: $font-weight-bold;
+  padding: 0px $grid-small;
+  margin-bottom: 0px;
+}
+
 // .blockContainer {
 //   max-width: 220px;
 // }

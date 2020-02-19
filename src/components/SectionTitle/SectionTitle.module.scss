@@ -4,10 +4,12 @@
 
 .container {
     text-align: center;
+    margin-bottom: $grid-xlarge;
 }
 
 .title {
     @extend %blockTitleText;
+    margin-bottom: $grid-medium;
 }
 
 .subtitle {

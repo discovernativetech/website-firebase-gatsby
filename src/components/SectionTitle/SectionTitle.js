@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './SectionTitle.module.scss';
 
-const SectionTitle = ({ title, subtitle }) => {
+const SectionTitle = ({ title, subtitle, className = "", useBorder = true }) => {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${className}`}>
             <p className={styles.title}>{title}</p>
-            <span>___</span>
+            {useBorder && <span>___</span>}
             <p className={styles.subtitle}>{subtitle}</p>
         </div>
     )

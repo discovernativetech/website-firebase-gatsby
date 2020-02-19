@@ -19,8 +19,9 @@
 }
 
 .fullWidth {
-  width: 50%;
+  width: 40%;
   float: right;
+  right: 40px;
 }
 
 .articleContainer {
@@ -31,7 +32,7 @@
   width: 50%;
   z-index: 999;
   transform: translate(0%, -50%);
-  padding: $grid-small $grid-large;
+  padding: $grid-medium $grid-large $grid-large $grid-large;
 }
 
 .buttonContainer {

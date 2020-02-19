@@ -1,0 +1,12 @@
+@import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
+
+.container {
+  padding: $grid-xlarge 0px;
+}
+
+.border {
+  // border-top: 1px solid $grey-color;
+  border-bottom: 1px solid $light-grey-color;
+}

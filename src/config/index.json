@@ -153,6 +153,23 @@
             "link": "https://www.airbnb.com/",
             "image": "../images/v2/veteran.jpg",
             "text": "Raman Bah Tuin is an Orang Asli from the Semai tribe whose efforts in the past decades have helped push the Orang Asli agenda to where it is today in Peninsular Malaysia. Over the last 30 years, he has shared his knowledge and expertise on tradition and cultural practices with hundreds of curious travellers and apprentices that he calls his “students”. He passes on the rich heritage of the Orang Asli through outdoor activities in the jungle, and the preservation of cultural arts and crafts. <br/><br/> After taking a 2-year break since his wife's passing, he has decided to co-create a Native experience with us in hopes to restore the village's pioneering campsite gradually to it's former livelihood."
+        },
+        "impact": {
+            "description": "40% of our revenue from bookings are used to build the livelihoods of our Native Hosts and their communities, highlighting on indigenous wisdom in this changing world.",
+            "impacts": [
+                {
+                    "icon": "../images/v2/income.png",
+                    "title": "Increase in monthly household income"
+                },
+                {
+                    "icon": "../images/v2/community.png",
+                    "title": "Establishing community fund for development"
+                },
+                {
+                    "icon": "../images/v2/culture.png",
+                    "title": "Preserving culture and heritage"
+                }
+            ]
         }
     }
 ]
