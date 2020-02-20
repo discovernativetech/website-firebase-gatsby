@@ -15,17 +15,24 @@
 
 .highlightBlock {
   max-width: 500px;
+  min-height: 800px;
 }
 
 .plainText {
-  padding: $grid-small $grid-large;
+  max-width: 250px;
 }
 
 .borderedText {
-  padding: $grid-small;
+  padding: $grid-small $grid-medium;
   border: 2px solid $light-grey-color;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 130px;
+}
+
+.borderedText p {
+  font-size: $font-large;
 }
 
 .whiteSectionTitle p {
@@ -51,8 +58,8 @@
   color: $primary-color;
   padding: 0px $grid-small;
   margin-bottom: 0px;
+  font-weight: $font-weight-bold;
 }
-
 
 .blockContainer {
   max-width: 600px;

@@ -1,22 +1,38 @@
-import React from "react";
-import { MDBIcon } from 'mdbreact';
-import styles from './SocialMedias.module.css';
+import React from "react"
+import { MDBIcon } from "mdbreact"
+import styles from "./SocialMedias.module.scss"
 
 const SocialMedias = ({ size = "2x" }) => {
-
-    return (
-        <div className={styles.socialMedias}>
-            <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.facebook.com/discovernative/">
-                <MDBIcon fab className={styles.icon} icon="facebook-square" size={size}/>
-            </a>
-            <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.instagram.com/discovernative/">
-                <MDBIcon fab className={styles.icon} icon="instagram" size={size}/>
-            </a>
-            <a rel="noopener noreferrer" className={styles.link} target="_blank" href="https://www.linkedin.com/company/native-experiences/about/">
-                <MDBIcon fab className={styles.icon} icon="linkedin" size={size} />
-            </a>
-        </div>
-    );
+  return (
+    <>
+        <p className={styles.title}>YOU CAN ALSO FIND US HERE:</p>
+      <div className={styles.socialMedias}>
+        <a
+          rel="noopener noreferrer"
+          className={styles.link}
+          target="_blank"
+          href="https://www.facebook.com/discovernative/"
+        >
+          <MDBIcon
+            fab
+            className={styles.icon}
+            icon="facebook-square"
+            size={size}
+          />{" "}
+          <p className={styles.mediaName}>Facebook</p>
+        </a>
+        <a
+          rel="noopener noreferrer"
+          className={styles.link}
+          target="_blank"
+          href="https://www.instagram.com/discovernative/"
+        >
+          <MDBIcon fab className={styles.icon} icon="instagram" size={size} />{" "}
+          <p className={styles.mediaName}>Instagram</p>
+        </a>
+      </div>
+    </>
+  )
 }
 
-export default SocialMedias;
+export default SocialMedias

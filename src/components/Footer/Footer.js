@@ -6,37 +6,30 @@ import { MDBContainer } from 'mdbreact';
 // import Img from "gatsby-image";
 import styles from './Footer.module.scss';
 import SocialMedias from '../SocialMedias/SocialMedias';
-// import Newsletter from '../Newsletter/Newsletter';
+
+import nst from '../../images/v2/NST.png';
+import astro from '../../images/v2/ASTROAWANI.png';
+import wob from '../../images/v2/WOB.jpg';
 
 const Footer = () => {
     return (
         <>
             <div className={styles.container}>
                 <MDBContainer className={styles.innerContainer}>
-                    <div className={styles.socialMediaContainer}>
-                        <SocialMedias />
-                    </div>
                     <div className={styles.linksContainer}>
                         <div className={styles.infoContainer}>
-                            <p className={styles.infoTitle}>Stay Connected</p>
-                            <p className={styles.p}>Join us and receive our bi-weekly newsletters.</p>
-                            <div className={styles.newsletterContainer}>
+                            <p className={styles.infoTitle}>As featured on,</p>
+                            <div className={styles.mediasContainer}>
+                                <a className={styles.mediaLink} href={'/'}>
+                                    <img className={styles.mediaIcon} src={wob} alt={'news'} />
+                                </a>
+                                <a className={styles.mediaLink} href={'/'}>
+                                    <img className={styles.mediaIcon} src={nst} alt={'news'} />
+                                </a>
+                                <a className={styles.mediaLink} href={'/'}>
+                                    <img className={styles.mediaIcon} src={astro} alt={'news'} />
+                                </a>
                             </div>
-                        </div>
-                        <div className={styles.infoContainer}>
-                            <p className={styles.infoTitle}>Navigate</p>
-                            <span className={styles.navLink}>
-                                <Link className={styles.link} to="/about-us">About Us</Link>
-                            </span>
-                            <span className={styles.navLink}>
-                                <Link className={styles.link} to="/traveller-experiences">The Experience</Link>
-                            </span>
-                            <span className={styles.navLink}>
-                                <Link className={styles.link} to="/impact">Impact</Link>
-                            </span>
-                            <span className={styles.navLink}>
-                                <Link className={styles.link} to="/coming-soon">Journal</Link>
-                            </span>
                         </div>
                         <div className={styles.infoContainer}>
                             <p className={styles.infoTitle}>Contact</p>
@@ -45,12 +38,24 @@ const Footer = () => {
                             <br/>
                             <p>Bandar Sunway, Petaling Jaya</p>
                         </div>
+                        <div className={styles.infoContainer}>
+                            <p className={styles.infoTitle}>Navigate</p>
+                            <span className={styles.navLink}>
+                                <Link className={styles.link} to="/about-us">Our Experiences</Link>
+                            </span>
+                            <span className={styles.navLink}>
+                                <Link className={styles.link} to="/traveller-experiences">Testimonials</Link>
+                            </span>
+                            <span className={styles.navLink}>
+                                <Link className={styles.link} to="/impact">Contact</Link>
+                            </span>
+                        </div>
                     </div>
                 </MDBContainer>
             </div>
-            <div className={styles.copyrightContainer}>
+            {/* <div className={styles.copyrightContainer}>
                 <p className={styles.p}>Copyright 2019 discovernative.org. All Right Reserved</p>
-            </div>
+            </div> */}
         </>
     )
 }

@@ -8,10 +8,10 @@ $font-tiny: 8px;
 $font-small: 14px;
 $font-standard: 18px;
 $font-large: 20px;
-$font-midLarge: 24px;
-$font-xlarge: 36px;
-$font-xxlarge: 54px;
-$font-xxxlarge: 60px;
+$font-xlarge: 24px;
+$font-xxlarge: 32px;
+$font-xxxlarge: 40px;
+$font-xxxxlarge: 50px;
 
 $font-weight-lighter: 300;
 $font-weight-light: 400;
@@ -29,15 +29,15 @@ $font-weight-bolder: 900;
 
 %blockTitleText {
     color: $primary-color;
-    font-size: $font-xlarge;
-    font-weight: $font-weight-bolder;
+    font-size: $font-xxxlarge;
+    font-weight: $font-weight-bold;
     letter-spacing: 0.3px;
     font-family: $font-family-header;
 }
 
 %blockSubtitleText {
     color: $secondary-color;
-    font-size: $font-small;
+    font-size: $font-large;
     font-style: italic;
     letter-spacing: 0.3px;
     font-family: $font-family-serif;

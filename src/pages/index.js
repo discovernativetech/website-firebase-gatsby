@@ -13,6 +13,8 @@ import { ArticlePreview } from "../components/ArticlePreview/ArticlePreview"
 import { Section } from "../components/Section/Section"
 import Navbar from "../components/Navbar/Navbar"
 import { MDBContainer } from "mdbreact"
+import SocialMedias from "../components/SocialMedias/SocialMedias"
+import Footer from "../components/Footer/Footer"
 
 const carouselData = [
   {
@@ -63,7 +65,7 @@ export const LandingPage = props => {
           ))}
         </MultiColumns>
 
-        <div className={styles.downloadButton}>
+        {/* <div className={styles.downloadButton}>
           <Button
             text={"Download Native Guide Book"}
             backgroundColor={"#ED435D"}
@@ -71,7 +73,7 @@ export const LandingPage = props => {
             link={"/download-file"}
             newTab={false}
           />
-        </div>
+        </div> */}
       </Section>
 
       <Section>
@@ -155,6 +157,8 @@ export const LandingPage = props => {
           </MDBContainer>
         </div>
       </Section>
+      <SocialMedias />
+      <Footer />
     </div>
   )
 }

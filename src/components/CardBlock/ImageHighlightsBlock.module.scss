@@ -51,7 +51,7 @@
   color: white;
   width: 100%;
   opacity: 0;
-  padding: $grid-medium 0px;
+  padding: $grid-xlarge 0px;
 }
 
 .imageContainer:hover .hoverContainer {
@@ -60,8 +60,13 @@
   transition: bottom 0.3s ease-out;
 }
 
+.imageContainer:hover .imageTitle {
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
 .bookingTitle {
-  font-size: 16px;
+  font-size: $font-xlarge;
   margin: 0px !important;
   display: flex;
   justify-content: center;
@@ -69,18 +74,22 @@
 }
 
 .arrowIcon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   margin: 0px $grid-tiny;
 }
 
 .bookingCaption {
-  font-size: $font-small;
+  font-size: $font-standard;
   margin: 0px !important;
   color: $primary-color;
 }
 
 .highlightsContainer {
-  border: 2px solid $light-grey-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid $grey-color;
   padding: $grid-small $grid-medium;
+  min-height: 450px;
 }

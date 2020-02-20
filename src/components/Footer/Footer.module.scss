@@ -16,9 +16,10 @@
 
 .container {
     min-height: 250px;
-    background-color: #002445;
-    color: #ffffff;
+    background-color: $beige-color;
+    color: $tertiary-color;
     box-shadow: $box-shadow-standard;
+    margin-top: $grid-medium;
 }
 
 .innerContainer {
@@ -32,8 +33,7 @@
 .linksContainer {
     display: flex;
     margin: 10px 0px;
-    color: #ffffff;
-    border-top: 2px solid $primary-color;
+    color: $tertiary-color;
 }
 
 .newsletterContainer {
@@ -62,7 +62,7 @@
 }
 
 .link{
-    color: #ffffff;
+    color: $tertiary-color;
 }
 
 .copyrightContainer {
@@ -70,4 +70,12 @@
     text-align: center;
     padding: $grid-small;
     color: black;
+}
+
+.mediaLink {
+    margin: $grid-small;
+}
+
+.mediaIcon {
+    max-height: 80px;
 }
