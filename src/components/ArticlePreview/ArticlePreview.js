@@ -8,7 +8,7 @@ export const ArticlePreview = ({ image, title, text, link }) => {
     <div className={styles.container}>
       <div className={styles.imageContainer}>
         <div className={styles.fullWidth}>
-          <Img fluid={image} alt="test" className={styles.coverImage} />
+          <Img fluid={image} alt="veteran native host" className={styles.coverImage} />
         </div>
       </div>
       <div className={styles.articleContainer}>

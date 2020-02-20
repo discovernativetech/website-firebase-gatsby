@@ -79,8 +79,11 @@
 .innerContainer {
     height: 100%;
     width: 100%;
-    display: inline-block;
-    padding-top: 10px;
+    display: flex;
+    // padding-top: 10px;
+    padding: $grid-medium $grid-large;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .link {
@@ -91,7 +94,7 @@
 }
 
 .container {
-    height: 80px;
+    // height: 80px;
     width: 100%;
     display: flex;
     justify-content: center;

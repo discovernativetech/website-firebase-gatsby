@@ -8,36 +8,55 @@ import Button from "../Button/Button"
 
 const { navbarBookNow } = featureToggles
 
+// const navItems = [
+//   {
+//     title: "About Us",
+//     path: "",
+//     menu: [],
+//   },
+//   {
+//     title: "Our Experiences",
+//     path: "",
+//     menu: [
+//       {
+//         title: "Travellers",
+//         path: "/traveller-experiences",
+//       },
+//       {
+//         title: "Teams",
+//         path: "/team-experiences",
+//       }
+//     ],
+//   },
+//   {
+//     title: "Impact",
+//     path: "/impact",
+//     menu: [],
+//   },
+//   {
+//     title: "Journal",
+//     path: "/coming-soon",
+//     menu: [],
+//   },
+// ]
+
 const navItems = [
-  {
-    title: "About Us",
-    path: "/about-us",
-    menu: [],
-  },
   {
     title: "Our Experiences",
     path: "",
-    menu: [
-      {
-        title: "Travellers",
-        path: "/traveller-experiences",
-      },
-      {
-        title: "Teams",
-        path: "/team-experiences",
-      }
-    ],
-  },
-  {
-    title: "Impact",
-    path: "/impact",
     menu: [],
   },
   {
-    title: "Journal",
-    path: "/coming-soon",
+    title: "Testimonials",
+    path: "",
     menu: [],
   },
+  {
+    title: "Contact",
+    path: "",
+    menu: [],
+  },
+  
 ]
 
 const Navbar = () => {
@@ -68,7 +87,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.container}>
-      <MDBContainer className={styles.innerContainer}>
+      <div className={styles.innerContainer}>
         <div className={styles.logoContainer}>
           <Link to="/">
             <Img fixed={data.logo.childImageSharp.fixed} />
@@ -102,7 +121,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
-      </MDBContainer>
+      </div>
     </div>
   )
 }

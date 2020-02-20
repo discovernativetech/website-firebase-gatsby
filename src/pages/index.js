@@ -12,6 +12,7 @@ import Testimonials from "../components/Testimonials/Testimonials"
 import SectionTitle from "../components/SectionTitle/SectionTitle"
 import { ArticlePreview } from "../components/ArticlePreview/ArticlePreview"
 import { Section } from "../components/Section/Section"
+import Navbar from "../components/Navbar/Navbar"
 
 const carouselData = [
   {
@@ -22,7 +23,7 @@ const carouselData = [
   },
   {
     id: "experienceOffers",
-    title: "RESTORING ORANG ASLI",
+    title: "RESTORING AN INDIGENOUS VILLAGE’S CAMPSITE",
     caption: "",
     linkText: "READ MORE",
   },
@@ -43,6 +44,7 @@ export const LandingPage = props => {
   }
   return (
     <div className={styles.container}>
+      <Navbar />
       <Carousel data={carouselData} />
       <Section>
         <MDBContainer>
@@ -124,12 +126,14 @@ export const LandingPage = props => {
         </MDBContainer>
       </Section>
       <Section useBorder={false}>
-        <ArticlePreview
-          title={articlePreview.title}
-          text={articlePreview.text}
-          image={articlePreview.image.childImageSharp.fluid}
-          link={articlePreview.link}
-        />
+        <MDBContainer>
+          <ArticlePreview
+            title={articlePreview.title}
+            text={articlePreview.text}
+            image={articlePreview.image.childImageSharp.fluid}
+            link={articlePreview.link}
+          />
+        </MDBContainer>
       </Section>
       <Section useBorder={false}>
         <div className={styles.impactSection} style={impactBackgroundStyle}>
@@ -241,7 +245,7 @@ export const query = graphql`
             }
             image {
               childImageSharp {
-                fluid {
+                fluid(maxHeight: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -252,7 +256,7 @@ export const query = graphql`
             description
             image {
               childImageSharp {
-                fixed(width: 100, height: 100) {
+                fixed(width: 140, height: 140) {
                   ...GatsbyImageSharpFixed
                 }
               }

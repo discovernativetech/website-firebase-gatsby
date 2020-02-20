@@ -13,6 +13,19 @@
 }
 
 .title {
-  font-size: $font-xlarge;
+  font-size: $font-xxlarge;
   width: 60%;
+  padding: 0px $grid-xxxlarge;
+}
+
+.videoContainer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -99;
+  width: 100%;
+}
+
+.video {
+  width: 100%;
 }
