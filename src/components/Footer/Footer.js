@@ -6,7 +6,7 @@ import { MDBContainer } from 'mdbreact';
 // import Img from "gatsby-image";
 import styles from './Footer.module.scss';
 import SocialMedias from '../SocialMedias/SocialMedias';
-import Newsletter from '../Newsletter/Newsletter';
+// import Newsletter from '../Newsletter/Newsletter';
 
 const Footer = () => {
     return (
@@ -21,7 +21,6 @@ const Footer = () => {
                             <p className={styles.infoTitle}>Stay Connected</p>
                             <p className={styles.p}>Join us and receive our bi-weekly newsletters.</p>
                             <div className={styles.newsletterContainer}>
-                                <Newsletter />
                             </div>
                         </div>
                         <div className={styles.infoContainer}>

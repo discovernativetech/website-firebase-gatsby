@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import styles from "./ImageHighlightsBlock.module.scss"
 
-import ArrowIcon from "../../images/v2/arrow.svg"
+// import ArrowIcon from "../../images/v2/arrow.svg"
 
 export const ImageHighlightsBlock = ({
   coverImage,
@@ -30,7 +30,7 @@ export const ImageHighlightsBlock = ({
         <div className={styles.hoverContainer}>
           <p className={styles.bookingTitle}>
             BOOK THIS EXPERIENCE NOW
-            <ArrowIcon className={styles.arrowIcon} />
+            {/* <ArrowIcon className={styles.arrowIcon} /> */}
           </p>
           <p className={styles.bookingCaption}>
             This link will redirect you to our booking page.
