@@ -7,12 +7,12 @@ import MultiColumns from "../components/MultiColumns/MultiColumns"
 import SimpleBlock from "../components/CardBlock/SimpleBlock"
 import Button from "../components/Button/Button"
 import { ImageHighlightsBlock } from "../components/CardBlock/ImageHighlightsBlock"
-import { MDBContainer } from "mdbreact"
 import Testimonials from "../components/Testimonials/Testimonials"
 import SectionTitle from "../components/SectionTitle/SectionTitle"
 import { ArticlePreview } from "../components/ArticlePreview/ArticlePreview"
 import { Section } from "../components/Section/Section"
 import Navbar from "../components/Navbar/Navbar"
+import { MDBContainer } from "mdbreact"
 
 const carouselData = [
   {
@@ -47,93 +47,83 @@ export const LandingPage = props => {
       <Navbar />
       <Carousel data={carouselData} />
       <Section>
-        <MDBContainer>
-          <MultiColumns
-            title="Looking for things to do in KL?"
-            subtitle="At Native, we provide"
-            useBorder={false}
-          >
-            {aboutNative.map((node, index) => (
-              <SimpleBlock
-                key={index}
+        <MultiColumns
+          title="Looking for things to do in KL?"
+          subtitle="At Native, we provide"
+          useBorder={false}
+        >
+          {aboutNative.map((node, index) => (
+            <SimpleBlock
+              key={index}
+              title={node.title}
+              description={node.description}
+              descriptionClass={styles.plainText}
+              imageSharp={node.image.childImageSharp}
+            />
+          ))}
+        </MultiColumns>
+
+        <div className={styles.downloadButton}>
+          <Button
+            text={"Download Native Guide Book"}
+            backgroundColor={"#ED435D"}
+            textColor={"#ffff"}
+            link={"/download-file"}
+            newTab={false}
+          />
+        </div>
+      </Section>
+
+      <Section>
+        <MultiColumns
+          title="What we offer"
+          subtitle="Native currently provides two immersive cultural experiences led by the Orang Asli, who are known as the indigenous communities in Malaysia."
+        >
+          {whatWeOffer.map((node, index) => (
+            <div className={styles.highlightBlock} key={index}>
+              <ImageHighlightsBlock
                 title={node.title}
                 description={node.description}
-                descriptionClass={styles.plainText}
+                highlights={node.highlights}
+                coverImage={node.image}
+              />
+            </div>
+          ))}
+        </MultiColumns>
+      </Section>
+      <Section>
+        <MultiColumns
+          title="Why We Do It"
+          subtitle="Native works with two Orang Asli communities in Peninsular Malaysia, the Temuan and Semai tribe, in order to:"
+        >
+          {whyWeDoIt.map((node, index) => (
+            <div className={styles.blockContainer} key={index}>
+              <SimpleBlock
+                title=""
+                description={node.description}
+                descriptionClass={styles.borderedText}
                 imageSharp={node.image.childImageSharp}
               />
-            ))}
-          </MultiColumns>
-
-          <div className={styles.downloadButton}>
-            <Button
-              text={"Download Native Guide Book"}
-              backgroundColor={"#ED435D"}
-              textColor={"#ffff"}
-              link={"/download-file"}
-              newTab={false}
-            />
-          </div>
-        </MDBContainer>
-      </Section>
-
-      <Section>
-        <MDBContainer>
-          <MultiColumns
-            title="What we offer"
-            subtitle="Native currently provides two immersive cultural experiences led by the Orang Asli, who are known as the indigenous communities in Malaysia."
-          >
-            {whatWeOffer.map((node, index) => (
-              <div className={styles.highlightBlock} key={index}>
-                <ImageHighlightsBlock
-                  title={node.title}
-                  description={node.description}
-                  highlights={node.highlights}
-                  coverImage={node.image}
-                />
-              </div>
-            ))}
-          </MultiColumns>
-        </MDBContainer>
+            </div>
+          ))}
+        </MultiColumns>
       </Section>
       <Section>
-        <MDBContainer>
-          <MultiColumns
-            title="Why We Do It"
-            subtitle="Native works with two Orang Asli communities in Peninsular Malaysia, the Temuan and Semai tribe, in order to:"
-          >
-            {whyWeDoIt.map((node, index) => (
-              <div className={styles.blockContainer} key={index}>
-                <SimpleBlock
-                  title=""
-                  description={node.description}
-                  descriptionClass={styles.borderedText}
-                  imageSharp={node.image.childImageSharp}
-                />
-              </div>
-            ))}
-          </MultiColumns>
-        </MDBContainer>
-      </Section>
-      <Section>
-        <MDBContainer>
-          <SectionTitle
-            title={"Testimonials"}
-            subtitle={
-              "Connecting through shared stories across time and place. Read our guests’ stories."
-            }
-          />
-          <Testimonials testimonials={testimonials} />
-        </MDBContainer>
+        <SectionTitle
+          title={"Testimonials"}
+          subtitle={
+            "Connecting through shared stories across time and place. Read our guests’ stories."
+          }
+        />
+        <Testimonials testimonials={testimonials} />
       </Section>
       <Section useBorder={false}>
-        <MDBContainer>
-          <ArticlePreview
-            title={articlePreview.title}
-            text={articlePreview.text}
-            image={articlePreview.image.childImageSharp.fluid}
-            link={articlePreview.link}
-          />
-        </MDBContainer>
+        <ArticlePreview
+          title={articlePreview.title}
+          text={articlePreview.text}
+          image={articlePreview.image.childImageSharp.fluid}
+          link={articlePreview.link}
+        />
       </Section>
       <Section useBorder={false}>
         <div className={styles.impactSection} style={impactBackgroundStyle}>
@@ -211,14 +201,14 @@ export const query = graphql`
             quoteText
             userIcon {
               childImageSharp {
-                fixed(width: 60, height: 60) {
+                fixed(width: 80, height: 80) {
                   ...GatsbyImageSharpFixed
                 }
               }
             }
             countryIcon {
               childImageSharp {
-                fixed(width: 60, height: 60) {
+                fixed(width: 80, height: 80) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -228,8 +218,8 @@ export const query = graphql`
             description
             image {
               childImageSharp {
-                fixed(width: 300, height: 232) {
-                  ...GatsbyImageSharpFixed
+                fluid {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -256,7 +246,7 @@ export const query = graphql`
             description
             image {
               childImageSharp {
-                fixed(width: 140, height: 140) {
+                fixed(width: 200, height: 200) {
                   ...GatsbyImageSharpFixed
                 }
               }

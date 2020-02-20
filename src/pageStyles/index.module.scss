@@ -6,6 +6,7 @@
   height: 500px;
   background-color: black;
   color: white;
+  font-family: $font-family-serif;
 }
 
 .downloadButton {
@@ -13,15 +14,14 @@
 }
 
 .highlightBlock {
-  max-width: 320px;
+  max-width: 500px;
 }
 
 .plainText {
-  padding: $grid-small;
+  padding: $grid-small $grid-large;
 }
 
 .borderedText {
-  width: 300px;
   padding: $grid-small;
   border: 2px solid $light-grey-color;
   display: flex;
@@ -49,11 +49,12 @@
 .impactTitle p {
   font-size: $font-large;
   color: $primary-color;
-  font-weight: $font-weight-bold;
   padding: 0px $grid-small;
   margin-bottom: 0px;
 }
 
-// .blockContainer {
-//   max-width: 220px;
-// }
+
+.blockContainer {
+  max-width: 600px;
+  flex: 1 1 0px;
+}

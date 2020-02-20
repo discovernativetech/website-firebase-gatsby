@@ -25,6 +25,7 @@
 }
 
 .articleContainer {
+  font-size: $font-standard;
   position: absolute;
   top: 50%;
   left: 5%;
@@ -32,7 +33,7 @@
   width: 50%;
   z-index: 999;
   transform: translate(0%, -50%);
-  padding: $grid-medium $grid-large $grid-large $grid-large;
+  padding: $grid-medium $grid-xlarge $grid-large $grid-xlarge;
 }
 
 .buttonContainer {
@@ -42,7 +43,8 @@
 }
 
 .title {
-  font-size: 20px;
+  font-family: $font-family-serif;
+  font-size: $font-xlarge;
   color: $primary-color;
   font-weight: $font-weight-bold;
   margin-bottom: $grid-medium;

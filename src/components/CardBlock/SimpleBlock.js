@@ -10,14 +10,14 @@ const SimpleBlock = ({
   imageSharp,
   children,
 }) => {
-  const image = imageSharp.fixed ? <Img fixed={imageSharp.fixed} /> : <Img fluid={imageSharp.fluid} /> 
+  const image = imageSharp.fixed ? (
+    <Img fixed={imageSharp.fixed} />
+  ) : (
+    <Img fluid={imageSharp.fluid} />
+  )
   return (
     <div className={styles.container}>
-      {image && (
-        <div className={styles.iconContainer}>
-           {image}
-        </div>
-      )}
+      {image && <div className={styles.iconContainer}>{image}</div>}
       <div className={styles.textContainer}>
         <div className={styles.titleContainer}>
           <span className={`${styles.title} ${titleClass}`}>{title}</span>

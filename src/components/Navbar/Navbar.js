@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { MDBContainer, MDBIcon } from "mdbreact"
+import { MDBIcon } from "mdbreact"
 import Img from "gatsby-image"
 import featureToggles from "../../config/featureToggle"
 import styles from "./Navbar.module.scss"
