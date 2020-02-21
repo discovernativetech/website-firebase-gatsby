@@ -5,14 +5,12 @@ import styles from "../pageStyles/index.module.scss"
 import { Carousel } from "../components/Carousel/Carousel"
 import MultiColumns from "../components/MultiColumns/MultiColumns"
 import SimpleBlock from "../components/CardBlock/SimpleBlock"
-import Button from "../components/Button/Button"
 import { ImageHighlightsBlock } from "../components/CardBlock/ImageHighlightsBlock"
 import Testimonials from "../components/Testimonials/Testimonials"
 import SectionTitle from "../components/SectionTitle/SectionTitle"
 import { ArticlePreview } from "../components/ArticlePreview/ArticlePreview"
 import { Section } from "../components/Section/Section"
 import Navbar from "../components/Navbar/Navbar"
-import { MDBContainer } from "mdbreact"
 import SocialMedias from "../components/SocialMedias/SocialMedias"
 import Footer from "../components/Footer/Footer"
 
@@ -158,7 +156,7 @@ export const LandingPage = props => {
           />
           <Section useBorder={false}>
             <div className={styles.impactContainer}>
-              <p>{impact.description}</p>
+              <p className={styles.impactDescription}>{impact.description}</p>
               <MultiColumns useBorder={false}>
                 {impact.impacts.map((data, index) => {
                   return (
