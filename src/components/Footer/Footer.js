@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link, useStaticQuery, graphql  } from "gatsby";
-import { Link  } from "gatsby";
+// import { Link  } from "gatsby";
 
 import { MDBContainer } from 'mdbreact';
 // import Img from "gatsby-image";
