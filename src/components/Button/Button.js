@@ -10,23 +10,36 @@ const Button = ({
   outlineColor,
   textColor,
   backgroundColor = "#ffff",
+  style = "primary",
   newTab = true,
   onClick,
 }) => {
-  const customStyle = {
-    color: textColor,
-    border: outlineColor ? `2px solid ${outlineColor}` : "none",
-    backgroundColor,
+  // const customStyle = {
+  //   color: textColor,
+  //   border: outlineColor ? `2px solid ${outlineColor}` : "none",
+  //   backgroundColor,
+  // }
+
+  let styleClass;
+  switch (style) {
+    case "tertiary":
+      styleClass = styles.tertiary
+      break
+    case "secondary":
+      styleClass = styles.secondary
+      break
+    default:
+    case "primary":
+      styleClass = styles.primary
   }
 
   const sendEvent = data => e => {
-    console.log("sending event.." + data)
     ReactGA.event({
       category: data,
       action: "Button Click",
     })
     if (onClick) {
-      onClick(e);
+      onClick(e)
     }
   }
 
@@ -34,8 +47,8 @@ const Button = ({
     <ButtonWrapper link={link} newTab={newTab}>
       <button
         type={type}
-        className={styles.button}
-        style={customStyle}
+        className={`${styles.button} ${styleClass}`}
+        // style={customStyle}
         onClick={sendEvent(`${text} - ${link}`)}
       >
         {text}

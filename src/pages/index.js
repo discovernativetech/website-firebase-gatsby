@@ -16,18 +16,36 @@ import { MDBContainer } from "mdbreact"
 import SocialMedias from "../components/SocialMedias/SocialMedias"
 import Footer from "../components/Footer/Footer"
 
+import video from '../images/v2/video.mp4';
+import giaCover from '../images/v2/GIA.png';
+import ttCover from '../images/v2/TVT.png';
+
 const carouselData = [
   {
     id: "experienceOffers",
     title: "DISCOVER MALAYSIA THROUGH A NATIVE ADVENTURE",
     caption: "Connecting through shared stories across place and time",
     linkText: "Find An Experience",
+    video: video,
+    style: 'primary'
   },
   {
     id: "experienceOffers",
     title: "RESTORING AN INDIGENOUS VILLAGE’S CAMPSITE",
     caption: "",
+    image: giaCover,
     linkText: "READ MORE",
+    style: 'secondary',
+    link: "https://abnb.me/blL7ZcmFf4"
+  },
+  {
+    id: "experienceOffers",
+    title: "TRAIL THROUGH A PROTECTED RAINFOREST",
+    caption: "",
+    image: ttCover,
+    linkText: "READ MORE",
+    style: 'secondary',
+    link: "https://www.airbnb.com/experiences/182216"
   },
 ]
 

@@ -10,13 +10,15 @@
   justify-content: center;
   height: 100%;
   text-align: center;
+  background-size: cover;
 }
 
 .title {
-  font-size: $font-xxlarge;
+  font-size: 70px;
   width: 60%;
   padding: 0px $grid-xxxlarge;
   font-family: $font-family-serif;
+  font-weight: $font-weight-semi;
 }
 
 .videoContainer {

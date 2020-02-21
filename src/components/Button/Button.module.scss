@@ -1,14 +1,18 @@
 @import '../../theme/animation.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
+@import '../../theme/typo.scss';
 
 .button {
     text-align: center;
     font-size: 16px;
-    // font-weight: 600;
     min-height: 45px;
-    padding: 10px 30px;
+    padding: $grid-medium - 2 $grid-medium;
     outline: none !important;
+    border: none;
     white-space: nowrap;
-    box-shadow: $box-shadow-standard
+    // box-shadow: $box-shadow-standard;
+    font-weight: $font-weight-semi;
 }
 
 .button:focus {
@@ -17,4 +21,20 @@
 
 .button:hover {
     opacity: 0.95;
+}
+
+.primary {
+    color: $primary-color;
+    background-color: $beige-color;
+}
+
+.secondary {
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+.tertiary {
+    color: white;
+    background-color: $tertiary-color;
 }
