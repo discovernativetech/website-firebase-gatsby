@@ -104,6 +104,7 @@ export const LandingPage = props => {
               <ImageHighlightsBlock
                 title={node.title}
                 description={node.description}
+                link={node.link}
                 highlights={node.highlights}
                 coverImage={node.image}
               />
@@ -248,6 +249,7 @@ export const query = graphql`
           }
           whatWeOffer {
             title
+            link
             description
             highlights {
               icon {

@@ -5,7 +5,6 @@ import { Link  } from "gatsby";
 import { MDBContainer } from 'mdbreact';
 // import Img from "gatsby-image";
 import styles from './Footer.module.scss';
-import SocialMedias from '../SocialMedias/SocialMedias';
 
 import nst from '../../images/v2/NST.png';
 import astro from '../../images/v2/ASTROAWANI.png';
@@ -20,13 +19,13 @@ const Footer = () => {
                         <div className={styles.infoContainer}>
                             <p className={styles.infoTitle}>As featured on,</p>
                             <div className={styles.mediasContainer}>
-                                <a className={styles.mediaLink} href={'/'}>
+                                <a className={styles.mediaLink} target="__blank" href={'https://www.worldofbuzz.com/you-can-actually-visit-an-orang-asli-village-hang-out-with-locals-via-this-activity-on-airbnb/'}>
                                     <img className={styles.mediaIcon} src={wob} alt={'news'} />
                                 </a>
-                                <a className={styles.mediaLink} href={'/'}>
+                                <a className={styles.mediaLink} target="__blank" href={'https://www.nst.com.my/lifestyle/sunday-vibes/2019/12/547875/native-social-enterprise-featuring-orang-aslis-thats-powered'}>
                                     <img className={styles.mediaIcon} src={nst} alt={'news'} />
                                 </a>
-                                <a className={styles.mediaLink} href={'/'}>
+                                <a className={styles.mediaLink} target="__blank" href={'https://www.youtube.com/watch?v=-MgjXRgCeXE'}>
                                     <img className={styles.mediaIcon} src={astro} alt={'news'} />
                                 </a>
                             </div>

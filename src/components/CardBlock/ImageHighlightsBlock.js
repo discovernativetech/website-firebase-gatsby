@@ -9,6 +9,7 @@ export const ImageHighlightsBlock = ({
   title,
   highlights,
   description,
+  link
 }) => {
   const icons = highlights.map((highlight, index) => {
     return (
@@ -27,15 +28,17 @@ export const ImageHighlightsBlock = ({
       <div className={styles.imageContainer}>
         <Img fluid={coverImage.childImageSharp.fluid} />
         <span className={styles.imageTitle}>{title}</span>
-        <div className={styles.hoverContainer}>
-          <p className={styles.bookingTitle}>
-            BOOK THIS EXPERIENCE NOW
-            <ArrowIcon className={styles.arrowIcon} />
-          </p>
-          <p className={styles.bookingCaption}>
-            This link will redirect you to our booking page.
-          </p>
-        </div>
+        <a href={link} target="__blank">
+          <div className={styles.hoverContainer}>
+            <p className={styles.bookingTitle}>
+              BOOK THIS EXPERIENCE NOW
+              <ArrowIcon className={styles.arrowIcon} />
+            </p>
+            <p className={styles.bookingCaption}>
+              This link will redirect you to our booking page.
+            </p>
+          </div>
+        </a>
       </div>
       <div className={styles.highlightsContainer}>
         <div className={styles.iconContainer}>{icons}</div>
