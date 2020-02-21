@@ -7,12 +7,13 @@
     text-align: center;
     font-size: 16px;
     min-height: 45px;
-    padding: $grid-medium - 2 $grid-medium;
+    padding: $grid-medium - 2 $grid-large;
     outline: none !important;
     border: none;
     white-space: nowrap;
     // box-shadow: $box-shadow-standard;
     font-weight: $font-weight-semi;
+    font-size: $font-large
 }
 
 .button:focus {
