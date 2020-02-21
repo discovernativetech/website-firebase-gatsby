@@ -28,7 +28,7 @@ export const CarouselItem = ({
         <p className={styles.caption}>{caption}</p>
         <br />
         <Button
-          style={buttonStyle}
+          buttonStyle={buttonStyle}
           text={linkText}
           link={link}
           newTab={false}

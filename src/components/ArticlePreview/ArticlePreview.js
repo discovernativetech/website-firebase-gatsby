@@ -17,7 +17,7 @@ export const ArticlePreview = ({ image, title, text, link }) => {
         <div className={styles.buttonContainer}>
           <Button
             text={"READ MORE"}
-            style="tertiary"
+            buttonStyle="tertiary"
             link={link}
             newTab={true}
           />

@@ -10,7 +10,7 @@ import nst from '../../images/v2/NST.png';
 import astro from '../../images/v2/ASTROAWANI.png';
 import wob from '../../images/v2/WOB.jpg';
 
-const Footer = () => {
+const Footer = ({ experiencesRef, testimonialsRef, contactRef}) => {
     return (
         <>
             <div className={styles.container}>
@@ -39,14 +39,26 @@ const Footer = () => {
                         </div>
                         <div className={styles.infoContainer}>
                             <p className={styles.infoTitle}>Navigate</p>
-                            <span className={styles.navLink}>
-                                <Link className={styles.link} to="/about-us">Our Experiences</Link>
+                            <span className={styles.navLink} 
+                                onClick={
+                                    () =>{experiencesRef.current.scrollIntoView({ behavior: 'smooth' });}
+                                }
+                            >
+                                <span className={styles.link} to="/about-us">Our Experiences</span>
                             </span>
-                            <span className={styles.navLink}>
-                                <Link className={styles.link} to="/traveller-experiences">Testimonials</Link>
+                            <span className={styles.navLink}  
+                                onClick={
+                                    () =>{testimonialsRef.current.scrollIntoView({ behavior: 'smooth' });}
+                                }
+                            >
+                                <span className={styles.link} to="/traveller-experiences">Testimonials</span>
                             </span>
-                            <span className={styles.navLink}>
-                                <Link className={styles.link} to="/impact">Contact</Link>
+                            <span className={styles.navLink}  
+                                onClick={
+                                    () =>{contactRef.current.scrollIntoView({ behavior: 'smooth' });}
+                                }
+                            >
+                                <span className={styles.link} to="/impact">Contact</span>
                             </span>
                         </div>
                     </div>

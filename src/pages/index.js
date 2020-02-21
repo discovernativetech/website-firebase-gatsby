@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { graphql } from "gatsby"
 
 import styles from "../pageStyles/index.module.scss"
@@ -14,9 +14,9 @@ import Navbar from "../components/Navbar/Navbar"
 import SocialMedias from "../components/SocialMedias/SocialMedias"
 import Footer from "../components/Footer/Footer"
 
-import video from '../images/v2/video.mp4';
-import giaCover from '../images/v2/GIA.png';
-import ttCover from '../images/v2/TVT.png';
+import video from "../images/v2/video.mp4"
+import giaCover from "../images/v2/GIA.png"
+import ttCover from "../images/v2/TVT.png"
 
 const carouselData = [
   {
@@ -25,7 +25,7 @@ const carouselData = [
     caption: "Travel with a purpose",
     linkText: "Find An Experience",
     video: video,
-    style: 'primary'
+    style: "primary",
   },
   {
     id: "experienceOffers",
@@ -33,8 +33,8 @@ const carouselData = [
     caption: "",
     image: giaCover,
     linkText: "READ MORE",
-    style: 'secondary',
-    link: "https://abnb.me/blL7ZcmFf4"
+    style: "secondary",
+    link: "https://abnb.me/blL7ZcmFf4",
   },
   {
     id: "experienceOffers",
@@ -42,12 +42,16 @@ const carouselData = [
     caption: "",
     image: ttCover,
     linkText: "READ MORE",
-    style: 'secondary',
-    link: "https://www.airbnb.com/experiences/182216"
+    style: "secondary",
+    link: "https://www.airbnb.com/experiences/182216",
   },
 ]
 
 export const LandingPage = props => {
+  const experiencesRef = React.createRef();
+  const testimonialsRef = React.createRef()
+  const contactRef = React.createRef()
+
   const {
     aboutNative,
     whatWeOffer,
@@ -62,7 +66,7 @@ export const LandingPage = props => {
   }
   return (
     <div className={styles.container}>
-      <Navbar />
+      <Navbar experiencesRef={experiencesRef} testimonialsRef={testimonialsRef} contactRef={contactRef} />
       <Carousel data={carouselData} />
       <Section>
         <MultiColumns
@@ -91,8 +95,7 @@ export const LandingPage = props => {
           />
         </div> */}
       </Section>
-
-      <Section id="offerExperiences">
+      <Section ref={experiencesRef}>
         <MultiColumns
           title="What we offer"
           subtitle="Native currently provides two immersive cultural experiences led by the Orang Asli, who are known as the indigenous communities in Malaysia."
@@ -127,7 +130,7 @@ export const LandingPage = props => {
           ))}
         </MultiColumns>
       </Section>
-      <Section>
+      <Section ref={testimonialsRef}>
         <SectionTitle
           title={"Testimonials"}
           subtitle={
@@ -145,37 +148,37 @@ export const LandingPage = props => {
         />
       </Section>
       {/* <Section useBorder={false}> */}
-        <div className={styles.impactSection} style={impactBackgroundStyle}>
-          <SectionTitle
-            className={styles.whiteSectionTitle}
-            useBorder={false}
-            title={"Our Impact"}
-            subtitle={
-              "Our Native Hosts have had the opportunity to host hundreds of guests from all over the world."
-            }
-          />
-          <Section useBorder={false}>
-            <div className={styles.impactContainer}>
-              <p className={styles.impactDescription}>{impact.description}</p>
-              <MultiColumns useBorder={false}>
-                {impact.impacts.map((data, index) => {
-                  return (
-                    <SimpleBlock
-                      key={index}
-                      title={""}
-                      description={data.title}
-                      descriptionClass={styles.impactTitle}
-                      imageSharp={data.icon.childImageSharp}
-                    />
-                  )
-                })}
-              </MultiColumns>
-            </div>
-          </Section>
-        </div>
+      <div className={styles.impactSection} style={impactBackgroundStyle}>
+        <SectionTitle
+          className={styles.whiteSectionTitle}
+          useBorder={false}
+          title={"Our Impact"}
+          subtitle={
+            "Our Native Hosts have had the opportunity to host hundreds of guests from all over the world."
+          }
+        />
+        <Section useBorder={false}>
+          <div className={styles.impactContainer}>
+            <p className={styles.impactDescription}>{impact.description}</p>
+            <MultiColumns useBorder={false}>
+              {impact.impacts.map((data, index) => {
+                return (
+                  <SimpleBlock
+                    key={index}
+                    title={""}
+                    description={data.title}
+                    descriptionClass={styles.impactTitle}
+                    imageSharp={data.icon.childImageSharp}
+                  />
+                )
+              })}
+            </MultiColumns>
+          </div>
+        </Section>
+      </div>
       {/* </Section> */}
-      <SocialMedias />
-      <Footer />
+      <SocialMedias ref={contactRef} />
+      <Footer experiencesRef={experiencesRef} testimonialsRef={testimonialsRef} contactRef={contactRef} />
     </div>
   )
 }

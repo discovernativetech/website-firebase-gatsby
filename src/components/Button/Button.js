@@ -7,10 +7,7 @@ const Button = ({
   type = "button",
   text,
   link,
-  outlineColor,
-  textColor,
-  backgroundColor = "#ffff",
-  style = "primary",
+  buttonStyle = "primary",
   newTab = true,
   onClick,
 }) => {
@@ -21,7 +18,7 @@ const Button = ({
   // }
 
   let styleClass;
-  switch (style) {
+  switch (buttonStyle) {
     case "tertiary":
       styleClass = styles.tertiary
       break

@@ -2,10 +2,10 @@ import React from "react"
 import { MDBIcon } from "mdbreact"
 import styles from "./SocialMedias.module.scss"
 
-const SocialMedias = ({ size = "2x" }) => {
+const SocialMedias = React.forwardRef(({ size = "2x" }, ref) => {
   return (
-    <>
-        <p className={styles.title}>YOU CAN ALSO FIND US HERE:</p>
+    <div ref={ref}>
+      <p className={styles.title}>YOU CAN ALSO FIND US HERE:</p>
       <div className={styles.socialMedias}>
         <a
           rel="noopener noreferrer"
@@ -31,8 +31,8 @@ const SocialMedias = ({ size = "2x" }) => {
           <p className={styles.mediaName}>Instagram</p>
         </a>
       </div>
-    </>
+    </div>
   )
-}
+});
 
 export default SocialMedias

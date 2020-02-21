@@ -6,8 +6,6 @@ import featureToggles from "../../config/featureToggle"
 import styles from "./Navbar.module.scss"
 import Button from "../Button/Button"
 
-import ScrollToElement from "scroll-to-element"
-
 const { navbarBookNow } = featureToggles
 
 // const navItems = [
@@ -42,34 +40,30 @@ const { navbarBookNow } = featureToggles
 //   },
 // ]
 
-const navItems = [
-  {
-    title: "Our Experiences",
-    path: "#offerExperiences",
-    menu: [],
-  },
-  {
-    title: "Testimonials",
-    path: "#offerExperiences",
-    menu: [],
-  },
-  {
-    title: "Contact",
-    path: "#offerExperiences",
-    menu: [],
-  },
-]
 
-const scrollToElement = (id) => {
-  scrollToElement(id, {
-    offset: 0,
-    ease: "out-bounce",
-    duration: 1500,
-  })
-}
-
-const Navbar = () => {
+const Navbar = ({ experiencesRef,contactRef, testimonialsRef }) => {
   const [toggleMenu, setToggleMenu] = useState(false)
+
+  const navItems = [
+    {
+      title: "Our Experiences",
+      path: "#",
+      ref: experiencesRef,
+      menu: [],
+    },
+    {
+      title: "Testimonials",
+      path: "#",
+      ref: testimonialsRef,
+      menu: [],
+    },
+    {
+      title: "Contact",
+      path: "#",
+      ref: contactRef,
+      menu: [],
+    },
+  ]
 
   const data = useStaticQuery(graphql`
     query {
@@ -89,6 +83,7 @@ const Navbar = () => {
       title={item.title}
       path={item.path}
       menuItems={item.menu}
+      elementRef={item.ref}
     />
   ))
 
@@ -135,7 +130,7 @@ const Navbar = () => {
   )
 }
 
-const NavBarItem = ({ title, path, menuItems }) => {
+const NavBarItem = ({ title, path, menuItems, elementRef }) => {
   const [hoverMenu, setHoverMenu] = useState(false)
   const menuStyles = hoverMenu
     ? { visibility: "visible", opacity: "1" }
@@ -173,8 +168,15 @@ const NavBarItem = ({ title, path, menuItems }) => {
       onClick={handleMouseClick}
     >
       <span className={styles.navLink}>
-        {path.charAt(1) === "#" ? (
-          <span className={styles.link} onClick={scrollToElement(path)}>
+        {elementRef ? (
+          <span
+            className={styles.link}
+            onClick={() =>
+              {
+                elementRef.current.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          >
             {title}
           </span>
         ) : (
