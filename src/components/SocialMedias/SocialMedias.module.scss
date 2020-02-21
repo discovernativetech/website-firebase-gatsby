@@ -37,7 +37,8 @@
     color: $dark-grey-color;
     font-weight: $font-weight-semi;
     text-align: center;
-    margin-bottom: 2px;
+    margin: $grid-small 0px;
+    margin-top: $grid-large;
 }
 
 .mediaName {

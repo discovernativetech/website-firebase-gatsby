@@ -13,10 +13,15 @@
   background-size: cover;
 }
 
+.caption {
+  font-family: $font-family-serif;
+  font-size: $font-xxlarge;
+}
+
 .title {
   font-size: 70px;
   width: 60%;
-  padding: 0px $grid-xxxlarge;
+  padding: 0px $grid-xlarge;
   font-family: $font-family-serif;
   font-weight: $font-weight-semi;
 }
@@ -27,8 +32,12 @@
   left: 0%;
   z-index: -99;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video {
   width: 100%;
+  height: 900px;
+  object-fit: fill
 }

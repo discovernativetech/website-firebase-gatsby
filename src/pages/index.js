@@ -24,7 +24,7 @@ const carouselData = [
   {
     id: "experienceOffers",
     title: "DISCOVER MALAYSIA THROUGH A NATIVE ADVENTURE",
-    caption: "Connecting through shared stories across place and time",
+    caption: "Travel with a purpose",
     linkText: "Find An Experience",
     video: video,
     style: 'primary'
@@ -94,7 +94,7 @@ export const LandingPage = props => {
         </div> */}
       </Section>
 
-      <Section>
+      <Section id="offerExperiences">
         <MultiColumns
           title="What we offer"
           subtitle="Native currently provides two immersive cultural experiences led by the Orang Asli, who are known as the indigenous communities in Malaysia."
@@ -146,7 +146,7 @@ export const LandingPage = props => {
           link={articlePreview.link}
         />
       </Section>
-      <Section useBorder={false}>
+      {/* <Section useBorder={false}> */}
         <div className={styles.impactSection} style={impactBackgroundStyle}>
           <SectionTitle
             className={styles.whiteSectionTitle}
@@ -156,7 +156,7 @@ export const LandingPage = props => {
               "Our Native Hosts have had the opportunity to host hundreds of guests from all over the world."
             }
           />
-          <MDBContainer>
+          <Section useBorder={false}>
             <div className={styles.impactContainer}>
               <p>{impact.description}</p>
               <MultiColumns useBorder={false}>
@@ -173,9 +173,9 @@ export const LandingPage = props => {
                 })}
               </MultiColumns>
             </div>
-          </MDBContainer>
+          </Section>
         </div>
-      </Section>
+      {/* </Section> */}
       <SocialMedias />
       <Footer />
     </div>

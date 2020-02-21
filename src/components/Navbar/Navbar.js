@@ -6,6 +6,8 @@ import featureToggles from "../../config/featureToggle"
 import styles from "./Navbar.module.scss"
 import Button from "../Button/Button"
 
+import ScrollToElement from "scroll-to-element"
+
 const { navbarBookNow } = featureToggles
 
 // const navItems = [
@@ -43,21 +45,28 @@ const { navbarBookNow } = featureToggles
 const navItems = [
   {
     title: "Our Experiences",
-    path: "",
+    path: "#offerExperiences",
     menu: [],
   },
   {
     title: "Testimonials",
-    path: "",
+    path: "#offerExperiences",
     menu: [],
   },
   {
     title: "Contact",
-    path: "",
+    path: "#offerExperiences",
     menu: [],
   },
-  
 ]
+
+const scrollToElement = (id) => {
+  scrollToElement(id, {
+    offset: 0,
+    ease: "out-bounce",
+    duration: 1500,
+  })
+}
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -128,7 +137,9 @@ const Navbar = () => {
 
 const NavBarItem = ({ title, path, menuItems }) => {
   const [hoverMenu, setHoverMenu] = useState(false)
-  const menuStyles = hoverMenu ? { visibility: "visible", opacity: "1" } : { visibility: "hidden", opacity: "0", height: "0px" }
+  const menuStyles = hoverMenu
+    ? { visibility: "visible", opacity: "1" }
+    : { visibility: "hidden", opacity: "0", height: "0px" }
 
   const handleMouseEnter = e => {
     setHoverMenu(true)
@@ -162,16 +173,18 @@ const NavBarItem = ({ title, path, menuItems }) => {
       onClick={handleMouseClick}
     >
       <span className={styles.navLink}>
-        {path === "" ? (
-          <span className={styles.link}>{title}</span>
+        {path.charAt(1) === "#" ? (
+          <span className={styles.link} onClick={scrollToElement(path)}>
+            {title}
+          </span>
         ) : (
           <Link className={styles.link} to={path}>
             {title}
           </Link>
         )}
-        {
-          Boolean(items.length) && <MDBIcon icon="caret-down" className={styles.caretDownIcon} />
-        }
+        {Boolean(items.length) && (
+          <MDBIcon icon="caret-down" className={styles.caretDownIcon} />
+        )}
       </span>
       {Boolean(items.length) && (
         <div style={menuStyles} className={styles.navItemMenuContainer}>

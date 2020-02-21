@@ -25,16 +25,16 @@
 }
 
 .articleContainer {
-  font-size: $font-xlarge;
+  font-size: $font-large - 1;
   font-weight: $font-weight-semi;
   position: absolute;
   top: 50%;
-  left: 12%;
+  left: 10%;
   background-color: $beige-color;
-  width: 42%;
+  width: 45%;
   z-index: 999;
   transform: translate(0%, -50%);
-  padding: $grid-medium $grid-xlarge $grid-xxlarge $grid-xlarge;
+  padding: $grid-medium $grid-xlarge $grid-xlarge $grid-xlarge;
   color: $tertiary-color;
 }
 
@@ -46,7 +46,7 @@
 
 .title {
   font-family: $font-family-serif;
-  font-size: $font-xxxlarge;
+  font-size: $font-xlarge;
   color: $primary-color;
   font-weight: $font-weight-bold;
   margin-bottom: $grid-medium;
