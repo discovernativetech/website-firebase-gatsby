@@ -5,6 +5,10 @@
 .container {
     text-align: center;
     margin-bottom: $grid-xlarge;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -14,7 +18,7 @@
 
 .subtitle {
     @extend %blockSubtitleText;
-    padding: 0px $grid-xlarge;
+    width: 40%;
 }
 
 .border {

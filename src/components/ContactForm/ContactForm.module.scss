@@ -1,0 +1,26 @@
+@import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  width: 50%;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin: $grid-small 0px;
+}
+
+.buttonClass {
+  height: 45px;
+  padding: 0px $grid-large;
+  font-size: $font-standard;
+  text-transform: initial;
+}

@@ -17,6 +17,7 @@ import Footer from "../components/Footer/Footer"
 import video from "../images/v2/video.mp4"
 import giaCover from "../images/v2/GIA.png"
 import ttCover from "../images/v2/TVT.png"
+import { ContactForm } from "../components/ContactForm/ContactForm"
 
 const carouselData = [
   {
@@ -148,7 +149,6 @@ export const LandingPage = props => {
           link={articlePreview.link}
         />
       </Section>
-      {/* <Section useBorder={false}> */}
       <div className={styles.impactSection} style={impactBackgroundStyle}>
         <SectionTitle
           className={styles.whiteSectionTitle}
@@ -177,7 +177,10 @@ export const LandingPage = props => {
           </div>
         </Section>
       </div>
-      {/* </Section> */}
+      <Section>
+        <SectionTitle title={'Get In Touch'} subtitle={'Interested to organise a private Native experience? Submit your enquiries in the form below and we will get back to you as soon as possible.'} />
+        <ContactForm />
+      </Section>
       <SocialMedias ref={contactRef} />
       <Footer experiencesRef={experiencesRef} testimonialsRef={testimonialsRef} contactRef={contactRef} />
     </div>

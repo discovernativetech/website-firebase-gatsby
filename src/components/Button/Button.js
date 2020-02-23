@@ -8,6 +8,7 @@ const Button = ({
   text,
   link,
   buttonStyle = "primary",
+  className,
   newTab = true,
   onClick,
 }) => {
@@ -44,7 +45,7 @@ const Button = ({
     <ButtonWrapper link={link} newTab={newTab}>
       <button
         type={type}
-        className={`${styles.button} ${styleClass}`}
+        className={`${className} ${styles.button} ${styleClass}`}
         // style={customStyle}
         onClick={sendEvent(`${text} - ${link}`)}
       >
