@@ -7,13 +7,13 @@ import Textarea from "../Textarea/Textarea"
 
 import styles from "./ContactForm.module.scss"
 
-export const ContactForm = () => {
+export const ContactForm = React.forwardRef((props, ref) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={ref}>
       <InquireForm />
     </div>
   )
-}
+})
 
 const InquireForm = ({ onSubmitted }) => {
   return (
@@ -39,7 +39,7 @@ const InquireForm = ({ onSubmitted }) => {
         const templateParams = {
           name: values.name,
           email: values.email,
-          message: values.message
+          message: values.message,
         }
 
         emailjs

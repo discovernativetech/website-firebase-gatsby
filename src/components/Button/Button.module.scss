@@ -39,7 +39,7 @@
     background-color: $tertiary-color;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
     .button {
         min-height: 30px;
         font-size: $font-small;

@@ -51,7 +51,7 @@ const carouselData = [
 export const LandingPage = props => {
   const experiencesRef = React.createRef();
   const testimonialsRef = React.createRef()
-  const contactRef = React.createRef()
+  const contactRef = React.createRef();
 
   const {
     aboutNative,
@@ -177,11 +177,11 @@ export const LandingPage = props => {
           </div>
         </Section>
       </div>
-      <Section>
+      <Section ref={contactRef}>
         <SectionTitle title={'Get In Touch'} subtitle={'Interested to organise a private Native experience? Submit your enquiries in the form below and we will get back to you as soon as possible.'} />
         <ContactForm />
       </Section>
-      <SocialMedias ref={contactRef} />
+      <SocialMedias />
       <Footer experiencesRef={experiencesRef} testimonialsRef={testimonialsRef} contactRef={contactRef} />
     </div>
   )

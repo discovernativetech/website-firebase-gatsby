@@ -34,8 +34,8 @@
   margin: 0px 2px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) { 
+@media (min-width: 300px) and (max-width: 767px) { 
  .container {
-    margin: 0px !important;
+    margin: $grid-medium 0px !important;
  }
 }

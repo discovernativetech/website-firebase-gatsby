@@ -32,11 +32,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+    .container {
+        margin-bottom: $grid-small;
+    }
+
     .title {
         font-size: $font-xxlarge;
     }
 
     .subtitle {
         font-size: $font-large;
+        width: 70%;
     }
 }

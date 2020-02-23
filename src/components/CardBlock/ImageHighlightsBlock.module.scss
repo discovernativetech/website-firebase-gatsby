@@ -98,7 +98,7 @@
   min-height: 520px;
 }
 
-@media (min-width: 576px) and (max-width: 767px) { 
+@media (min-width: 300px) and (max-width: 767px) { 
   .description {
     font-size: $font-standard;
   }

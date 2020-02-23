@@ -59,21 +59,21 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .articleContainer {
+    position: relative;
     font-size: $font-small;
     padding-top: $grid-small;
     padding-left: $grid-small;
     padding-right: $grid-small;
     padding-bottom: $grid-medium;
-    width:60%;
+    width: 100%;
+    top: 0%;
     left: 0%;
   }
 
   .fullWidth {
-    width: 60%;
-    float: right;
-    right: 40px;
+    width: 100%;
   }
 
   .container {

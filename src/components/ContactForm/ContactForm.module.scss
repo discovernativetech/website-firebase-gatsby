@@ -24,3 +24,22 @@
   font-size: $font-standard;
   text-transform: initial;
 }
+
+@media (min-width: 300px) and (max-width: 767px) {  
+  .container {
+    flex-direction: column;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  .formContainer {
+    width: 80%;
+  }
+
+  .buttonClass {
+    padding: $grid-small 0px !important;
+  }
+  
+}
