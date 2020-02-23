@@ -7,6 +7,7 @@ const SimpleBlock = ({
   titleClass = "",
   descriptionClass = "",
   description,
+  textContainerClass = "",
   imageSharp,
   children,
 }) => {
@@ -18,10 +19,10 @@ const SimpleBlock = ({
   return (
     <div className={styles.container}>
       {image && <div className={styles.iconContainer}>{image}</div>}
-      <div className={styles.textContainer}>
-        <div className={styles.titleContainer}>
+      <div className={`${textContainerClass} ${styles.textContainer} `}>
+        {title && <div className={styles.titleContainer}>
           <span className={`${styles.title} ${titleClass}`}>{title}</span>
-        </div>
+        </div>}
         {description && (
           <div className={`${descriptionClass}`}>
             <p className={styles.description}>{description}</p>

@@ -24,7 +24,7 @@ export const ImageHighlightsBlock = ({
     )
   })
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.imageContainer}>
         <Img fluid={coverImage.childImageSharp.fluid} />
         <span className={styles.imageTitle}>{title}</span>
@@ -44,6 +44,6 @@ export const ImageHighlightsBlock = ({
         <div className={styles.iconContainer}>{icons}</div>
         <div className={styles.description}>{description}</div>
       </div>
-    </div>
+    </>
   )
 }

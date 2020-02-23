@@ -11,38 +11,38 @@
   border-bottom: 1px solid $light-grey-color;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 80%;
-  }
-}
+// @media (min-width: 1400px) {
+//   .container {
+//     max-width: 80%;
+//   }
+// }
 
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .container {
-    max-width: 1240px;
-  }
-}
+// @media (min-width: 1200px) and (max-width: 1399px) {
+//   .container {
+//     max-width: 1240px;
+//   }
+// }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    max-width: 980px;
-  }
-}
+// @media (min-width: 992px) and (max-width: 1199px) {
+//   .container {
+//     max-width: 980px;
+//   }
+// }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .container {
-    max-width: 740px;
-  }
-}
+// @media (min-width: 768px) and (max-width: 991px) {
+//   .container {
+//     max-width: 740px;
+//   }
+// }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .container {
-    max-width: 560px;
-  }
-}
+// @media (min-width: 576px) and (max-width: 767px) {
+//   .container {
+//     max-width: 560px;
+//   }
+// }
 
 .container {
-  width: 100%;
+  width: 85%;
   margin-right: auto;
   margin-left: auto;
   padding: $grid-xlarge 0px;

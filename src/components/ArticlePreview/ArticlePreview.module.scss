@@ -52,3 +52,31 @@
   margin-bottom: $grid-medium;
   font-style: italic;
 }
+
+@media (min-width: 1200px) {
+  .articleContainer {
+    font-size: $font-large;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .articleContainer {
+    font-size: $font-small;
+    padding-top: $grid-small;
+    padding-left: $grid-small;
+    padding-right: $grid-small;
+    padding-bottom: $grid-medium;
+    width:60%;
+    left: 0%;
+  }
+
+  .fullWidth {
+    width: 60%;
+    float: right;
+    right: 40px;
+  }
+
+  .container {
+    padding: 0px;
+  }
+}

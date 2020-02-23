@@ -123,7 +123,8 @@ export const LandingPage = props => {
               <SimpleBlock
                 title=""
                 description={node.description}
-                descriptionClass={styles.borderedText}
+                textContainerClass={styles.borderedText}
+                // descriptionClass={styles.borderedText}
                 imageSharp={node.image.childImageSharp}
               />
             </div>

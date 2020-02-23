@@ -9,6 +9,8 @@
     color: $secondary-color;
     text-align: center;
     flex: 1 1 0px;
+    align-self: stretch;
+    height: 100%;
 }
 
 .titleContainer {
@@ -31,4 +33,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .description {
+        font-size: $font-standard !important;
+        margin-bottom: 0px;
+    }
 }

@@ -22,12 +22,13 @@
 }
 
 .borderedText {
-  padding: $grid-small $grid-medium;
+  padding: $grid-small;
   border: 2px solid $light-grey-color;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 130px;
+  margin-top: $grid-small;
 }
 
 .borderedText p {
@@ -63,4 +64,11 @@
 .blockContainer {
   max-width: 600px;
   flex: 1 1 0px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+  .highlightBlock {
+    width: 100%;
+    margin: $grid-large 0px;
+  }
 }

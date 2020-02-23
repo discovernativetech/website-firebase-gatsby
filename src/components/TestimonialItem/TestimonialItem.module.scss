@@ -9,9 +9,9 @@
   flex: 1 1 0px;
   border: 2px solid $light-grey-color;
   padding: $grid-small $grid-large;
-  font-size: $font-large;
+  font-size: $font-standard;
   color: $dark-grey-color;
-  margin: 0px $grid-medium;
+  margin: $grid-medium;
   position: relative;
 }
 
@@ -32,4 +32,10 @@
 .icon {
   border-radius: 50%;
   margin: 0px 2px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+ .container {
+    margin: 0px !important;
+ }
 }
