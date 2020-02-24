@@ -205,7 +205,7 @@ export const query = graphql`
               title
               icon {
                 childImageSharp {
-                  fixed(width: 90, height: 90) {
+                  fixed(width: 80, height: 80) {
                     ...GatsbyImageSharpFixed
                   }
                 }
@@ -275,7 +275,7 @@ export const query = graphql`
             description
             image {
               childImageSharp {
-                fixed(width: 200, height: 200) {
+                fixed(width: 160, height: 160) {
                   ...GatsbyImageSharpFixed
                 }
               }

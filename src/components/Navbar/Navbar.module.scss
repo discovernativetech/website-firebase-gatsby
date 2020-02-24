@@ -86,7 +86,7 @@
     width: 80%;
     display: flex;
     // padding-top: 10px;
-    padding: $grid-small $grid-medium;
+    padding: $grid-tiny + 1 $grid-medium;
     justify-content: space-between;
     align-items: center;
 }

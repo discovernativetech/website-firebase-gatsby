@@ -23,7 +23,7 @@
 }
 
 .innerContainer {
-    padding: 30px
+    padding: $grid-small;
 }
 
 .socialMediaContainer {
@@ -53,7 +53,7 @@
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.3px;
-    font-size: 18px;
+    font-size: $font-xlarge;
     margin-bottom: $grid-small;
 }
 

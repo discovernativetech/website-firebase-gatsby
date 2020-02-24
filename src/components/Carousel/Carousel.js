@@ -6,7 +6,6 @@ import { CarouselItem } from "./CarouselItem"
 
 export const Carousel = ({ data }) => {
   if (data.length < 1) return
-  console.log(data)
 
   const items = data.map((slide, index) => {
     return (
@@ -26,6 +25,7 @@ export const Carousel = ({ data }) => {
 
   return (
     <MDBCarousel
+      interval={8000}
       activeItem={1}
       length={data.length}
       showControls={true}

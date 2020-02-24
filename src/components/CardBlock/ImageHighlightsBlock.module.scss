@@ -50,12 +50,12 @@
 
 .hoverContainer {
   position: absolute;
-  bottom: -15%;
+  bottom: -10%;
   background-color: $tertiary-color;
   color: white;
   width: 100%;
   opacity: 0;
-  padding: $grid-xlarge 0px;
+  padding: $grid-large 0px;
 }
 
 .imageContainer:hover .hoverContainer {
@@ -84,7 +84,7 @@
 }
 
 .bookingCaption {
-  font-size: $font-standard;
+  font-size: $font-large;
   margin: 0px !important;
   color: $primary-color;
 }
@@ -94,8 +94,8 @@
   flex-direction: column;
   justify-content: center;
   border: 2px solid $grey-color;
-  padding: $grid-small $grid-large;
-  min-height: 520px;
+  padding: $grid-medium;
+  // min-height: 520px;
 }
 
 @media (min-width: 300px) and (max-width: 767px) { 
