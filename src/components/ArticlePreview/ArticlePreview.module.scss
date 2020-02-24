@@ -19,7 +19,7 @@
 }
 
 .fullWidth {
-  width: 50%;
+  width: 60%;
   float: right;
   right: 40px;
 }
@@ -29,12 +29,12 @@
   font-weight: $font-weight-semi;
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 5%;
   background-color: $beige-color;
-  width: 45%;
+  width: 50%;
   z-index: 999;
   transform: translate(0%, -50%);
-  padding: $grid-medium $grid-xlarge $grid-xlarge $grid-xlarge;
+  padding: $grid-medium $grid-large $grid-xlarge $grid-large;
   color: $tertiary-color;
 }
 

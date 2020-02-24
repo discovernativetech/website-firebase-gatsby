@@ -5,7 +5,7 @@ import SectionTitle from "../SectionTitle/SectionTitle"
 const MultiColumns = ({ children, className = "", title, subtitle, useBorder }) => {
   return (
     <div className={styles.container}>
-      <SectionTitle title={title} subtitle={subtitle} useBorder={useBorder} />
+      {title && <SectionTitle title={title} subtitle={subtitle} useBorder={useBorder} />}
       <div className={`${styles.itemsContainer} ${className}`}>{children}</div>
     </div>
   )

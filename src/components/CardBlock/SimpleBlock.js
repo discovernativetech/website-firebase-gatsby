@@ -25,7 +25,7 @@ const SimpleBlock = ({
         </div>}
         {description && (
           <div className={`${descriptionClass}`}>
-            <p className={styles.description}>{description}</p>
+            <p className={styles.description} dangerouslySetInnerHTML={{__html: description}} />
           </div>
         )}
       </div>

@@ -24,7 +24,7 @@ export const CarouselItem = ({
         </div>
       )}
       <div className={styles.itemContainer} style={itemStyles}>
-        <p className={styles.title}>{title}</p>
+        <p className={styles.title} dangerouslySetInnerHTML={{__html: title}} />
         <p className={styles.caption}>{caption}</p>
         <br />
         <Button

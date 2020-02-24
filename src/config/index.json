@@ -135,7 +135,7 @@
                 "name": "Jason, United States",
                 "userIcon": "../images/v2/jason.jpg",
                 "countryIcon": "../images/v2/united_states.png",
-                "quoteText": "That was a wonderful experience- being able to learn about village life from our Orang Asli guides, and our knowledgeable and kind organizers/translators,was an absolutely unique experience. There was clearly a lot of mutual respect and friendship between them all, and that brought a warmth to the tour. Please take this opportunity to see another part of malaysia. It’s well worth it."
+                "quoteText": "That was a wonderful experience- being able to learn about village life from our Orang Asli guides, and our knowledgeable and kind organizers/translators, was an absolutely unique experience. There was clearly a lot of mutual respect and friendship between them all, and that brought a warmth to the tour. Please take this opportunity to see another part of malaysia. It’s well worth it."
             },
             {
                 "name": "Meewun, Australia",
@@ -161,15 +161,15 @@
             "impacts": [
                 {
                     "icon": "../images/v2/income.png",
-                    "title": "Increase in monthly household income"
+                    "title": "Increase in monthly <br/> household income"
                 },
                 {
                     "icon": "../images/v2/community.png",
-                    "title": "Establishing community fund for development"
+                    "title": "Establishing community <br/> fund for development"
                 },
                 {
                     "icon": "../images/v2/culture.png",
-                    "title": "Preserving culture and heritage"
+                    "title": "Preserving culture <br/> and heritage"
                 }
             ]
         }

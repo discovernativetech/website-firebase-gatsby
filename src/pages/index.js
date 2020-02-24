@@ -22,7 +22,7 @@ import { ContactForm } from "../components/ContactForm/ContactForm"
 const carouselData = [
   {
     id: "experienceOffers",
-    title: "DISCOVER MALAYSIA THROUGH A NATIVE ADVENTURE",
+    title: "DISCOVER MALAYSIA <br/> THROUGH A NATIVE <br/> EXPERIENCE",
     caption: "Travel with a purpose",
     linkText: "Find An Experience",
     video: video,
@@ -30,7 +30,7 @@ const carouselData = [
   },
   {
     id: "experienceOffers",
-    title: "RESTORING AN INDIGENOUS VILLAGE’S CAMPSITE",
+    title: "RESTORING <br/> AN INDIGENOUS <br/> VILLAGE’S CAMPSITE",
     caption: "",
     image: giaCover,
     linkText: "READ MORE",
@@ -39,7 +39,7 @@ const carouselData = [
   },
   {
     id: "experienceOffers",
-    title: "TRAIL THROUGH A PROTECTED RAINFOREST",
+    title: "TRAIL THROUGH <br/> A PROTECTED <br/> RAINFOREST",
     caption: "",
     image: ttCover,
     linkText: "READ MORE",
