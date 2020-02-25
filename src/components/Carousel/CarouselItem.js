@@ -28,6 +28,7 @@ export const CarouselItem = ({
         <p className={styles.caption}>{caption}</p>
         <br />
         <Button
+         className={styles.carouselButton}
           buttonStyle={buttonStyle}
           text={linkText}
           link={link}

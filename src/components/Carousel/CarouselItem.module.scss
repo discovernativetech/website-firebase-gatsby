@@ -15,11 +15,11 @@
 
 .caption {
   font-family: $font-family-serif;
-  font-size: $font-large;
+  font-size: $font-xlarge;
 }
 
 .title {
-  font-size: 60px;
+  font-size: $font-xxxxlarge;
   width: 80%;
   // padding: 0px $grid-xlarge;
   font-family: $font-family-serif;
@@ -40,6 +40,10 @@
   width: 100%;
   height: 900px;
   object-fit: cover;
+}
+
+.carouselButton {
+  padding: $grid-small;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
