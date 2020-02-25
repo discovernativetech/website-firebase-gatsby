@@ -29,6 +29,7 @@
   justify-content: center;
   align-items: center;
   margin-top: $grid-small;
+  color: $dark-grey-color;
 }
 
 .borderedText p {
@@ -53,7 +54,7 @@
 }
 
 .impactTitle p {
-  font-size: $font-xlarge;
+  font-size: $font-standard;
   color: $primary-color;
   padding: 0px $grid-small;
   margin-bottom: 0px;

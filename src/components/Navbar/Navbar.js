@@ -69,7 +69,7 @@ const Navbar = ({ experiencesRef,contactRef, testimonialsRef }) => {
     query {
       logo: file(relativePath: { eq: "logo-horizontal.png" }) {
         childImageSharp {
-          fixed(width: 176, height: 60, quality: 100) {
+          fixed(width: 150, height: 51, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }

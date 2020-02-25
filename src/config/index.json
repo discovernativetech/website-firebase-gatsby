@@ -61,17 +61,17 @@
             {
                 "title": "UNIQUE ADVENTURES",
                 "image": "../images/v2/landing-icon-1.png",
-                "description": "Embark on a Native experience led by indigenous communities"
+                "description": "Embark on a Native <br/>  experience led by <br/> indigenous communities"
             },
             {
                 "title": "EXPERT NATIVE HOST",
                 "image": "../images/v2/landing-icon-2.png",
-                "description": "Expect personal encounters with local traditions and culture"
+                "description": "Expect personal <br/>  encounters with local <br/>  traditions and culture"
             },
             {
                 "title": "ALL INCLUSIVE PRICING",
                 "image": "../images/v2/landing-icon-3.png",
-                "description": "Travel hassle free as transportation, equipment and meals are all provided"
+                "description": "Travel hassle free as <br/>  transportation, equipment <br/>  and meals are all provided"
             }
         ],
         "whatWeOffer": [

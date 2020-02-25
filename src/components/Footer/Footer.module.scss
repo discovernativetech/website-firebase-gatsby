@@ -20,6 +20,7 @@
     color: $tertiary-color;
     box-shadow: $box-shadow-standard;
     margin-top: $grid-medium;
+    font-size: $font-standard;
 }
 
 .innerContainer {
@@ -53,7 +54,7 @@
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.3px;
-    font-size: $font-xlarge;
+    font-size: $font-standard;
     margin-bottom: $grid-small;
 }
 
