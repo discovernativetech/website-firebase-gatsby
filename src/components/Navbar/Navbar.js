@@ -40,8 +40,7 @@ const { navbarBookNow } = featureToggles
 //   },
 // ]
 
-
-const Navbar = ({ experiencesRef,contactRef, testimonialsRef }) => {
+const Navbar = ({ experiencesRef, contactRef, testimonialsRef }) => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   const navItems = [
@@ -93,9 +92,12 @@ const Navbar = ({ experiencesRef,contactRef, testimonialsRef }) => {
     <div className={styles.container}>
       <div className={styles.innerContainer}>
         <div className={styles.logoContainer}>
-          <Link to="/">
-            <Img fixed={data.logo.childImageSharp.fixed} />
-          </Link>
+          <span className={styles.logo}>
+            <Link to="/">
+              <Img fixed={data.logo.childImageSharp.fixed} />
+            </Link>
+          </span>
+
           <span className={styles.menuIcon}>
             <MDBIcon
               icon="bars"
@@ -171,11 +173,9 @@ const NavBarItem = ({ title, path, menuItems, elementRef }) => {
         {elementRef ? (
           <span
             className={styles.link}
-            onClick={() =>
-              {
-                elementRef.current.scrollIntoView({ behavior: 'smooth' });
-              }
-            }
+            onClick={() => {
+              elementRef.current.scrollIntoView({ behavior: "smooth" })
+            }}
           >
             {title}
           </span>

@@ -11,6 +11,7 @@ const Button = ({
   className,
   newTab = true,
   onClick,
+  toRef
 }) => {
   // const customStyle = {
   //   color: textColor,
@@ -41,13 +42,17 @@ const Button = ({
     }
   }
 
+  const scrollToRef = () => {
+    toRef.current.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <ButtonWrapper link={link} newTab={newTab}>
       <button
         type={type}
         className={`${className} ${styles.button} ${styleClass}`}
         // style={customStyle}
-        onClick={sendEvent(`${text} - ${link}`)}
+        onClick={toRef ? scrollToRef : sendEvent(`${text} - ${link}`)}
       >
         {text}
       </button>

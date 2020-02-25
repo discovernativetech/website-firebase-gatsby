@@ -18,6 +18,7 @@ export const Carousel = ({ data }) => {
           link={slide.link}
           linkText={slide.linkText}
           buttonStyle={slide.style}
+          buttonRef={slide.buttonRef}
         />
       </MDBCarouselItem>
     )

@@ -53,6 +53,8 @@ export const LandingPage = props => {
   const testimonialsRef = React.createRef()
   const contactRef = React.createRef();
 
+  carouselData[0].buttonRef = experiencesRef;
+
   const {
     aboutNative,
     whatWeOffer,

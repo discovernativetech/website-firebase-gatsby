@@ -2,76 +2,6 @@
 @import '../../theme/colors.scss';
 @import '../../theme/typo.scss';
 
-@media (min-width: 120px) and (max-width: 790px) {
-    .icon {
-        color: #002445;
-        font-size: 40px;
-        margin-right: 5px;
-    }
-
-    .innerContainer {
-        display: flex !important;;
-        flex-direction: column !important;
-        width: 100% !important;
-        padding: $grid-small !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .logoContainer {
-        display: flex;
-        flex-direction: row !important;
-        align-items: center !important;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .container {
-        height: initial !important;
-    }
-    .menuIcon {
-        display: block !important;
-    }
-
-    .linksContainer {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        margin: 10px 0px;
-        margin-top: 0px;
-        transition: all 0.2s ease-in;
-    }
-
-    .menuContainer {
-        display: flex;
-    }
-
-    .menuContainer {
-        flex-direction: column !important;
-        transition: all 0.2s ease-in;
-    }
-
-    .openMenu {
-        opacity: 1;
-        visibility: visible;
-        margin-top: 5px;
-    }
-
-    .hideMenu {
-        height: 0px !important;
-        opacity: 0;
-        visibility: none;
-    }
-
-    .navLink {
-        margin: 10px 0px !important;
-        padding: 0px !important;
-    }
-
-    .navItemMenuContainer { 
-        position: relative !important;
-        z-index: 0 !important;
-    }
-}
 
 .caretDownIcon {
     color: $grey-color;
@@ -162,4 +92,85 @@
 .menuRightArrow {
     font-size: $font-small;
     float: right;
+}
+
+
+
+@media (min-width: 120px) and (max-width: 790px) {
+    .icon {
+        color: #002445;
+        font-size: 40px;
+        margin-right: 5px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .innerContainer {
+        display: flex !important;;
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: $grid-small;
+        padding-bottom: 0px;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .container {
+        height: initial !important;
+    }
+    .menuIcon {
+        display: block !important;
+    }
+
+    .linksContainer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        margin: 10px 0px;
+        margin-top: 0px;
+        transition: all 0.2s ease-in;
+        // display: none !important;
+    }
+
+    .menuContainer {
+        display: flex;
+    }
+
+    .menuContainer {
+        flex-direction: column !important;
+        transition: all 0.2s ease-in;
+    }
+
+    .openMenu {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 5px;
+    }
+
+    .hideMenu {
+        height: 0px !important;
+        opacity: 0;
+        visibility: none;
+    }
+
+    .navLink {
+        margin: 10px 0px !important;
+        padding: 0px !important;
+    }
+
+    .navItemMenuContainer { 
+        position: relative !important;
+        z-index: 0 !important;
+    }
 }

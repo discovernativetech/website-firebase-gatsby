@@ -10,7 +10,8 @@ export const CarouselItem = ({
   linkText,
   buttonStyle,
   video,
-  link
+  link,
+  buttonRef,
 }) => {
   const itemStyles = image ? { backgroundImage: `url(${image})` } : {}
 
@@ -24,15 +25,19 @@ export const CarouselItem = ({
         </div>
       )}
       <div className={styles.itemContainer} style={itemStyles}>
-        <p className={styles.title} dangerouslySetInnerHTML={{__html: title}} />
+        <p
+          className={styles.title}
+          dangerouslySetInnerHTML={{ __html: title }}
+        />
         <p className={styles.caption}>{caption}</p>
         <br />
         <Button
-         className={styles.carouselButton}
+          className={styles.carouselButton}
           buttonStyle={buttonStyle}
           text={linkText}
           link={link}
           newTab={false}
+          toRef={buttonRef}
         />
       </div>
     </>
