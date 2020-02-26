@@ -1,0 +1,26 @@
+@import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .container {
+    margin: $grid-small 0px !important;
+  }
+  
+  .itemsContainer {
+    flex-direction: column;
+  }
+}
+
+.container {
+  margin: $grid-small 0px;
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleContainer {
+  margin-bottom: 50px;
+}

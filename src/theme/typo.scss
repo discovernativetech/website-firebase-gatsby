@@ -1,16 +1,17 @@
 @import './colors.scss';
 
 $font-family-header: 'Raleway', 'san-serif';
-$font-family-standard: 'Open Sans', 'san-serif';
+$font-family-standard: 'Arial', 'san-serif';
+$font-family-serif: 'Aria Text G2';
 
 $font-tiny: 8px;
 $font-small: 12px;
-$font-standard: 16px;
-$font-large: 24px;
-$font-midLarge: 30px;
-$font-xlarge: 36px;
-$font-xxlarge: 54px;
-$font-xxxlarge: 60px;
+$font-standard: 14px;
+$font-large: 16px;
+$font-xlarge: 20px;
+$font-xxlarge: 28px;
+$font-xxxlarge: 36px;
+$font-xxxxlarge: 48px;
 
 $font-weight-lighter: 300;
 $font-weight-light: 400;
@@ -24,4 +25,20 @@ $font-weight-bolder: 900;
     font-size: $font-xxxlarge;
     font-weight: $font-weight-bolder;
     letter-spacing: 0.3px;
+}
+
+%blockTitleText {
+    color: $primary-color;
+    font-size: $font-xxxlarge;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3px;
+    font-family: $font-family-header;
+}
+
+%blockSubtitleText {
+    color: $secondary-color;
+    font-size: $font-large;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    font-family: $font-family-serif;
 }

@@ -1,0 +1,88 @@
+@import "../../theme/typo.scss";
+@import "../../theme/layout.scss";
+@import "../../theme/colors.scss";
+
+.container {
+  padding: 0px $grid-xlarge;
+  position: relative;
+  // overflow: auto;
+}
+
+.coverImage {
+  // width: 50%;
+  z-index: 1;
+  // float: right;
+}
+
+.imageContainer {
+  overflow: auto;
+}
+
+.fullWidth {
+  width: 60%;
+  float: right;
+  right: 40px;
+}
+
+.articleContainer {
+  font-size: $font-large - 1;
+  font-weight: $font-weight-semi;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  background-color: $beige-color;
+  width: 50%;
+  z-index: 999;
+  transform: translate(0%, -50%);
+  padding: $grid-medium $grid-large $grid-xlarge $grid-large;
+  color: $tertiary-color;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: -22.5px;
+  left: 5%;
+}
+
+.title {
+  font-family: $font-family-serif;
+  font-size: 24px;
+  color: $primary-color;
+  font-weight: $font-weight-bold;
+  margin-bottom: $grid-medium;
+  font-style: italic;
+}
+
+@media (min-width: 1200px) {
+  .articleContainer {
+    font-size: $font-large;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .articleContainer {
+    position: relative;
+    font-size: $font-small;
+    padding-top: $grid-small;
+    padding-left: $grid-small;
+    padding-right: $grid-small;
+    padding-bottom: $grid-medium;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -20%);
+  }
+
+  .fullWidth {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+  .title {
+    font-size: $font-xlarge;
+    margin-bottom: $grid-small;
+  }
+}

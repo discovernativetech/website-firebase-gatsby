@@ -1,21 +1,21 @@
-import React from 'react';
-import styles from './TestimonialItem.module.css'
-import quoteIcon from '../../images/quote-icon.png';
+import React from "react"
+import styles from "./TestimonialItem.module.scss"
 
-const TestimonialItem = ({quote, name, location = "", userIcon}) => {
+import Img from "gatsby-image"
+
+const TestimonialItem = ({ quote, name, countryIcon, userIcon }) => {
   return (
-      <div className={styles.container}>
-        <span className={styles.iconContainer}>
-          <img className={styles.icon} src={quoteIcon} alt="quote"/>
-        </span>
-        <div className={styles.quoteContainer}>
-          <p className={styles.quoteText}>{quote}</p>
-          <img src={userIcon} className={styles.userIcon} alt="user_pic"/>
-          <p className={styles.nameText}>{name}</p>
-          <p className={styles.locationText}>{location}</p>
-        </div>
+    <div className={styles.container}>
+      <div className={styles.iconsContainer}>
+        <Img className={styles.icon} fixed={userIcon} />
+        <Img className={styles.icon} fixed={countryIcon} />
       </div>
+      <div className={styles.textContainer}>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.text}>{quote}</p>
+      </div>
+    </div>
   )
-};
+}
 
-export default TestimonialItem;
+export default TestimonialItem

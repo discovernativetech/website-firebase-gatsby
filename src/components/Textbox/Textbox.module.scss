@@ -8,6 +8,7 @@
 }
 
 .columnContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-family: $font-family-standard;
@@ -18,13 +19,20 @@
 }
 
 .textbox {
-    min-width: 200px;
     font-size: $font-standard;
     height: 45px;
+    margin-right: $grid-tiny;
 }
 
 .message {
     margin: $grid-tiny;
     color: $alert-color;
     font-size: $font-small;
+}
+
+@media (min-width: 300px) and (max-width: 767px) { 
+    .textbox {
+        margin-right: 0px;
+        margin-bottom: $grid-small;
+    }
 }

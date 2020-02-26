@@ -1,4 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Raleway:400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap');
+
+@font-face {
+  font-family: "Aria Text G2";
+  src: url("../theme/fonts/AriaTextG2-Regular.otf");
+}
+@font-face {
+  font-family: "Aria Text G2";
+  src: url("../theme/fonts/AriaTextG2-Italic.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Aria Text G2";
+  src: url("../theme/fonts/AriaTextG2-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Aria Text G2";
+  src: url("../theme/fonts/AriaTextG2-SemiBoldItalic.otf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Aria Text G2";
+  src: url("../theme/fonts/AriaTextG2-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Aria Text G2";
+  src: url("../theme/fonts/AriaTextG2-BoldItalic.otf");
+  font-weight: 700;
+  font-style: italic;
+}
 
 html {
   font-family: 'Open Sans', sans-serif !important;
@@ -8,14 +40,14 @@ html {
 }
 
 body {
+  font-size: 18px;
   margin: 0;
   height: 100%;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
   background-color: #FAFAFA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-
+  font-weight: 500;
 }
 
 a:hover {

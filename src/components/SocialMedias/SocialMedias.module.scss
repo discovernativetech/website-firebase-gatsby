@@ -1,0 +1,48 @@
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
+@import '../../theme/typo.scss';
+
+.socialMedias {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin: 16px 22px;
+    /* font-size: 26px; */
+    transition: all 0.3s ease;
+}
+
+// .icon:hover {
+//     transform: scale(1.1);
+//     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+// }
+
+.link {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0px $grid-medium;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover {
+    color: black;
+}
+
+.title {
+    color: $dark-grey-color;
+    font-weight: $font-weight-semi;
+    text-align: center;
+    margin: $grid-small 0px;
+    margin-top: $grid-large;
+}
+
+.mediaName {
+    font-weight: $font-weight-semi;
+    color: $dark-grey-color;
+    text-transform: uppercase;
+}

@@ -55,5 +55,123 @@
                 "description": "Learn and experience the Indigenous culture and traditions in customized experiences for organisations such as corporates and schools."
             }
         ]
+    },
+    {
+        "aboutNative": [
+            {
+                "title": "UNIQUE ADVENTURES",
+                "image": "../images/v2/landing-icon-1.png",
+                "description": "Embark on a Native <br/>  experience led by <br/> indigenous communities"
+            },
+            {
+                "title": "EXPERT NATIVE HOST",
+                "image": "../images/v2/landing-icon-2.png",
+                "description": "Expect personal <br/>  encounters with local <br/>  traditions and culture"
+            },
+            {
+                "title": "ALL INCLUSIVE PRICING",
+                "image": "../images/v2/landing-icon-3.png",
+                "description": "Travel hassle free as <br/>  transportation, equipment <br/>  and meals are all provided"
+            }
+        ],
+        "whatWeOffer": [
+            {
+                "title": "TEMUAN VILLAGE TRAIL",
+                "link": "https://www.airbnb.com/experiences/182216",
+                "highlights": [
+                    {
+                        "icon": "../images/v2/mountain.svg",
+                        "text": "Hiking Trail"
+                    },
+                    {
+                        "icon": "../images/v2/waterfall.svg",
+                        "text": "Waterfalls"
+                    },
+                    {
+                        "icon": "../images/v2/food.svg",
+                        "text": "Local Cuisine"
+                    }
+                ],
+                "description": "Situated 50-minutes away from the capital city of Malaysia, guests can expect to learn the tricks of the rainforest and build a deeper connection to the Orang Asli Temuan community through the act of story-telling and cultural exchange.",
+                "image": "../images/v2/tt-cover.png"
+            },
+            {
+                "title": "GOMBAK INDIGENOUS AFFAIRS",
+                "link": "https://abnb.me/blL7ZcmFf4",
+                "highlights": [
+                    {
+                        "icon": "../images/v2/foraging.svg",
+                        "text": "Foraging"
+                    },
+                    {
+                        "icon": "../images/v2/fire.svg",
+                        "text": "Fire Starting"
+                    },
+                    {
+                        "icon": "../images/v2/camp.svg",
+                        "text": "Build Shelter"
+                    }
+                ],
+                "description": "Based in the largest Orang Asli settlement in Peninsular Malaysia, guests will focus on reviving different aspects of the basecamp with activities ranging from building the structure, putting up the walls, to weaving the roof using traditional Semai tribe methods.",
+                "image": "../images/v2/gia-cover.png"
+            }
+        ],
+        "whyWeDoIt": [
+            {
+                "image": "../images/v2/showcase.jpg",
+                "description": "Showcase the cultural heritage of the Orang Asli through community programmes."
+            },
+            {
+                "image": "../images/v2/sustainable.jpg",
+                "description": "Boost sustainable livelihoods of marginalised communities through part-time work."
+            },
+            {
+                "image": "../images/v2/empower.jpg",
+                "description": "Empower ordinary citizens to become ambassadors of Malaysian hospitality and tourism."
+            }
+        ],
+        "testimonials": [
+            {
+                "name": "Jason, United States",
+                "userIcon": "../images/v2/jason.jpg",
+                "countryIcon": "../images/v2/united_states.png",
+                "quoteText": "That was a wonderful experience- being able to learn about village life from our Orang Asli guides, and our knowledgeable and kind organizers/translators, was an absolutely unique experience. There was clearly a lot of mutual respect and friendship between them all, and that brought a warmth to the tour. Please take this opportunity to see another part of malaysia. It’s well worth it."
+            },
+            {
+                "name": "Meewun, Australia",
+                "userIcon": "../images/v2/meewun.png",
+                "countryIcon": "../images/v2/australia.png",
+                "quoteText": "It was very special to trek through rough terrain. The guides took it slow so we always felt comfortable and looked after. We heard bird songs and saw some monkeys, all this within striking distance of KL. What makes this trip stand out is that it is low key. We highly recommend the trip and wish the villagers all success for this highly worthwhile enterprise that brings benefits to the locals."
+            },
+            {
+                "name": "Leslie, Malaysia",
+                "userIcon": "../images/v2/leslie.jpg",
+                "countryIcon": "../images/v2/malaysia.png",
+                "quoteText": "是一个我前所未有的徒步旅行和马来西亚土著乡村文化体验｡旅途中,当地土著给我们分享了许多,例如在森林里的禁忌､他们的信仰以及介绍各种植物种类和用途,在最后还为我们提供了他们亲自烹饪的美味佳肴,这不仅让我们品尝到当地土著特有的美食也使我们更加了解当地的饮食习惯和风俗｡这对于我这一位在大城市奋斗的青年来说确实是一个非常棒体验,让我对马来西亚的当地土著有更深一层的了解｡我个人强力推荐!"
+            }
+        ],
+        "articlePreview": {
+            "title": "MEET OUR VETERAN NATIVE HOST",
+            "link": "https://abnb.me/blL7ZcmFf4",
+            "image": "../images/v2/veteran.jpg",
+            "text": "Raman Bah Tuin is an Orang Asli from the Semai tribe whose efforts in the past decades have helped push the Orang Asli agenda to where it is today in Peninsular Malaysia. Over the last 30 years, he has shared his knowledge and expertise on tradition and cultural practices with hundreds of curious travellers and apprentices that he calls his “students”. He passes on the rich heritage of the Orang Asli through outdoor activities in the jungle, and the preservation of cultural arts and crafts. <br/><br/> After taking a 2-year break since his wife's passing, he has decided to co-create a Native experience with us in hopes to restore the village's pioneering campsite gradually to it's former livelihood."
+        },
+        "impact": {
+            "description": "40% of our revenue from bookings are used to build the livelihoods of our Native Hosts and their communities, highlighting on indigenous wisdom in this changing world.",
+            "impacts": [
+                {
+                    "icon": "../images/v2/income.png",
+                    "title": "Increase in monthly <br/> household income"
+                },
+                {
+                    "icon": "../images/v2/community.png",
+                    "title": "Establishing community <br/> fund for development"
+                },
+                {
+                    "icon": "../images/v2/culture.png",
+                    "title": "Preserving culture <br/> and heritage"
+                }
+            ]
+        }
     }
 ]

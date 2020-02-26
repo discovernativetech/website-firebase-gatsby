@@ -1,22 +1,47 @@
 @import '../../theme/typo.scss';
+@import '../../theme/layout.scss';
+@import '../../theme/colors.scss';
 
 .container {
-    width: 100%;
-    border-bottom: 2px solid #C4C4C4;
+    text-align: center;
+    margin-bottom: $grid-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
-    font-family: $font-family-header;
-    font-size: $font-midLarge;
-    color: #002445;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 20px 0px;
-    font-weight: 600;
+    @extend %blockTitleText;
+    // margin-bottom: $grid-medium;
+}
+
+.subtitle {
+    @extend %blockSubtitleText;
+    width: 60%;
+}
+
+.border {
+    content: '-';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $primary-color;
+    margin: auto;
+    margin-bottom: $grid-large;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+    .container {
+        margin-bottom: $grid-small;
+    }
+
     .title {
+        font-size: $font-xlarge;
+    }
+
+    .subtitle {
         font-size: $font-large;
+        width: 100%;
     }
 }

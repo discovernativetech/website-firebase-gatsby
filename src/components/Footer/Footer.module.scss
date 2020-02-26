@@ -1,73 +1,90 @@
-@import '../../theme/colors.scss';
-@import '../../theme/typo.scss';
-@import '../../theme/layout.scss';
-@import '../../theme/animation.scss';
-
-@media (min-width: 320px) and (max-width: 600px) {
-    .linksContainer {
-        flex-direction: column !important;
-    }
-
-    .infoContainer {
-        width: 100% !important; 
-        margin: 12px 0px !important;
-    }
-  }
+@import "../../theme/colors.scss";
+@import "../../theme/typo.scss";
+@import "../../theme/layout.scss";
+@import "../../theme/animation.scss";
 
 .container {
-    min-height: 250px;
-    background-color: #002445;
-    color: #ffffff;
-    box-shadow: $box-shadow-standard;
+  min-height: 250px;
+  background-color: $beige-color;
+  color: $tertiary-color;
+  box-shadow: $box-shadow-standard;
+  margin-top: $grid-medium;
+  font-size: $font-standard;
 }
 
 .innerContainer {
-    padding: 30px
+  padding: $grid-small;
 }
 
 .socialMediaContainer {
-    margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .linksContainer {
-    display: flex;
-    margin: 10px 0px;
-    color: #ffffff;
-    border-top: 2px solid $primary-color;
+  display: flex;
+  margin: 10px 0px;
+  color: $tertiary-color;
 }
 
 .newsletterContainer {
-    margin: $grid-small 0px;
+  margin: $grid-small 0px;
 }
 
 .infoContainer {
-    margin: $grid-small $grid-medium;
-    margin-top: $grid-large;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  margin: $grid-small $grid-medium;
+  margin-top: $grid-large;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .infoTitle {
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    font-size: 18px;
-    margin-bottom: $grid-small;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-size: $font-standard;
+  margin-bottom: $grid-small;
 }
 
 .p {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
-.link{
-    color: #ffffff;
+.link {
+  color: $tertiary-color;
+}
+
+.navLink {
+  cursor: pointer;
 }
 
 .copyrightContainer {
-    background-color: $light-grey-color;
-    text-align: center;
-    padding: $grid-small;
-    color: black;
+  background-color: $light-grey-color;
+  text-align: center;
+  padding: $grid-small;
+  color: black;
+}
+
+.mediaLink {
+  margin: $grid-small;
+}
+
+.mediaIcon {
+  max-height: 80px;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .linksContainer {
+    flex-direction: column !important;
+  }
+
+  .infoContainer {
+    width: 100% !important;
+    margin: 12px 0px !important;
+  }
+
+  .mediaIcon {
+    max-height: 60px;
+  }
 }

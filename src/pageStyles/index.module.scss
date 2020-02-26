@@ -1,106 +1,80 @@
-@import '../theme/colors.scss';
 @import '../theme/typo.scss';
 @import '../theme/layout.scss';
+@import '../theme/colors.scss';
 
-.backgroundHeaderText {
-    @extend %backgroundHeaderText;
-    text-shadow: 2px 2px 5px grey;
-    letter-spacing: 0px;
-    font-weight: $font-weight-bold;
-    font-family: $font-family-header;
+.carouselContainer {
+  height: 500px;
+  background-color: black;
+  color: white;
+  font-family: $font-family-serif;
 }
 
-.textBanner {
-    font-size: $font-xxxlarge !important;
-    font-weight: $font-weight-bolder;
-    color: $tertiary-color !important;
-    font-family: $font-family-header;
+.downloadButton {
+  text-align: center;
 }
 
-.visionMissionStyle {
-    font-size: $font-midLarge !important;
-    font-weight: $font-weight-light;
+.highlightBlock {
+  width: 45%;
 }
 
-.aboutNativeSection {
-    color: $tertiary-color;
-    margin-bottom: $grid-xlarge;
+.plainText {
+  max-width: 250px;
 }
 
-.secondaryBackgroundBlock {
-    display: none;
-    margin-top: $grid-medium;
+.borderedText {
+  padding: $grid-small;
+  border: 2px solid $light-grey-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: $grid-small;
+  color: $dark-grey-color;
 }
 
-.sectionTitle {
-    font-weight: 600;
-    font-size: 50px;
-    text-align: center;
+.borderedText p {
+  font-size: $font-large;
 }
 
-.sectionSub {
-    font-weight: bold;
-    font-size: 20px;
-    font-style: italic;
+.whiteSectionTitle p {
+  color: white !important;
 }
 
-.sectionContent {
-    margin: 20px 0px;
+.impactSection {
+  background-position-x: center;
+  padding: $grid-large;
+  min-height: 500px;
+  background-size: cover;
+  padding: $grid-medium $grid-small;
 }
 
-.affliatesContainer {
-    margin: 30px 0px;
+.impactContainer {
+  background-color: white;
+  padding: $grid-medium $grid-large;
+  font-size: $font-standard;
 }
 
-.oneThirdWidth {
-    width: 300px;
+.impactTitle p {
+  font-size: $font-standard;
+  color: $primary-color;
+  padding: 0px $grid-small;
+  margin-bottom: 0px;
+  font-weight: $font-weight-bold;
 }
 
-.logos {
-    max-width: 200px;
-    max-height: 100px;
-    margin: 10px;
+.blockContainer {
+  max-width: 600px;
+  flex: 1 1 0px;
 }
 
-.affliatesTitle {
-    font-weight: 600;
-    color: #ED435D;
-    font-size: 26px;
-}
+@media (min-width: 300px) and (max-width: 767px) { 
+  .highlightBlock {
+    width: 100%;
+    margin: $grid-large 0px;
+  }
 
-.logoContainer {
-    margin: 30px 0px 10px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100%;
-}
-
-@media (min-width: 320px) and (max-width: 600px) {
-
-    .backgroundHeaderText {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .backgroundItemsBlock {
-        text-align: center;
-    }
-
-    .secondaryBackgroundBlock {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .textBanner {
-        font-size: $font-large !important;
-        text-align: center;
-        
-    }
-
-    .visionMissionStyle {
-        font-size: $font-standard !important;
-    }
+  .impactTitle p {
+    padding: 0px $grid-medium;
+  }
+  
 }

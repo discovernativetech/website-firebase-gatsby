@@ -1,169 +1,251 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import { MDBContainer } from "mdbreact"
-
-import SEO from "../components/seo"
-import BackgroundSection from "../components/BackgroundSection/BackgroundSection"
-import MultiColumns from "../components/MultiColumns/MultiColumns"
-import CardBlock from "../components/CardBlock/CardBlock"
-import TravellersTeamsTabs from "../components/TravellersTeamsTabs/TravellersTeamsTabs"
-
 import styles from "../pageStyles/index.module.scss"
-import Dropdown from "../components/Dropdown/Dropdown"
+import { Carousel } from "../components/Carousel/Carousel"
+import MultiColumns from "../components/MultiColumns/MultiColumns"
 import SimpleBlock from "../components/CardBlock/SimpleBlock"
-import TextBanner from "../components/TextBanner/TextBanner"
+import { ImageHighlightsBlock } from "../components/CardBlock/ImageHighlightsBlock"
+import Testimonials from "../components/Testimonials/Testimonials"
+import SectionTitle from "../components/SectionTitle/SectionTitle"
+import { ArticlePreview } from "../components/ArticlePreview/ArticlePreview"
+import { Section } from "../components/Section/Section"
+import Navbar from "../components/Navbar/Navbar"
+import SocialMedias from "../components/SocialMedias/SocialMedias"
+import Footer from "../components/Footer/Footer"
 
-const IndexPage = ({ data }) => {
-  const aboutNativeInfo = data.allIndexJson.edges[0].node.aboutNative
-  const nativeAffliatesInfo = data.allIndexJson.edges[0].node.nativeAffliates
-  const tabsTravellers = data.allIndexJson.edges[0].node.travellerSlides
-  const tabsTeams = data.allIndexJson.edges[0].node.teamSlides
-  const visionMissionImage =
-    data.visionBannerBackground.childImageSharp.original.src
+import video from "../images/v2/video.mp4"
+import giaCover from "../images/v2/GIA.png"
+import ttCover from "../images/v2/TVT.png"
+import { ContactForm } from "../components/ContactForm/ContactForm"
 
-  const dropDownOptions = [
-    {
-      title: "Traveller",
-      link: "/traveller-experiences",
-    },
-    {
-      title: "Company",
-      link: "/team-experiences",
-    },
-    {
-      title: "School",
-      link: "/team-experiences",
-    },
-  ]
+const carouselData = [
+  {
+    id: "experienceOffers",
+    title: "DISCOVER MALAYSIA <br/> THROUGH A NATIVE <br/> EXPERIENCE",
+    caption: "Travel with a purpose",
+    linkText: "Find An Experience",
+    video: video,
+    style: "primary",
+  },
+  {
+    id: "experienceOffers",
+    title: "RESTORING <br/> AN INDIGENOUS <br/> VILLAGE’S CAMPSITE",
+    caption: "",
+    image: giaCover,
+    linkText: "READ MORE",
+    style: "secondary",
+    link: "https://abnb.me/blL7ZcmFf4",
+  },
+  {
+    id: "experienceOffers",
+    title: "TRAIL THROUGH <br/> A PROTECTED <br/> RAINFOREST",
+    caption: "",
+    image: ttCover,
+    linkText: "READ MORE",
+    style: "secondary",
+    link: "https://www.airbnb.com/experiences/182216",
+  },
+]
 
+export const LandingPage = props => {
+  const experiencesRef = React.createRef();
+  const testimonialsRef = React.createRef()
+  const contactRef = React.createRef();
+
+  carouselData[0].buttonRef = experiencesRef;
+
+  const {
+    aboutNative,
+    whatWeOffer,
+    whyWeDoIt,
+    testimonials,
+    articlePreview,
+    impact,
+  } = props.data.allIndexJson.edges[1].node
+  const { impactBackgroundImage } = props.data
+  const impactBackgroundStyle = {
+    backgroundImage: `url("${impactBackgroundImage.childImageSharp.original.src}")`,
+  }
   return (
-    <Layout>
-      <SEO
-        title="Home"
-        description={data.allAboutusJson.edges[0].node.summaryP1}
-      />
-      <BackgroundSection
-        childrenPosition={{ left: "25%", top: "45%" }}
-        image={data.fullImageHeader.childImageSharp.fluid}
-        containerStyles={{ height: "550px" }}
-      >
-        <span className={styles.backgroundItemsBlock}>
-          <span className={styles.backgroundHeaderText}>
-            Discover Malaysia <br /> the Native way
-          </span>
-          <Dropdown options={dropDownOptions} defaultText={"I am a"} />
-        </span>
-      </BackgroundSection>
-      <div className={styles.aboutNativeSection}>
-        <TextBanner
-          containerStyle={styles.textBanner}
-          text={
-            "Rewrite the narrative through your travels. Be part of the Native story."
-          }
-        />
-        <TextBanner
-          image={visionMissionImage}
-          containerStyle={styles.visionMissionStyle}
-          text={
-            "Native strives to see a Malaysia where people from all walks of life are represented, protected and valued for their own unique sense of identity."
-          }
-          altText={"Native vision and mission image"}
-        />
-      </div>
-      <MDBContainer>
-        <MultiColumns>
-          {aboutNativeInfo.map((node, index) => (
-            <div className={styles.oneThirdWidth} key={index}>
-              <SimpleBlock
-                key={index}
+    <div className={styles.container}>
+      <Navbar experiencesRef={experiencesRef} testimonialsRef={testimonialsRef} contactRef={contactRef} />
+      <Carousel data={carouselData} />
+      <Section>
+        <MultiColumns
+          title="Looking for things to do in KL?"
+          subtitle="At Native, we provide"
+          useBorder={false}
+        >
+          {aboutNative.map((node, index) => (
+            <SimpleBlock
+              key={index}
+              title={node.title}
+              description={node.description}
+              descriptionClass={styles.plainText}
+              imageSharp={node.image.childImageSharp}
+            />
+          ))}
+        </MultiColumns>
+
+        {/* <div className={styles.downloadButton}>
+          <Button
+            text={"Download Native Guide Book"}
+            backgroundColor={"#ED435D"}
+            textColor={"#ffff"}
+            link={"/download-file"}
+            newTab={false}
+          />
+        </div> */}
+      </Section>
+      <Section ref={experiencesRef}>
+        <MultiColumns
+          title="What we offer"
+          subtitle="Native currently provides two immersive cultural experiences led by the Orang Asli, who are known as the indigenous communities in Malaysia."
+        >
+          {whatWeOffer.map((node, index) => (
+            <div className={styles.highlightBlock} key={index}>
+              <ImageHighlightsBlock
                 title={node.title}
                 description={node.description}
-                image={node.image.childImageSharp.fixed}
+                link={node.link}
+                highlights={node.highlights}
+                coverImage={node.image}
               />
             </div>
           ))}
         </MultiColumns>
-        <TravellersTeamsTabs
-          teamsTab={tabsTeams}
-          travellersTab={tabsTravellers}
-        />
-        <MultiColumns className={styles.affliatesContainer}>
-          {nativeAffliatesInfo.map((node, index) => (
-            <CardBlock
-              key={index}
-              title={node.title}
-              titleClass={styles.affliatesTitle}
-            >
-              <div className={styles.logoContainer}>
-                {node.images.map((image, index) => {
-                  return (
-                    <img
-                      key={index}
-                      src={image.childImageSharp.original.src}
-                      className={styles.logos}
-                      alt={node.title}
-                    />
-                  )
-                })}
-              </div>
-            </CardBlock>
+      </Section>
+      <Section>
+        <MultiColumns
+          title="Why We Do It"
+          subtitle="Native works with two Orang Asli communities in Peninsular Malaysia, the Temuan and Semai tribe, in order to:"
+        >
+          {whyWeDoIt.map((node, index) => (
+            <div className={styles.blockContainer} key={index}>
+              <SimpleBlock
+                title=""
+                description={node.description}
+                textContainerClass={styles.borderedText}
+                // descriptionClass={styles.borderedText}
+                imageSharp={node.image.childImageSharp}
+              />
+            </div>
           ))}
         </MultiColumns>
-      </MDBContainer>
-    </Layout>
+      </Section>
+      <Section ref={testimonialsRef}>
+        <SectionTitle
+          title={"Testimonials"}
+          subtitle={
+            "Connecting through shared stories across time and place. Read our guests’ stories."
+          }
+        />
+        <Testimonials testimonials={testimonials} />
+      </Section>
+      <Section useBorder={false}>
+        <ArticlePreview
+          title={articlePreview.title}
+          text={articlePreview.text}
+          image={articlePreview.image.childImageSharp.fluid}
+          link={articlePreview.link}
+        />
+      </Section>
+      <div className={styles.impactSection} style={impactBackgroundStyle}>
+        <SectionTitle
+          className={styles.whiteSectionTitle}
+          useBorder={false}
+          title={"Our Impact"}
+          subtitle={
+            "Our Native Hosts have had the opportunity to host hundreds of guests from all over the world."
+          }
+        />
+        <Section useBorder={false}>
+          <div className={styles.impactContainer}>
+            <p className={styles.impactDescription}>{impact.description}</p>
+            <MultiColumns useBorder={false}>
+              {impact.impacts.map((data, index) => {
+                return (
+                  <SimpleBlock
+                    key={index}
+                    title={""}
+                    description={data.title}
+                    descriptionClass={styles.impactTitle}
+                    imageSharp={data.icon.childImageSharp}
+                  />
+                )
+              })}
+            </MultiColumns>
+          </div>
+        </Section>
+      </div>
+      <Section ref={contactRef}>
+        <SectionTitle title={'Get In Touch'} subtitle={'Interested to organise a private Native experience? Submit your enquiries in the form below and we will get back to you as soon as possible.'} />
+        <ContactForm />
+      </Section>
+      <SocialMedias />
+      <Footer experiencesRef={experiencesRef} testimonialsRef={testimonialsRef} contactRef={contactRef} />
+    </div>
   )
 }
 
 export const query = graphql`
   query {
-    fullImageHeader: file(relativePath: { eq: "asliBackground.png" }) {
-      childImageSharp {
-        fluid(fit: CONTAIN, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    visionBannerBackground: file(relativePath: { eq: "vision-mission.jpg" }) {
+    impactBackgroundImage: file(relativePath: { eq: "v2/impactImage.jpg" }) {
       childImageSharp {
         original {
           src
         }
       }
     }
-    allAboutusJson {
-      edges {
-        node {
-          summaryP1
-        }
-      }
-    }
     allIndexJson {
       edges {
         node {
-          aboutNative {
-            title
+          impact {
             description
+            impacts {
+              title
+              icon {
+                childImageSharp {
+                  fixed(width: 80, height: 80) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+            }
+          }
+          articlePreview {
+            title
+            text
+            link
             image {
               childImageSharp {
-                fixed(width: 300, height: 300) {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          testimonials {
+            name
+            quoteText
+            userIcon {
+              childImageSharp {
+                fixed(width: 80, height: 80) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            countryIcon {
+              childImageSharp {
+                fixed(width: 80, height: 80) {
                   ...GatsbyImageSharpFixed
                 }
               }
             }
           }
-          nativeAffliates {
-            title
-            images {
-              childImageSharp {
-                original {
-                  src
-                }
-              }
-            }
-          }
-          travellerSlides {
+          whyWeDoIt {
+            description
             image {
               childImageSharp {
                 fluid {
@@ -171,21 +253,35 @@ export const query = graphql`
                 }
               }
             }
+          }
+          whatWeOffer {
             title
             link
             description
-          }
-          teamSlides {
+            highlights {
+              icon {
+                publicURL
+              }
+              text
+            }
             image {
               childImageSharp {
-                fluid {
+                fluid(maxHeight: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
+          }
+          aboutNative {
             title
-            link
             description
+            image {
+              childImageSharp {
+                fixed(width: 160, height: 160) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
@@ -193,4 +289,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default LandingPage
