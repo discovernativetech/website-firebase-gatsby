@@ -18,6 +18,7 @@ import video from "../images/v2/video.mp4"
 import giaCover from "../images/v2/GIA.png"
 import ttCover from "../images/v2/TVT.png"
 import { ContactForm } from "../components/ContactForm/ContactForm"
+import SEO from '../components/seo';
 
 const carouselData = [
   {
@@ -67,8 +68,13 @@ export const LandingPage = props => {
   const impactBackgroundStyle = {
     backgroundImage: `url("${impactBackgroundImage.childImageSharp.original.src}")`,
   }
+  const metaDescription = "We create community-based experiences hosted by natives in Malaysia for world explorers to immerse themselves in colourful local cultures. Catered to both soul-seeking individuals and organisations, we offer different travel experiences to match your expectations.";
   return (
     <div className={styles.container}>
+      <SEO
+        title="Native"
+        description={metaDescription}
+      />
       <Navbar experiencesRef={experiencesRef} testimonialsRef={testimonialsRef} contactRef={contactRef} />
       <Carousel data={carouselData} />
       <Section>
